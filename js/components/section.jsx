@@ -7,7 +7,7 @@ export default class Section extends React.Component {
   }
 
   render() {
-    var classes = `container ${this.props.className}`
+    var classes = `container blitz-section ${this.props.className}`
     return (
       <div {... this.props} className={classes}>
         { this.renderHeading() }  

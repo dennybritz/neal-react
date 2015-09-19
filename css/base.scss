@@ -1,0 +1,59 @@
+.blitz-quick-signup {
+  input.form-control { width: 100% };
+  button[type=submit] { width: 100%; }
+}
+
+$blitz-font-family: Roboto;
+$blitz-border-radius: 0px;
+$blitz-link-color: #0088cc;
+
+body {
+  font-family: $blitz-font-family;
+  a { color: $blitz-link-color; }
+  p { margin-bottom: 2rem; }
+}
+
+
+// Forms
+.form-control,
+.btn,
+input,
+textarea,
+button {
+  border-radius: $blitz-border-radius;
+  padding: 0.8em;
+}
+
+
+// Hero
+$blitz-hero-vpadding: 10rem;
+$blitz-hero-background-color: #333;
+$blitz-hero-text-color: #fff;
+.blitz-hero {
+  .jumbotron {
+    h1 { font-weight: 900; }
+    padding-top: $blitz-hero-vpadding;
+    padding-bottom: $blitz-hero-vpadding;
+    background-color: $blitz-hero-background-color;
+    color: $blitz-hero-text-color;
+  }
+  margin-bottom: $blitz-hero-vpadding/2;
+}
+
+// Footer
+$blitz-footer-margin-top: 4rem;
+footer {
+  margin-top: $blitz-footer-margin-top;
+  a.navbar-brand { 
+    font-size: 1rem;
+  }
+}
+
+// Sections
+$blitz-section-vmargin: 5rem;
+.blitz-section {
+  h2 { margin-bottom: 2rem; font-weight: 300; }
+  & + .blitz-section {
+    margin-top: $blitz-section-vmargin;
+  }
+}

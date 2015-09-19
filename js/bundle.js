@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(169);
+	module.exports = __webpack_require__(170);
 
 
 /***/ },
@@ -68,7 +68,7 @@
 
 	var _componentsIndex2 = _interopRequireDefault(_componentsIndex);
 
-	var _samplesSamplePageJsx = __webpack_require__(168);
+	var _samplesSamplePageJsx = __webpack_require__(169);
 
 	var _samplesSamplePageJsx2 = _interopRequireDefault(_samplesSamplePageJsx);
 
@@ -19465,8 +19465,10 @@
 	exports.SignupInline = SignupInline;
 	var SignupModal = __webpack_require__(167);
 	exports.SignupModal = SignupModal;
-	var GoogleAnalytics = __webpack_require__(173);
+	var GoogleAnalytics = __webpack_require__(168);
 	exports.GoogleAnalytics = GoogleAnalytics;
+	var Section = __webpack_require__(166);
+	exports.Section = Section;
 
 /***/ },
 /* 160 */
@@ -19821,8 +19823,8 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2['default'].createElement(
-	        'nav',
-	        { className: 'navbar navbar-fixed-bottom navbar-light bg-faded' },
+	        'footer',
+	        { className: 'navbar navbar-light bg-faded' },
 	        _react2['default'].createElement(
 	          _helpersBootstrapJsx.Container,
 	          null,
@@ -19943,14 +19945,14 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2['default'].createElement(
-	        _sectionJsx2['default'],
-	        { heading: 'Sign up', className: 'blitz-section-quick-signup' },
+	        'div',
+	        { className: 'blitz-quick-signup' },
 	        _react2['default'].createElement(
 	          'form',
 	          { className: 'form-inline row' },
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'form-group col-sm-4' },
+	            { className: 'form-group col-sm-5' },
 	            _react2['default'].createElement(
 	              'label',
 	              { className: 'sr-only', htmlFor: 'email' },
@@ -19960,7 +19962,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'form-group col-sm-4' },
+	            { className: 'form-group col-sm-5' },
 	            _react2['default'].createElement(
 	              'label',
 	              { className: 'sr-only', htmlFor: 'password' },
@@ -19969,9 +19971,13 @@
 	            _react2['default'].createElement('input', { type: 'password', className: 'form-control', id: 'password', placeholder: 'Password' })
 	          ),
 	          _react2['default'].createElement(
-	            'button',
-	            { type: 'submit', className: 'btn btn-primary' },
-	            'Sign up'
+	            'div',
+	            { className: 'form-group col-sm-2' },
+	            _react2['default'].createElement(
+	              'button',
+	              { type: 'submit', className: 'btn btn-primary' },
+	              'Sign up'
+	            )
 	          )
 	        )
 	      );
@@ -20022,7 +20028,7 @@
 	  _createClass(Section, [{
 	    key: 'render',
 	    value: function render() {
-	      var classes = 'container ' + this.props.className;
+	      var classes = 'container blitz-section ' + this.props.className;
 	      return _react2['default'].createElement(
 	        'div',
 	        _extends({}, this.props, { className: classes }),
@@ -20157,9 +20163,21 @@
 	              _react2["default"].createElement("input", { type: "password", className: "form-control", id: "password", placeholder: "Password" })
 	            ),
 	            _react2["default"].createElement(
-	              "button",
-	              { type: "submit", className: "btn btn-primary" },
-	              "Sign up"
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "row" },
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-xs-12" },
+	                  _react2["default"].createElement(
+	                    "button",
+	                    { type: "submit", className: "btn btn-primary btn-block" },
+	                    "Sign up"
+	                  )
+	                )
+	              )
 	            )
 	          )
 	        )
@@ -20205,6 +20223,71 @@
 	  value: true
 	});
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var GoogleAnalytics = (function (_React$Component) {
+	  _inherits(GoogleAnalytics, _React$Component);
+
+	  function GoogleAnalytics() {
+	    _classCallCheck(this, GoogleAnalytics);
+
+	    _get(Object.getPrototypeOf(GoogleAnalytics.prototype), 'constructor', this).apply(this, arguments);
+	  }
+
+	  _createClass(GoogleAnalytics, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', this.props.account]);
+	      _gaq.push(['_trackPageview']);
+
+	      (function () {
+	        var ga = document.createElement('script');ga.type = 'text/javascript';ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);
+	      })();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return null;
+	    }
+	  }], [{
+	    key: 'propTypes',
+	    value: {
+	      account: _react2['default'].PropTypes.string.isRequired
+	    },
+	    enumerable: true
+	  }]);
+
+	  return GoogleAnalytics;
+	})(_react2['default'].Component);
+
+	exports['default'] = GoogleAnalytics;
+	module.exports = exports['default'];
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 	var _react = __webpack_require__(2);
@@ -20221,33 +20304,60 @@
 	    null,
 	    _react2['default'].createElement(_componentsIndex.Navbar, { brandName: brandName, items: navItems }),
 	    _react2['default'].createElement(_componentsIndex.Hero, { heading: 'Blitz Sample Page', subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }),
-	    _react2['default'].createElement(_componentsIndex.Footer, { brandName: brandName, items: navItems }),
-	    _react2['default'].createElement(_componentsIndex.SignupInline, null),
-	    _react2['default'].createElement(_componentsIndex.SignupModal, null),
-	    _react2['default'].createElement(_componentsIndex.GoogleAnalytics, null)
+	    _react2['default'].createElement(
+	      _componentsIndex.Section,
+	      { heading: 'Inline Signup Component' },
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        _react2['default'].createElement(
+	          'code',
+	          null,
+	          'SignupInline'
+	        ),
+	        ' does the validation for you, but you can add your own callback handler.'
+	      ),
+	      _react2['default'].createElement(_componentsIndex.SignupInline, null)
+	    ),
+	    _react2['default'].createElement(
+	      _componentsIndex.Section,
+	      { heading: 'Signup Modal' },
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+	      ),
+	      _react2['default'].createElement(
+	        'p',
+	        null,
+	        _react2['default'].createElement(_componentsIndex.SignupModal, null)
+	      )
+	    ),
+	    _react2['default'].createElement(_componentsIndex.GoogleAnalytics, null),
+	    _react2['default'].createElement(_componentsIndex.Footer, { brandName: brandName, items: navItems })
 	  );
 	};
 
 	module.exports = exports['default'];
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(170);
+	var content = __webpack_require__(171);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(172)(content, {});
+	var update = __webpack_require__(173)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./base.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./base.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -20257,21 +20367,21 @@
 	}
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(171)();
+	exports = module.exports = __webpack_require__(172)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".blitz-section-quick-signup input.form-control {\n  width: 100%; }\n", ""]);
+	exports.push([module.id, ".blitz-quick-signup input.form-control {\n  width: 100%; }\n\n.blitz-quick-signup button[type=submit] {\n  width: 100%; }\n\nbody {\n  font-family: Roboto; }\n  body a {\n    color: #0088cc; }\n  body p {\n    margin-bottom: 2rem; }\n\n.form-control,\n.btn,\ninput,\ntextarea,\nbutton {\n  border-radius: 0px;\n  padding: 0.8em; }\n\n.blitz-hero {\n  margin-bottom: 5rem; }\n  .blitz-hero .jumbotron {\n    padding-top: 10rem;\n    padding-bottom: 10rem;\n    background-color: #333;\n    color: #fff; }\n    .blitz-hero .jumbotron h1 {\n      font-weight: 900; }\n\nfooter {\n  margin-top: 4rem; }\n  footer a.navbar-brand {\n    font-size: 1rem; }\n\n.blitz-section h2 {\n  margin-bottom: 2rem;\n  font-weight: 300; }\n\n.blitz-section + .blitz-section {\n  margin-top: 5rem; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports) {
 
 	/*
@@ -20327,7 +20437,7 @@
 
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -20550,71 +20660,6 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var GoogleAnalytics = (function (_React$Component) {
-	  _inherits(GoogleAnalytics, _React$Component);
-
-	  function GoogleAnalytics() {
-	    _classCallCheck(this, GoogleAnalytics);
-
-	    _get(Object.getPrototypeOf(GoogleAnalytics.prototype), 'constructor', this).apply(this, arguments);
-	  }
-
-	  _createClass(GoogleAnalytics, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var _gaq = _gaq || [];
-	      _gaq.push(['_setAccount', this.props.account]);
-	      _gaq.push(['_trackPageview']);
-
-	      (function () {
-	        var ga = document.createElement('script');ga.type = 'text/javascript';ga.async = true;
-	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);
-	      })();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return null;
-	    }
-	  }], [{
-	    key: 'propTypes',
-	    value: {
-	      account: _react2['default'].PropTypes.string.isRequired
-	    },
-	    enumerable: true
-	  }]);
-
-	  return GoogleAnalytics;
-	})(_react2['default'].Component);
-
-	exports['default'] = GoogleAnalytics;
-	module.exports = exports['default'];
 
 /***/ }
 /******/ ]);

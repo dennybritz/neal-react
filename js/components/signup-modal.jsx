@@ -37,7 +37,13 @@ export default class SignupModal extends React.Component {
               <label className="sr-only" htmlFor="password">Password</label>
               <input type="password" className="form-control" id="password" placeholder="Password"/>
             </div>
-            <button type="submit" className="btn btn-primary">Sign up</button>
+            <div className="form-group">
+              <div className="row">
+                <div className="col-xs-12">
+                  <button type="submit" className="btn btn-primary btn-block">Sign up</button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>

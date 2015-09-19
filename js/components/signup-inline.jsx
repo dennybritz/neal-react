@@ -6,19 +6,21 @@ export default class SignupInline extends React.Component {
 
   render() {
     return (
-      <Section heading="Sign up" className="blitz-section-quick-signup">
+      <div className="blitz-quick-signup">
         <form className="form-inline row">
-         <div className="form-group col-sm-4">
-          <label className="sr-only" htmlFor="email">Email address</label>
-          <input type="email" className="form-control" id="email" placeholder="Email"/>
-        </div>
-        <div className="form-group col-sm-4">
-          <label className="sr-only" htmlFor="password">Password</label>
-          <input type="password" className="form-control" id="password" placeholder="Password"/>
-        </div>
-        <button type="submit" className="btn btn-primary">Sign up</button>
+          <div className="form-group col-sm-5">
+            <label className="sr-only" htmlFor="email">Email address</label>
+            <input type="email" className="form-control" id="email" placeholder="Email"/>
+          </div>
+          <div className="form-group col-sm-5">
+            <label className="sr-only" htmlFor="password">Password</label>
+            <input type="password" className="form-control" id="password" placeholder="Password"/>
+          </div>
+          <div className="form-group col-sm-2">
+            <button type="submit" className="btn btn-primary">Sign up</button>
+          </div>
         </form>
-      </Section>
+      </div>
     );
   }
 }
