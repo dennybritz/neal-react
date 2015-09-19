@@ -1,9 +1,9 @@
-## TODO
+## Major TODOs
 
 - How to build as library without including react, etc?
 - Include bootstrap and build from there
 
-## Components TODO
+## Components TODOs
 
 Basic:
 
@@ -17,3 +17,9 @@ Third-Parties:
 
 - Stripe
 - Mixpanel
+
+
+## Styling TODOs
+
+- Make Header Pretty
+- Make Footer Pretty
