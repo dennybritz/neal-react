@@ -6,3 +6,4 @@ export var SignupInline = require('./signup-inline.jsx');
 export var SignupModal = require('./signup-modal.jsx');
 export var GoogleAnalytics = require('./google-analytics.jsx');
 export var Section = require('./section.jsx');
+export var HorizontalSections = require('./horizontal-sections.jsx');

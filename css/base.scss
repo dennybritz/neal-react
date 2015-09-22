@@ -1,39 +1,87 @@
+// Variables
+$blitz-header-link-color: #666;
+$blitz-header-link-colo-hover: darken($blitz-header-link-color, 15%);
+$blitz-link-color: #0088cc;
+$blitz-hero-vpadding: 5rem;
+$blitz-hero-background-color: #263238;
+$blitz-hero-text-color: #fff;
+$blitz-footer-margin-top: 4rem;
+$blitz-section-vmargin: 5rem;
+
+// Generic Bootstrap Overrides
+$enable-rounded: false;
+$link-color: $blitz-link-color !default;
+$font-family-sans-serif: Roboto;
+$jumbotron-padding: $blitz-hero-vpadding !default;
+
+// Button Paddings
+$btn-padding-x: 3rem;
+$btn-padding-y: 1rem;
+$btn-padding-x-sm: $btn-padding-x;
+$btn-padding-y-sm: $btn-padding-y;
+$btn-padding-x-lg: $btn-padding-x;
+$btn-padding-y-lg: $btn-padding-y;
+
+// Input Paddings
+$input-padding-x: 1rem;
+$input-padding-y: 1rem;
+$input-padding-x-sm: $input-padding-x;
+$input-padding-y-sm: $input-padding-y;
+$input-padding-x-lg: $input-padding-x;
+$input-padding-y-lg: $input-padding-y;
+
+// Navbar
+$navbar-padding-vertical: 1rem;
+
+// Colors
+$brand-primary: #03A9F4;
+$brand-success: #8BC34A;
+$brand-info: #00BCD4;
+$brand-warning: #F44336;
+$brand-danger: #FF9800;
+
+@import '../bower_components/bootstrap/scss/bootstrap.scss';
+
+
+// Header Component
+header.blitz-header {
+  a.nav-link { 
+    font-weight: 500;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    color: $blitz-header-link-color;
+    &:hover, &:active {
+      color: $blitz-header-link-colo-hover;
+    }
+  }
+  a.navbar-brand {
+    font-weight: 900;
+    color: #333;
+  }
+  .nav-item + .nav-item {
+    margin-left: 2.5rem;
+  }
+}
+
+// Footer Component
+footer.navbar {
+  background-color: #ECEFF1;
+}
+
 .blitz-quick-signup {
   input.form-control { width: 100% };
   button[type=submit] { width: 100%; }
 }
 
-$blitz-font-family: Roboto;
-$blitz-border-radius: 0px;
-$blitz-link-color: #0088cc;
-
 body {
-  font-family: $blitz-font-family;
-  a { color: $blitz-link-color; }
   p { margin-bottom: 2rem; }
 }
 
 
-// Forms
-.form-control,
-.btn,
-input,
-textarea,
-button {
-  border-radius: $blitz-border-radius;
-  padding: 0.8em;
-}
-
-
 // Hero
-$blitz-hero-vpadding: 10rem;
-$blitz-hero-background-color: #333;
-$blitz-hero-text-color: #fff;
 .blitz-hero {
   .jumbotron {
     h1 { font-weight: 900; }
-    padding-top: $blitz-hero-vpadding;
-    padding-bottom: $blitz-hero-vpadding;
     background-color: $blitz-hero-background-color;
     color: $blitz-hero-text-color;
   }
@@ -41,7 +89,6 @@ $blitz-hero-text-color: #fff;
 }
 
 // Footer
-$blitz-footer-margin-top: 4rem;
 footer {
   margin-top: $blitz-footer-margin-top;
   a.navbar-brand { 
@@ -50,10 +97,10 @@ footer {
 }
 
 // Sections
-$blitz-section-vmargin: 5rem;
 .blitz-section {
   h2 { margin-bottom: 2rem; font-weight: 300; }
   & + .blitz-section {
     margin-top: $blitz-section-vmargin;
   }
 }
+

@@ -11,16 +11,19 @@ export default class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-static-top">
-        <div className="container">
-          <a className="navbar-brand" href="#">{this.props.brandName}</a>
-          <ul className="nav navbar-nav pull-right">
-            {this.props.items.map(function(item){
-              return <Navbar.NavItem key={item.text}>{item.text}</Navbar.NavItem>
-            })}
-          </ul>
-        </div>
-      </nav>)
+      <header className="blitz-header">
+        <nav className="navbar navbar-static-top">
+          <div className="container">
+            <a className="navbar-brand" href="#">{this.props.brandName}</a>
+            <ul className="nav navbar-nav pull-right">
+              {this.props.items.map(function(item){
+                return <Navbar.NavItem key={item.text}>{item.text}</Navbar.NavItem>
+              })}
+            </ul>
+          </div>
+        </nav>
+      </header>
+    )
   }
 
   renderNavItem(item) {

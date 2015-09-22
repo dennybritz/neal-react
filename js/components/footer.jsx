@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="navbar navbar-light bg-faded">
+      <footer className="navbar">
         <Container>
           <Row>
             <Col size={["xs-12", "sm-6"]}>

@@ -1,13 +1,14 @@
 ## Major TODOs
 
 - How to build as library without including react, etc?
-- Include bootstrap and build from there
 - Research components that Launchrock, Startup Framework, etc are providing
+- Organize Variable
 
 ## Components TODOs
 
 Basic:
-
+  
+  - Make Header component mobile-friendly
   - Two-column split
   - Three-column split
   - Team Photos
@@ -22,5 +23,4 @@ Third-Parties:
 
 ## Styling TODOs
 
-- Make Header Pretty
 - Make Footer Pretty
