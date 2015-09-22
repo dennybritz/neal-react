@@ -14,7 +14,7 @@ export default class Navbar extends React.Component {
       <header className="blitz-header">
         <nav className="navbar navbar-static-top">
           <div className="container">
-            <a className="navbar-brand" href="#">{this.props.brandName}</a>
+            <a className="navbar-brand hidden-xs-down" href="#">{this.props.brandName}</a>
             <ul className="nav navbar-nav pull-right">
               {this.props.items.map(function(item){
                 return <Navbar.NavItem key={item.text}>{item.text}</Navbar.NavItem>

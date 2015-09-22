@@ -8,7 +8,6 @@
 
 Basic:
   
-  - Make Header component mobile-friendly
   - Two-column split
   - Three-column split
   - Team Photos

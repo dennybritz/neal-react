@@ -19569,7 +19569,7 @@
 	            { className: "container" },
 	            _react2["default"].createElement(
 	              "a",
-	              { className: "navbar-brand", href: "#" },
+	              { className: "navbar-brand hidden-xs-down", href: "#" },
 	              this.props.brandName
 	            ),
 	            _react2["default"].createElement(
