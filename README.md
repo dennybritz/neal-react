@@ -2,7 +2,7 @@
 
 - How to build as library without including react, etc?
 - Research components that Launchrock, Startup Framework, etc are providing
-- Organize Variable
+- Organize Variables
 
 ## Components TODOs
 
@@ -11,7 +11,7 @@ Basic:
   - Two-column split
   - Three-column split
   - Team Photos
-  - Customer Quotes
+  - Customer Quotes with Pictures
   - Pricing Table
 
 Third-Parties:
@@ -22,4 +22,3 @@ Third-Parties:
 
 ## Styling TODOs
 
-- Make Footer Pretty

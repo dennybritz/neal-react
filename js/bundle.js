@@ -19837,34 +19837,26 @@
 	          _react2['default'].createElement(
 	            _helpersBootstrapJsx.Row,
 	            null,
+	            _react2['default'].createElement(_helpersBootstrapJsx.Col, { size: ["xs-12", "sm-4"] }),
+	            _react2['default'].createElement(_helpersBootstrapJsx.Col, { size: ["xs-12", "sm-4"] }),
 	            _react2['default'].createElement(
 	              _helpersBootstrapJsx.Col,
-	              { size: ["xs-12", "sm-6"] },
-	              _react2['default'].createElement(
-	                'a',
-	                { className: 'navbar-brand' },
-	                'Copyright ',
-	                new Date().getFullYear(),
-	                ', ',
-	                this.props.brandName
-	              )
-	            ),
+	              { size: ["xs-12", "sm-4"] },
+	              this.renderSocialIcons()
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _helpersBootstrapJsx.Row,
+	            null,
 	            _react2['default'].createElement(
-	              _helpersBootstrapJsx.Col,
-	              { size: ["xs-12", "sm-6"] },
-	              _react2['default'].createElement(
-	                'ul',
-	                { className: 'nav navbar-nav pull-right' },
-	                this.props.items.map(function (item) {
-	                  return _react2['default'].createElement(
-	                    _navbarJsx2['default'].NavItem,
-	                    { key: item.text },
-	                    item.text
-	                  );
-	                })
-	              )
-	            ),
-	            this.renderSocialIcons()
+	              'small',
+	              null,
+	              'Copyright © ',
+	              new Date().getFullYear(),
+	              ' ',
+	              this.props.brandName,
+	              ' '
+	            )
 	          )
 	        )
 	      );
@@ -19873,20 +19865,30 @@
 	    key: 'renderSocialIcons',
 	    value: function renderSocialIcons() {
 	      return _react2['default'].createElement(
-	        _helpersBootstrapJsx.Col,
-	        { size: ["xs-12"] },
+	        'ul',
+	        { className: 'nav navbar-nav pull-right' },
+	        this.renderSocialIcon("fa-envelope-square", this.props.emailUrl),
+	        this.renderSocialIcon("fa-facebook", this.props.facebookUrl),
+	        this.renderSocialIcon("fa-twitter", this.props.twitterUrl)
+	      );
+	    }
+	  }, {
+	    key: 'renderSocialIcon',
+	    value: function renderSocialIcon(iconClass, url) {
+	      if (!url || !iconClass) {
+	        return null;
+	      }
+	      return _react2['default'].createElement(
+	        _navbarJsx2['default'].NavItem,
+	        null,
 	        _react2['default'].createElement(
-	          'ul',
-	          { className: 'nav navbar-nav pull-right' },
+	          'a',
+	          { href: url, target: '_blank' },
 	          _react2['default'].createElement(
-	            _navbarJsx2['default'].NavItem,
-	            null,
-	            _react2['default'].createElement('i', { className: 'fa fa-twitter' })
-	          ),
-	          _react2['default'].createElement(
-	            _navbarJsx2['default'].NavItem,
-	            null,
-	            _react2['default'].createElement('i', { className: 'fa fa-facebook' })
+	            'span',
+	            { className: 'fa-stack' },
+	            _react2['default'].createElement('i', { className: 'fa fa-circle fa-stack-2x ' }),
+	            _react2['default'].createElement('i', { className: 'fa ' + iconClass + ' fa-stack-1x fa-inverse' })
 	          )
 	        )
 	      );
@@ -19895,9 +19897,9 @@
 	    key: 'propTypes',
 	    value: {
 	      brandName: _react2['default'].PropTypes.string.isRequired,
-	      items: _react2['default'].PropTypes.arrayOf(_react2['default'].PropTypes.shape({
-	        text: _react2['default'].PropTypes.string
-	      })).isRequired
+	      facebookUrl: _react2['default'].PropTypes.string,
+	      twitterUrl: _react2['default'].PropTypes.string,
+	      emailUrl: _react2['default'].PropTypes.string
 	    },
 	    enumerable: true
 	  }]);
@@ -20405,7 +20407,10 @@
 	      )
 	    ),
 	    _react2['default'].createElement(_componentsIndex.GoogleAnalytics, null),
-	    _react2['default'].createElement(_componentsIndex.Footer, { brandName: brandName, items: navItems })
+	    _react2['default'].createElement(_componentsIndex.Footer, { brandName: brandName,
+	      facebookUrl: 'http://www.facebook.com',
+	      twitterUrl: 'http://www.twitter.com',
+	      emailUrl: 'mailto:info@google.com' })
 	  );
 	};
 

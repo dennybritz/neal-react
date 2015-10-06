@@ -6,9 +6,9 @@ export default class Footer extends React.Component {
 
   static propTypes = {
     brandName: React.PropTypes.string.isRequired,
-    items: React.PropTypes.arrayOf(React.PropTypes.shape({
-      text: React.PropTypes.string,
-    })).isRequired
+    facebookUrl: React.PropTypes.string,
+    twitterUrl: React.PropTypes.string,
+    emailUrl: React.PropTypes.string,
   }
 
 
@@ -17,19 +17,18 @@ export default class Footer extends React.Component {
       <footer className="navbar">
         <Container>
           <Row>
-            <Col size={["xs-12", "sm-6"]}>
-              <a className="navbar-brand">Copyright {new Date().getFullYear()}, {this.props.brandName}</a>
+            <Col size={["xs-12", "sm-4"]}>
             </Col>
-            <Col size={["xs-12", "sm-6"]}>
-              <ul className="nav navbar-nav pull-right">
-                {this.props.items.map(function(item){
-                  return <Navbar.NavItem key={item.text}>{item.text}</Navbar.NavItem>
-                })}
-              </ul>
+            <Col size={["xs-12", "sm-4"]}>
             </Col>
-            {this.renderSocialIcons()}
+            <Col size={["xs-12", "sm-4"]}>
+              {this.renderSocialIcons()}
+            </Col>
           </Row>
-          
+          <Row>
+            <small>Copyright © {new Date().getFullYear()} {this.props.brandName} </small>
+          </Row>
+         
         </Container>
       </footer>
     );
@@ -37,12 +36,27 @@ export default class Footer extends React.Component {
 
   renderSocialIcons() {
     return (
-      <Col size={["xs-12"]}>
-        <ul className="nav navbar-nav pull-right">
-          <Navbar.NavItem><i className="fa fa-twitter"/></Navbar.NavItem>
-          <Navbar.NavItem><i className="fa fa-facebook"/></Navbar.NavItem>
-        </ul>
-      </Col>
+      <ul className="nav navbar-nav pull-right">
+        { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
+        { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
+        { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
+      </ul>
+    )
+  }
+
+  
+
+  renderSocialIcon(iconClass, url) {
+    if(!url || !iconClass ) { return null; }
+    return (
+      <Navbar.NavItem>
+        <a href={url} target="_blank">
+          <span className="fa-stack">
+            <i className="fa fa-circle fa-stack-2x "></i>
+            <i className={`fa ${iconClass} fa-stack-1x fa-inverse`}></i>
+          </span>
+        </a>
+      </Navbar.NavItem> 
     )
   }
 }

@@ -21,7 +21,10 @@ export default (props) => {
         <p><SignupModal/></p>
       </Section>
       <GoogleAnalytics/>
-      <Footer brandName={brandName} items={navItems}/>
+      <Footer brandName={brandName}
+        facebookUrl="http://www.facebook.com"
+        twitterUrl="http://www.twitter.com"
+        emailUrl="mailto:info@google.com"/>
     </Page>
   );
 };
