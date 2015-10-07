@@ -1,8 +1,10 @@
 ## Major TODOs
 
+- Upgrade to react 0.14
 - How to build as library without including react, etc?
 - Research components that Launchrock, Startup Framework, etc are providing
 - Organize Variables
+
 
 ## Components TODOs
 
@@ -21,4 +23,6 @@ Third-Parties:
 
 
 ## Styling TODOs
+
+- Footer Review
 
