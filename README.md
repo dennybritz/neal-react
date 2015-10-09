@@ -10,8 +10,8 @@
 
 Basic:
   
-  - Team Photos
   - Customer Quotes with Pictures
+  - Team Photos
   - Pricing Table
 
 Third-Parties:

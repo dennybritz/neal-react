@@ -1,5 +1,5 @@
 import React from 'react';
-import {Page, Navbar, Hero, Footer, SignupInline, SignupModal, GoogleAnalytics, Section, HorizontalSplit} from '../components/index';
+import {Page, Navbar, Hero, Footer, SignupInline, SignupModal, GoogleAnalytics, Section, HorizontalSplit, CustomerQuotes} from '../components/index';
 
 export default (props) => {
   var brandName = "SamplePage"
@@ -29,6 +29,20 @@ export default (props) => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         <SignupModal/>
       </Section>
+      <Section heading="Customer Quotes">
+        <CustomerQuotes>
+          <CustomerQuotes.Quote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </CustomerQuotes.Quote>
+          <CustomerQuotes.Quote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </CustomerQuotes.Quote>          
+          <CustomerQuotes.Quote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </CustomerQuotes.Quote>
+        </CustomerQuotes>
+      </Section>
+
       <GoogleAnalytics account="ABC"/>
       <Footer brandName={brandName}
         facebookUrl="http://www.facebook.com"
