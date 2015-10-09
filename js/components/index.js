@@ -8,3 +8,4 @@ export var GoogleAnalytics = require('./google-analytics.jsx');
 export var Section = require('./section.jsx');
 export var HorizontalSplit = require('./horizontal-split.jsx');
 export var CustomerQuotes = require('./customer-quotes.jsx');
+export var Team = require('./team.jsx');

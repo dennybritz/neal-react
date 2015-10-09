@@ -1,5 +1,5 @@
 import React from 'react';
-import {Page, Navbar, Hero, Footer, SignupInline, SignupModal, GoogleAnalytics, Section, HorizontalSplit, CustomerQuotes} from '../components/index';
+import {Page, Navbar, Hero, Footer, SignupInline, SignupModal, GoogleAnalytics, Section, HorizontalSplit, CustomerQuotes, Team} from '../components/index';
 
 export default (props) => {
   var brandName = "SamplePage"
@@ -29,6 +29,7 @@ export default (props) => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         <SignupModal/>
       </Section>
+      
       <Section heading="Customer Quotes">
         <CustomerQuotes>
           <CustomerQuotes.Quote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
@@ -42,6 +43,21 @@ export default (props) => {
           </CustomerQuotes.Quote>
         </CustomerQuotes>
       </Section>
+
+      <Section heading="Team">
+        <Team>
+          <Team.Member name="Denny Britz" title="Founder at BigCo" imageUrl="http://placehold.it/200x200">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </Team.Member>
+          <Team.Member name="Denny Britz" title="Founder at BigCo" imageUrl="http://placehold.it/200x200">
+          TODO
+          </Team.Member>
+          <Team.Member name="Denny Britz" title="Founder at BigCo" imageUrl="http://placehold.it/200x200">
+          TODO
+          </Team.Member>
+        </Team>
+      </Section>
+
 
       <GoogleAnalytics account="ABC"/>
       <Footer brandName={brandName}
