@@ -49,14 +49,14 @@ export default class Footer extends React.Component {
   renderSocialIcon(iconClass, url) {
     if(!url || !iconClass ) { return null; }
     return (
-      <Navbar.NavItem>
+     <li className="nav-item">
         <a href={url} target="_blank">
           <span className="fa-stack">
             <i className="fa fa-circle fa-stack-2x "></i>
             <i className={`fa ${iconClass} fa-stack-1x fa-inverse`}></i>
           </span>
         </a>
-      </Navbar.NavItem> 
+      </li> 
     )
   }
 }
