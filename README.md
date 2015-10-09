@@ -11,7 +11,6 @@
 
 Basic:
   
-  - Team Photos
   - Pricing Table
 
 Third-Parties:
