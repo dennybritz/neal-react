@@ -1,11 +1,12 @@
 ## Major TODOs
 
-- How to build as library without including react, etc?
-- Research components that Launchrock, Startup Framework, etc are providing
+- Add classes to all components
+- Refactor CSS
 - Organize Variables
+- Research components that Launchrock, Startup Framework, etc are providing
 - Research styling and common themes
-- Flex Compatibility
-
+- Research Flex Compatibility
+- How to build as library without including react, etc?
 
 ## Components TODOs
 
