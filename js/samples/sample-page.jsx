@@ -6,10 +6,11 @@ import { GoogleAnalytics, Segment, Stripe} from '../components/index';
 export default (props) => {
   var brandName = "SamplePage"
   var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
-    name: 'Stripe.com',
-    description: `Hi ${name || email}. It's time to pay!`,
+    name: 'Stripe Integration',
+    description: "Like this? Donate $5 to keep it up :)",
+    panelLabel: "Donate {{amount}}",
     email: email,    
-    amount: 2000
+    amount: 500
   });
 
   return(
