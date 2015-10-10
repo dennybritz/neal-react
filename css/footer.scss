@@ -13,9 +13,12 @@ footer.blitz-footer {
   font-size: 1.5rem;
 }
 .blitz-footer-social-icon { 
-  i.fa { color: $blitz-footer-social-icon-bg-color; }
-  i.fa.fa-inverse { color: $blitz-footer-social-icon-color; }
+  i.fa-stack-2x { color: $blitz-footer-social-icon-bg-color; }
+  i.fa-stack-1x { color: $blitz-footer-social-icon-color; }
 }
+
+.twitter.blitz-footer-social-icon i.fa-stack-2x { color: #55acee; }
+.facebook.blitz-footer-social-icon i.fa-stack-2x { color: #3b5998; }
 
 // Copyright
 .blitz-footer-copyright { }

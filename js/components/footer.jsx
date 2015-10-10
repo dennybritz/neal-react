@@ -42,8 +42,8 @@ export class Footer extends React.Component {
     return (
       <ul className="nav navbar-nav pull-right blitz-footer-social">
         { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
-        { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
+        { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }        
       </ul>
     );
   }
@@ -53,10 +53,10 @@ export class Footer extends React.Component {
   renderSocialIcon(iconClass, url) {
     if(!url || !iconClass ) { return null; }
     return (
-     <li className="nav-item blitz-footer-social-icon">
+     <li className={`nav-item blitz-footer-social-icon ${iconClass.replace('fa-','')}`}>
         <a href={url} target="_blank">
           <span className="fa-stack">
-            <i className="fa fa-circle fa-stack-2x "></i>
+            <i className="fa fa-circle fa-stack-2x"></i>
             <i className={`fa ${iconClass} fa-stack-1x fa-inverse`}></i>
           </span>
         </a>
