@@ -9,10 +9,10 @@
 
 Basic:
   
-  - Background image for Hero
-  - Signup callbacks
-  - How to best deal with Routing in Navbar? (Depend on react router)
-  - Pricing Table
+- Signup callbacks
+- How to best deal with Routing in Navbar? (Depend on react router)
+- App Component
+- Pricing Table
 
 Third-Parties:
 

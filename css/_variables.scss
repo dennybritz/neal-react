@@ -32,7 +32,7 @@ $blitz-footer-margin-top: 4rem !default;
 $blitz-footer-bg-color: #ECEFF1 !default;
 
 // Section Component
-$blitz-section-padding-y: 6rem !default;
+$blitz-section-padding-y: 8rem !default;
 
 // Navbar Component
 $blitz-navbar-padding-y: 1rem !default;
@@ -41,13 +41,15 @@ $blitz-header-link-color-hover: darken($blitz-navbar-link-color, 25%) !default;
 $blitz-navbar-brand-color: #333 !default;
 $blitz-navbar-item-padding-x: 1.5rem !default;
 
+// Hero Component
+$blitz-hero-padding-y: 10rem !default;
+$blitz-hero-margin-bottom: 2rem !default;
+$blitz-hero-bg-color: #263238 !default;
+$blitz-hero-text-color: #fff !default;
+
 // Horizontal Split: 
 // N/A
 
-// Hero Component
-$blitz-hero-padding-y: 8rem !default;
-$blitz-hero-bg-color: #263238 !default;;
-$blitz-hero-text-color: #fff !default;;
 
 // Customer Quotes Component
 $blitz-customer-quotes-bg-color: #fafafa !default;

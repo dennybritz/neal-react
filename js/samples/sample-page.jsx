@@ -10,11 +10,7 @@ export default (props) => {
         <NavItem>About</NavItem>
         <NavItem>Contact</NavItem>
       </Navbar>
-      <Hero heading="Blitz Sample Page" subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-      <Section heading="Inline Signup Component">
-        <p><code>SignupInline</code> does the validation for you, but you can add your own callback handler.</p>
-        <SignupInline/>
-      </Section>
+      <Hero heading="Blitz Sample Page" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       <Section heading="Horizontal Split">
         <HorizontalSplit>
           <p> You can create Horizontal Splits with 1,2,3,4,6 or 12 columns. </p>
@@ -43,7 +39,10 @@ export default (props) => {
           </CustomerQuote>
         </CustomerQuotes>
       </Section>
-
+      <Section heading="Inline Signup Component">
+        <p><code>SignupInline</code> does the validation for you, but you can add your own callback handler.</p>
+        <SignupInline/>
+      </Section>
       <Section heading="Team">
         <Team>
           <Team.Member name="Denny Britz" title="Founder at BigCo" imageUrl="http://placehold.it/200x200">
