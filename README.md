@@ -1,6 +1,5 @@
 ## Major TODOs
 
-- Organize Variables
 - Research components that Launchrock, Startup Framework, etc are providing
 - Research styling and common themes
 - Research Flex Compatibility
@@ -10,6 +9,7 @@
 
 Basic:
   
+  - Background image for Hero
   - Signup callbacks
   - How to best deal with Routing in Navbar? (Depend on react router)
   - Pricing Table

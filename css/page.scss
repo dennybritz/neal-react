@@ -1,3 +1,8 @@
 .blitz-page { 
-  p { margin-bottom: 2rem; }
+  
+  p {
+    margin-bottom: $blitz-page-paragraph-margin;
+    &:last-child { margin-bottom: 0; }
+  }
+  
 }

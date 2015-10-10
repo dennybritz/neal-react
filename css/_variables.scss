@@ -1,24 +1,63 @@
-// Blitz Variables
+// Blitz Global Variables
 // ========================================
 
-// General
-$blitz-link-color: #0088cc;
+// Global
+$blitz-link-color: #0088cc !default;
+$blitz-font-family: Roboto, sans-serif;
 
-// Section Component
-$blitz-section-vmargin: 5rem;
+// Buttons
+$blitz-button-padding-x: 3rem !default;
+$blitz-button-padding-y: 1rem !default;
 
-// Navbar Component
-$blitz-header-link-color: #666;
-$blitz-header-link-colo-hover: darken($blitz-header-link-color, 15%);
+// Inputs
+$blitz-input-padding-x: 1rem !default;
+$blitz-input-padding-y: 1rem !default;
 
-// Hero Component
-$blitz-hero-vpadding: 5rem;
-$blitz-hero-background-color: #263238;
-$blitz-hero-text-color: #fff;
+// Colors
+$brand-primary: #03A9F4;
+$brand-success: #8BC34A;
+$brand-info: #00BCD4;
+$brand-warning: #F44336;
+$brand-danger: #FF9800;
+
+
+// Blitz Component Variables
+// ========================================
+
+// Page
+$blitz-page-paragraph-margin: 2rem !default;
 
 // Footer Component
-$blitz-footer-margin-top: 4rem;
+$blitz-footer-margin-top: 4rem !default;
+$blitz-footer-bg-color: #ECEFF1 !default;
 
+// Section Component
+$blitz-section-padding-y: 6rem !default;
+
+// Navbar Component
+$blitz-navbar-padding-y: 1rem !default;
+$blitz-navbar-link-color: #666 !default;
+$blitz-header-link-color-hover: darken($blitz-navbar-link-color, 25%) !default;
+$blitz-navbar-brand-color: #333 !default;
+$blitz-navbar-item-padding-x: 1.5rem !default;
+
+// Horizontal Split: 
+// N/A
+
+// Hero Component
+$blitz-hero-padding-y: 8rem !default;
+$blitz-hero-bg-color: #263238 !default;;
+$blitz-hero-text-color: #fff !default;;
+
+// Customer Quotes Component
+$blitz-customer-quotes-bg-color: #fafafa !default;
+$blitz-customer-quotes-img-width: 25% !default;
+
+// Signup Inline
+// N/A
+
+// Signup Modal
+// N/A
 
 
 // Bootstrap Overrides
@@ -28,31 +67,24 @@ $enable-flex: true;
 $enable-rounded: false;
 $border-radius: 0;
 $link-color: $blitz-link-color !default;
-$font-family-sans-serif: Roboto;
-$jumbotron-padding: $blitz-hero-vpadding !default;
+$font-family-sans-serif: $blitz-font-family !default;
+$jumbotron-padding: $blitz-hero-padding-y !default;
 
 // Button Paddings
-$btn-padding-x: 3rem;
-$btn-padding-y: 1rem;
+$btn-padding-x: $blitz-button-padding-x;
+$btn-padding-y: $blitz-button-padding-y;
 $btn-padding-x-sm: $btn-padding-x;
 $btn-padding-y-sm: $btn-padding-y;
 $btn-padding-x-lg: $btn-padding-x;
 $btn-padding-y-lg: $btn-padding-y;
 
 // Input Paddings
-$input-padding-x: 1rem;
-$input-padding-y: 1rem;
+$input-padding-x: $blitz-input-padding-x;
+$input-padding-y: $blitz-input-padding-y;
 $input-padding-x-sm: $input-padding-x;
 $input-padding-y-sm: $input-padding-y;
 $input-padding-x-lg: $input-padding-x;
 $input-padding-y-lg: $input-padding-y;
 
 // Navbar
-$navbar-padding-vertical: 1rem;
-
-// Colors
-$brand-primary: #03A9F4;
-$brand-success: #8BC34A;
-$brand-info: #00BCD4;
-$brand-warning: #F44336;
-$brand-danger: #FF9800;
+$navbar-padding-vertical: $blitz-navbar-padding-y;

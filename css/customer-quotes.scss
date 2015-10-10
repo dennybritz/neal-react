@@ -3,7 +3,7 @@
 }
 
 .blitz-customer-quote-quote {
-  background-color: #fafafa;
+background-color: $blitz-customer-quotes-bg-color;
   padding: 1rem;
   :last-child { margin-bottom: 0; }
   margin-bottom: 1rem;
@@ -14,6 +14,6 @@
 .blitz-customer-quote-title { }
 img.blitz-customer-quote-img { 
   float: left;
-  width: 25%;
+  width: $blitz-customer-quotes-img-width;
   margin-right: 1rem;
 }

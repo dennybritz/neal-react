@@ -1,6 +1,6 @@
 .blitz-hero.jumbotron {
   h1 { font-weight: 900; }
-  background-color: $blitz-hero-background-color;
+  background-color: $blitz-hero-bg-color;
   color: $blitz-hero-text-color;
-  margin-bottom: $blitz-hero-vpadding/2;
+  margin: 0;
 }
