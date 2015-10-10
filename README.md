@@ -1,7 +1,5 @@
 ## Major TODOs
 
-- Add classes to all components
-- Refactor CSS
 - Organize Variables
 - Research components that Launchrock, Startup Framework, etc are providing
 - Research styling and common themes
