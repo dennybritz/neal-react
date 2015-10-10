@@ -1,21 +1,31 @@
 import React from 'react';
+import history from '../../helpers/history';
 
 export class GoogleAnalytics extends React.Component {
 
+
   static propTypes = {
-    account: React.PropTypes.string.isRequired
+    account: React.PropTypes.string.isRequired,
+    enableRouteTracking: React.PropTypes.bool
+  }
+
+  static defaultProps = {
+    enableRouteTracking: true
   }
 
   componentDidMount() {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', this.props.account]);
-    _gaq.push(['_trackPageview']);
+    // Initialize Google Analytics
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', this.props.account, 'auto');
+    let src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    jQuery.getScript(src);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    // Track route changes
+    if(this.props.enableRouteTracking){
+      history.listen((newLocation) => {
+        ga('send', 'pageview');
+      })
+    }
   }
 
   render() {

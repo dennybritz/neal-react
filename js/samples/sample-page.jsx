@@ -1,18 +1,18 @@
 import React from 'react';
-import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote} from '../components/index';
+import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe} from '../components/index';
 
-import { GoogleAnalytics, Segment, Stripe} from '../components/index';
+// Function to call when someone signs up
+var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
+  name: 'Stripe Integration',
+  description: "Like this? Donate $5 to keep it up :)",
+  panelLabel: "Donate {{amount}}",
+  email: email,
+  amount: 500
+});
+
 
 export default (props) => {
   var brandName = "SamplePage"
-  var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
-    name: 'Stripe Integration',
-    description: "Like this? Donate $5 to keep it up :)",
-    panelLabel: "Donate {{amount}}",
-    email: email,    
-    amount: 500
-  });
-
   return(
     <Page>
       <Navbar brandName={brandName}>
@@ -66,11 +66,6 @@ export default (props) => {
           </Team.Member>
         </Team>
       </Section>
-
-
-      <GoogleAnalytics account="ABC"/>
-      <Segment writeKey="ABC"/>
-      <Stripe stripeKey="pk_test_6pRNASCoBOKtIshFeQd4XMUh"/>
       <Footer brandName={brandName}
         facebookUrl="http://www.facebook.com"
         twitterUrl="http://www.twitter.com"

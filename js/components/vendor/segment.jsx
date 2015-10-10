@@ -1,9 +1,15 @@
 import React from 'react';
+import history from '../../helpers/history';
 
 export class Segment extends React.Component {
   
   static propTypes ={
-    writeKey: React.PropTypes.string.isRequired
+    writeKey: React.PropTypes.string.isRequired,
+    enableRouteTracking: React.PropTypes.bool
+  }
+
+  static defaultProps = {
+    enableRouteTracking: true
   }
 
   componentDidMount() {
@@ -12,6 +18,13 @@ export class Segment extends React.Component {
     analytics.load(writeKey);
     analytics.page()
     }}();
+
+    // Track Route changes
+    if(this.props.enableRouteTracking){
+      history.listen((newLocation) => {
+        analytics.page()
+      })
+    }
   }
 
   render() {

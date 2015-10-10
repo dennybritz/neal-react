@@ -1,3 +1,4 @@
+export * from './app.jsx';
 export * from './customer-quotes.jsx';
 export * from './footer.jsx';
 export * from './hero.jsx';

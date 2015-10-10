@@ -10,7 +10,6 @@
 Basic:
   
 - How to best deal with Routing in Navbar? (Depend on react router)
-- App Component
 - Pricing Table
 - Logo Listing (e.g. Press Logos)
 
