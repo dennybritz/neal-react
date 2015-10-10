@@ -61,7 +61,7 @@ export class SignupModal extends React.Component {
             <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email" onChange={this.handleChange} value={this.state.email} />
             <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
             <div className="form-group">
-              <button type="submit" className="btn btn-primary btn-block">Sign up</button>
+              <button type="submit" className="btn btn-primary btn-block btn-ghost-disable">Sign up</button>
             </div>
           </form>
         </div>

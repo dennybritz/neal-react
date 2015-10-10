@@ -3,13 +3,16 @@
 @import '../bower_components/bootstrap/scss/bootstrap.scss';
 
 // Component Styles
+@import './buttons.scss';
 @import './customer-quotes.scss';
 @import './footer.scss';
 @import './hero.scss';
 @import './horizontal-split.scss';
 @import './navbar.scss';
 @import './page.scss';
+@import './pricing-table.scss';
 @import './section.scss';
 @import './singup-inline.scss';
 @import './singup-modal.scss';
 @import './team.scss';
+

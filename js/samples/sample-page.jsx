@@ -1,19 +1,19 @@
 import React from 'react';
-import {Page, Navbar, NavItem, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe} from '../components/index';
+import {Page, Navbar, NavItem, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan} from '../components/index';
 import {Link} from 'react-router';
 
-var brandName = "SamplePage"
+let brandName = "SamplePage"
 
 // Function to call when someone signs up
-var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
-  name: 'Stripe Integration',
-  description: "Like this? Donate $5 to keep it up :)",
+let onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
+  name: 'Stripe Integration Included',
+  description: "Like this? Donate $5 <3",
   panelLabel: "Donate {{amount}}",
   email: email,
   amount: 500
 });
 
-var businessAddress = (
+let businessAddress = (
   <address>
     <strong>{brandName}</strong><br/>
     1355 Market Street, Suite 900<br/>
@@ -21,6 +21,37 @@ var businessAddress = (
     +1 (123) 456-7890
   </address>
 )
+
+let pricingPlan1 = {
+  name: 'Starter',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  price: '$99',
+  features: {
+    'Fully Integrated E-Commerce': true,
+    'Sell 1 Product & Accept Donations': true,
+    'Mobile Website and Store': false,
+    'Custom Domain': false,
+    '24/7 Customer Support': false
+  },
+  onClick: onSignup
+}
+
+let pricingPlan2 = Object.assign({}, pricingPlan1, {
+  price: '$499',
+  name: 'Startup',
+  features: Object.assign({}, pricingPlan1.features, {
+    'Mobile Website and Store': true
+  })
+});
+
+let pricingPlan3 = Object.assign({}, pricingPlan2, {
+  price: '$999',
+  name: 'Enterprise',
+  features: Object.assign({}, pricingPlan2.features, {
+    'Custom Domain': true,
+    '24/7 Customer Support': true
+  })
+});
 
 
 export default (props) => {
@@ -32,20 +63,39 @@ export default (props) => {
         <NavItem><Link to="Home" className="nav-link">Documentation</Link></NavItem>
       </Navbar>
       <Hero heading="Declarative Landing Pages for React.js" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+      
       <Section heading="Horizontal Split">
+        <p> You can create Horizontal Splits with 1, 2, 3, 4, 6 or 12 columns. Most companies use this to show off their features!</p>
         <HorizontalSplit>
-          <p> You can create Horizontal Splits with 1,2,3,4,6 or 12 columns. </p>
-          <p>
-            Describe your Features with three columns, like all the cool startups.
-          </p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+          <div>
+            <p><strong>Batteries Included</strong></p>
+            <p>Blitz ships with a navbar, hero unit, footer, sections, horziontal split (this text), and all the other basic elements you need for a landing page. No more repetetive coding!</p>
+          </div>
+          <div>
+            <p> <strong>Third-Party Integrations </strong></p>
+            <p>Blitz includes integration components for <a>Google Analytics</a>, <a>Segment</a>, and <a>Stripe</a>. No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page, using the react-router library.</p>
+          </div>
+          <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
         </HorizontalSplit>
       </Section>
-      <Section heading="Signup Modal">
+      
+      <Section heading="Inline and Modal Signup components">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <SignupInline onSubmit={onSignup}/>
+        <br/>
         <SignupModal modalId='signup-modal' onSubmit={onSignup}/>
-        <a className="btn btn-primary btn-lg" data-toggle="modal" data-target="#signup-modal">Show signup modal</a>
+        <p>
+          <a className="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
+        </p>
       </Section>
+
+      <Section heading="Pricing Table">
+        <PricingTable>
+          <PricingPlan {... pricingPlan1} />
+          <PricingPlan {... pricingPlan2} />
+          <PricingPlan {... pricingPlan3} />
+        </PricingTable>
+      </Section>      
       
       <Section heading="Customer Quotes">
         <CustomerQuotes>
@@ -60,10 +110,7 @@ export default (props) => {
           </CustomerQuote>
         </CustomerQuotes>
       </Section>
-      <Section heading="Inline Signup Component">
-        <p><code>SignupInline</code> does the validation for you, but you can add your own callback handler.</p>
-        <SignupInline onSubmit={onSignup}/>
-      </Section>
+      
       <Section heading="Team">
         <Team>
           <Team.Member name="Denny Britz" title="Founder at BigCo" imageUrl="http://placehold.it/200x200">
@@ -77,6 +124,7 @@ export default (props) => {
           </Team.Member>
         </Team>
       </Section>
+      
       <Footer brandName={brandName} facebookUrl="http://www.facebook.com" twitterUrl="http://www.twitter.com"
         emailUrl="mailto:info@google.com" address={businessAddress}>
       </Footer>

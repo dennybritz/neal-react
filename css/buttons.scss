@@ -1,0 +1,23 @@
+@mixin ghost-button($color, $color-hover){
+  border: 2px solid $color;
+  color: $color;
+  background-color: inherit;
+  &:hover, &:active {
+    color: $color-hover;
+    border-color: $color-hover;
+  }
+}
+
+.btn.btn-primary:not(.btn-ghost-disable) {
+  @if $blitz-button-ghost-enable {
+    @include ghost-button($brand-primary, darken($brand-primary, 15%));
+  }
+}
+
+.btn.btn-white {
+  color: $gray-dark;
+  background-color: #fff;
+  @if $blitz-button-ghost-enable {
+    @include ghost-button(#fff, #fafafa);
+  }
+}

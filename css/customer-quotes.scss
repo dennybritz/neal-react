@@ -3,7 +3,8 @@
 }
 
 .blitz-customer-quote-quote {
-background-color: $blitz-customer-quotes-bg-color;
+  background-color: $blitz-customer-quotes-bg-color;
+  border: 2px solid $blitz-customer-quotes-border-color;
   padding: 1rem;
   :last-child { margin-bottom: 0; }
   margin-bottom: 1rem;

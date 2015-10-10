@@ -5,6 +5,7 @@ export * from './hero.jsx';
 export * from './horizontal-split.jsx';
 export * from './navbar.jsx';
 export * from './page.jsx';
+export * from './pricing-table.jsx';
 export * from './section.jsx';
 export * from './signup-inline.jsx';
 export * from './signup-modal.jsx';

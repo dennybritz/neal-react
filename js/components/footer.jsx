@@ -21,15 +21,15 @@ export class Footer extends React.Component {
       <footer className="blitz-footer navbar">
         <Container>
           <Row>
-            <Col size={["xs-12", "sm-4"]}>
+            <Col size={["xs-12", "md-4"]}>
               <p className="blitz-footer-copyright">
                 Copyright © {new Date().getFullYear()}, {this.props.brandName}
               </p>
               {this.props.address}
             </Col>
-            <Col size={["xs-12", "sm-4"]}>
+            <Col size={["xs-12", "md-4"]}>
             </Col>
-            <Col size={["xs-12", "sm-4"]}>
+            <Col size={["xs-12", "md-4"]}>
               {this.renderSocialIcons()}
             </Col>
           </Row>
@@ -40,7 +40,7 @@ export class Footer extends React.Component {
 
   renderSocialIcons() {
     return (
-      <ul className="nav navbar-nav pull-right blitz-footer-social">
+      <ul className="nav navbar-nav blitz-footer-social">
         { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }        

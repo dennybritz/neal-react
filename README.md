@@ -1,16 +1,11 @@
 ## Major TODOs
 
-- Research styling and common themes
-- Research Flex Compatibility
-- How to build as library without including react, etc?
+- Build as library without including react, etc?
+- Logo Listing (e.g. Press Logos) Component
 
+## Minor TODOs
 
-## Components TODOs
-
-Basic:
-  
-- Pricing Table
-- Logo Listing (e.g. Press Logos)
+- Flex Compatibility
 
 ## Naming Ideas
 

@@ -3,9 +3,10 @@
 
 // Global
 $blitz-link-color: #0088cc !default;
-$blitz-font-family: Roboto, sans-serif;
+$blitz-font-family: Roboto, sans-serif !default;
 
 // Buttons
+$blitz-button-ghost-enable: true !default;
 $blitz-button-padding-x: 3rem !default;
 $blitz-button-padding-y: 1rem !default;
 
@@ -19,8 +20,9 @@ $gray: lighten($gray-dark, 10%) !default;
 $gray-light: lighten($gray-dark, 30%) !default;
 $gray-lighter: lighten($gray-dark, 55%) !default;
 $gray-lightest: lighten($gray-dark, 80%) !default;
+$gray-uberlight: lighten($gray-dark, 85%) !default;
 
-$brand-primary: #03A9F4 !default;
+$brand-primary: #0091EA !default;
 $brand-success: #8BC34A !default;
 $brand-info: #B3E5FC !default;
 $brand-warning: #F44336 !default;
@@ -44,7 +46,7 @@ $blitz-footer-social-icon-bg-color: $gray-light;
 
 // Section Component
 $blitz-section-padding-y: 8rem !default;
-$blitz-section-heading-margin-bottom: 3rem !default;
+$blitz-section-heading-margin-bottom: 4rem !default;
 
 // Navbar Component
 $blitz-navbar-padding-y: 1rem !default;
@@ -64,7 +66,8 @@ $blitz-hero-text-color: #fff !default;
 
 
 // Customer Quotes Component
-$blitz-customer-quotes-bg-color: #fafafa !default;
+$blitz-customer-quotes-bg-color: $gray-uberlight !default;
+$blitz-customer-quotes-border-color: $gray-uberlight !default;
 $blitz-customer-quotes-img-width: 25% !default;
 
 // Signup Inline
@@ -72,6 +75,12 @@ $blitz-customer-quotes-img-width: 25% !default;
 
 // Signup Modal
 // N/A
+
+// Pricing Table
+$blitz-pricing-plan-border-color: $gray-lightest;
+$blitz-pricing-plan-header-bg-color: #455A64;
+$blitz-pricing-plan-header-text-color: #fff;
+ 
 
 
 // Bootstrap Overrides
