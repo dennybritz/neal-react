@@ -7,11 +7,14 @@
 - Research styling and common themes
 - Research Flex Compatibility
 - How to build as library without including react, etc?
+- Navbar should use children instead of props
 
 ## Components TODOs
 
 Basic:
   
+  - How to best deal with Routing in Navbar?
+  - Signup callbacks
   - Pricing Table
 
 Third-Parties:

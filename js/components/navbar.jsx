@@ -1,24 +1,19 @@
 import React from 'react';
 
-export default class Navbar extends React.Component {
+export class Navbar extends React.Component {
 
   static propTypes = {
-    brandName: React.PropTypes.string.isRequired,
-    items: React.PropTypes.arrayOf(React.PropTypes.shape({
-      text: React.PropTypes.string,
-    })).isRequired
+    brandName: React.PropTypes.string.isRequired
   }
 
   render() {
     return (
-      <header className="blitz-header">
-        <nav className="navbar navbar-static-top">
+      <header className="blitz-navbar-wrapper">
+        <nav className="navbar navbar-static-top blitz-navbar">
           <div className="container">
             <a className="navbar-brand hidden-xs-down" href="#">{this.props.brandName}</a>
             <ul className="nav navbar-nav pull-right">
-              {this.props.items.map(function(item){
-                return <Navbar.NavItem key={item.text}>{item.text}</Navbar.NavItem>
-              })}
+              {this.props.children}
             </ul>
           </div>
         </nav>
@@ -32,7 +27,7 @@ export default class Navbar extends React.Component {
 
 }
 
-Navbar.NavItem = class extends React.Component {
+export class NavItem extends React.Component {
   
   static propTypes = {
     href: React.PropTypes.string

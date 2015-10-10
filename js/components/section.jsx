@@ -1,23 +1,20 @@
 import React from 'react';
+import classNames from 'classnames';
 
-export default class Section extends React.Component {
+export class Section extends React.Component {
 
   static propTypes = {
     heading: React.PropTypes.string
   }
 
   render() {
-    var classes = `container blitz-section ${this.props.className}`
+    var _className = classNames('container', 'blitz-section', this.props.className)
     return (
-      <div {... this.props} className={classes}>
-        { this.renderHeading() }  
+      <div {... this.props} className={_className}>
+        { this.props.heading ?  <h2>{this.props.heading}</h2> : null }  
         {this.props.children}
       </div>
     );
   }
 
-  renderHeading() {
-    if(!this.props.heading) return null;
-    return <h2>{this.props.heading}</h2>
-  }
 }

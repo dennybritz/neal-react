@@ -1,0 +1,6 @@
+.blitz-section { 
+  h2 { margin-bottom: 2rem; font-weight: 300; }
+  & + .blitz-section {
+    margin-top: $blitz-section-vmargin;
+  }
+}

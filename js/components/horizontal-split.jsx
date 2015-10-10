@@ -1,7 +1,7 @@
 import {Row, Col} from '../helpers/bootstrap.jsx';
 import React from 'react';
 
-export default class HorizontalSplit extends React.Component {
+export class HorizontalSplit extends React.Component {
   
   static COLUMN_CLASSES = {
     1: ["xs-12"],

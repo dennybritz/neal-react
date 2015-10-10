@@ -1,134 +1,15 @@
-// Variables
-$blitz-header-link-color: #666;
-$blitz-header-link-colo-hover: darken($blitz-header-link-color, 15%);
-$blitz-link-color: #0088cc;
-$blitz-hero-vpadding: 5rem;
-$blitz-hero-background-color: #263238;
-$blitz-hero-text-color: #fff;
-$blitz-footer-margin-top: 4rem;
-$blitz-section-vmargin: 5rem;
-
-// Generic Bootstrap Overrides
-$enable-flex: true;
-$enable-rounded: false;
-$border-radius: 0;
-$link-color: $blitz-link-color !default;
-$font-family-sans-serif: Roboto;
-$jumbotron-padding: $blitz-hero-vpadding !default;
-
-// Button Paddings
-$btn-padding-x: 3rem;
-$btn-padding-y: 1rem;
-$btn-padding-x-sm: $btn-padding-x;
-$btn-padding-y-sm: $btn-padding-y;
-$btn-padding-x-lg: $btn-padding-x;
-$btn-padding-y-lg: $btn-padding-y;
-
-// Input Paddings
-$input-padding-x: 1rem;
-$input-padding-y: 1rem;
-$input-padding-x-sm: $input-padding-x;
-$input-padding-y-sm: $input-padding-y;
-$input-padding-x-lg: $input-padding-x;
-$input-padding-y-lg: $input-padding-y;
-
-// Navbar
-$navbar-padding-vertical: 1rem;
-
-// Colors
-$brand-primary: #03A9F4;
-$brand-success: #8BC34A;
-$brand-info: #00BCD4;
-$brand-warning: #F44336;
-$brand-danger: #FF9800;
-
+// Load variables and base styles
+@import './_variables.scss';
 @import '../bower_components/bootstrap/scss/bootstrap.scss';
 
-
-// Header Component
-header.blitz-header {
-  a.nav-link { 
-    font-weight: 500;
-    font-size: $font-size-sm;
-    text-transform: uppercase;
-    color: $blitz-header-link-color;
-    &:hover, &:active {
-      color: $blitz-header-link-colo-hover;
-    }
-  }
-  a.navbar-brand {
-    font-weight: 900;
-    color: #333;
-  }
-  .nav-item + .nav-item {
-    margin-left: 2.5rem;
-  }
-}
-
-// Footer Component
-footer.navbar {
-  background-color: #ECEFF1;
-}
-
-.blitz-quick-signup {
-  input.form-control { width: 100% };
-  button[type=submit] { width: 100%; }
-}
-
-body {
-  p { margin-bottom: 2rem; }
-}
-
-
-// Hero
-.blitz-hero {
-  .jumbotron {
-    h1 { font-weight: 900; }
-    background-color: $blitz-hero-background-color;
-    color: $blitz-hero-text-color;
-  }
-  margin-bottom: $blitz-hero-vpadding/2;
-}
-
-// Footer
-footer {
-  margin-top: $blitz-footer-margin-top;
-  a.navbar-brand { 
-    font-size: 1rem;
-  }
-}
-
-// Sections
-.blitz-section {
-  h2 { margin-bottom: 2rem; font-weight: 300; }
-  & + .blitz-section {
-    margin-top: $blitz-section-vmargin;
-  }
-}
-
-
-// Customer Quotes
-.blitz-customer-quotes {
-  .row { align-items: flex-end; }
-}
-
-.blitz-customer-quote-quote {
-  background-color: #fafafa;
-  padding: 1rem;
-  :last-child { margin-bottom: 0; }
-  margin-bottom: 1rem;
-  font-weight: 300;
-}
-
-.blitz-customer-quote-profile {
-  img.blitz-customer-quote-img { float: left; width: 25%; margin-right: 1rem; }
-}
-
-// Team Section
-.blitz-team .blitz-team-member {
-  img.blitz-team-member-img { margin-bottom: 1rem; }
-  .blitz-team-member-name { font-weight: 900; }
-  .blitz-team-member-profile { background-color: #fafafa; padding: 1rem; }
-  .blitz-team-member-description { margin-top: 0.5rem; }
-}
-
+// Component Styles
+@import './customer-quotes.scss';
+@import './footer.scss';
+@import './hero.scss';
+@import './horizontal-split.scss';
+@import './navbar.scss';
+@import './page.scss';
+@import './section.scss';
+@import './singup-inline.scss';
+@import './singup-modal.scss';
+@import './team.scss';

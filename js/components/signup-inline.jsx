@@ -1,24 +1,24 @@
 import React from 'react';
 import Section from './section.jsx';
-import {Row} from '../helpers/bootstrap.jsx'
+import {Col} from '../helpers/bootstrap.jsx'
 
-export default class SignupInline extends React.Component {
+export class SignupInline extends React.Component {
 
   render() {
     return (
-      <div className="blitz-quick-signup">
+      <div className="blitz-signup-inline">
         <form className="form-inline row">
-          <div className="form-group col-sm-5">
+          <Col className="form-group" size={['xs-12', 'lg-5']}>
             <label className="sr-only" htmlFor="email">Email address</label>
             <input type="email" className="form-control" id="email" placeholder="Email"/>
-          </div>
-          <div className="form-group col-sm-5">
+          </Col>
+          <Col className="form-group" size={['xs-12', 'lg-5']}>
             <label className="sr-only" htmlFor="password">Password</label>
             <input type="password" className="form-control" id="password" placeholder="Password"/>
-          </div>
-          <div className="form-group col-sm-2">
+          </Col>
+          <Col className="form-group" size={['xs-12', 'lg-2']}>
             <button type="submit" className="btn btn-primary">Sign up</button>
-          </div>
+          </Col>
         </form>
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class GoogleAnalytics extends React.Component {
+export class GoogleAnalytics extends React.Component {
 
   static propTypes = {
     account: React.PropTypes.string.isRequired

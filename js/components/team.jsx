@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalSplit from './horizontal-split.jsx'
+import {HorizontalSplit} from './horizontal-split.jsx'
 
 class Member extends React.Component {
 
@@ -21,10 +21,9 @@ class Member extends React.Component {
       </div>
     );
   }  
-
 }
 
-export default class Team extends React.Component {
+export class Team extends React.Component {
 
   static propTypes = {
     // TODO: Enforce Member type

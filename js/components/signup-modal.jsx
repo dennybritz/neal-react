@@ -1,56 +1,8 @@
 import React from 'react';
+import {Col} from '../helpers/bootstrap.jsx'
 
-export default class SignupModal extends React.Component {
-  
+class ModalHeader extends React.Component {
   render() {
-    return (
-      <div>
-        <div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              {this.renderModalHeader()}
-              {this.renderModalBody()}
-            </div>
-          </div>
-        </div>
-        <button type="button" className="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
-        </button>
-      </div>
-    );
-  }
-
-  renderModalBody() {
-    return (
-      <div className="modal-body">
-        <div className="container-fluid">
-          <form className="form-vertical">
-            <div className="form-group">
-              <label className="sr-only" htmlFor="name">Name</label>
-              <input type="name" className="form-control" id="name" placeholder="Name"/>
-            </div>          
-            <div className="form-group">
-              <label className="sr-only" htmlFor="email">Email address</label>
-              <input type="email" className="form-control" id="email" placeholder="Email"/>
-            </div>
-            <div className="form-group">
-              <label className="sr-only" htmlFor="password">Password</label>
-              <input type="password" className="form-control" id="password" placeholder="Password"/>
-            </div>
-            <div className="form-group">
-              <div className="row">
-                <div className="col-xs-12">
-                  <button type="submit" className="btn btn-primary btn-block">Sign up</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    )
-  }
-
-  renderModalHeader() {
     return (
       <div className="modal-header">
         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
@@ -60,5 +12,70 @@ export default class SignupModal extends React.Component {
       </div>
     )
   }
+}
 
+export class SignupModal extends React.Component {
+  
+  static propTypes = {
+    modalId: React.PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    modalId: 'signup-modal'
+  }
+
+  render() {
+    var modalId = this.props.modalId;
+    return (
+      <div>
+        <div className="modal fade blitz-signup-modal" key={modalId} id={modalId} tabIndex="-1" role="dialog" aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <ModalHeader/>
+              {this.renderModalBody()}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  renderModalBody() {
+    return (
+      <div className="modal-body">
+        <div className="container-fluid">
+          <form className="form-vertical">
+            <SignupModal.Input name="name" label="Name" placeholder="Name" />
+            <SignupModal.Input type="email" name="email" label="Email" placeholder="Email" />
+            <SignupModal.Input type="password" name="password" label="Password" placeholder="Password" />
+            <div className="form-group">
+              <button type="submit" className="btn btn-primary btn-block">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    )
+  }
+}
+
+SignupModal.Input = class extends React.Component {
+  static propTypes = {
+    type: React.PropTypes.string,
+    name: React.PropTypes.string.isRequired,
+    label: React.PropTypes.string.isRequired,
+    placeholder: React.PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    type: 'text'
+  }
+
+  render(){
+    return (
+      <div className="form-group blitz-signup-modal-input">
+        <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
+        <input type="password" className="form-control" name={this.props.name} placeholder={this.props.placeholder}/>
+      </div>
+    )
+  }
 }

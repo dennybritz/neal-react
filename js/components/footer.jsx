@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from '../helpers/bootstrap.jsx';
 import Navbar from './navbar.jsx';
 
-export default class Footer extends React.Component {
+export class Footer extends React.Component {
 
   static propTypes = {
     brandName: React.PropTypes.string.isRequired,
@@ -14,10 +14,13 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="navbar">
+      <footer className="blitz-footer navbar">
         <Container>
           <Row>
             <Col size={["xs-12", "sm-4"]}>
+              <div className="blitz-footer-copyright">
+                <small>Copyright © {new Date().getFullYear()} {this.props.brandName}</small>
+              </div>
             </Col>
             <Col size={["xs-12", "sm-4"]}>
             </Col>
@@ -25,10 +28,6 @@ export default class Footer extends React.Component {
               {this.renderSocialIcons()}
             </Col>
           </Row>
-          <Row>
-            <small>Copyright © {new Date().getFullYear()} {this.props.brandName} </small>
-          </Row>
-         
         </Container>
       </footer>
     );
@@ -36,7 +35,7 @@ export default class Footer extends React.Component {
 
   renderSocialIcons() {
     return (
-      <ul className="nav navbar-nav pull-right">
+      <ul className="nav navbar-nav pull-right blitz-footer-social">
         { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
@@ -49,7 +48,7 @@ export default class Footer extends React.Component {
   renderSocialIcon(iconClass, url) {
     if(!url || !iconClass ) { return null; }
     return (
-     <li className="nav-item">
+     <li className="nav-item blitz-footer-social-icon">
         <a href={url} target="_blank">
           <span className="fa-stack">
             <i className="fa fa-circle fa-stack-2x "></i>

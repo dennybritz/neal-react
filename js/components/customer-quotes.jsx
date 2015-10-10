@@ -1,7 +1,7 @@
 import React from 'react';
-import HorizontalSplit from './horizontal-split.jsx'
+import {HorizontalSplit} from './horizontal-split.jsx'
 
-class CustomerQuote extends React.Component {
+export class CustomerQuote extends React.Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired,
@@ -24,7 +24,7 @@ class CustomerQuote extends React.Component {
 
 }
 
-export default class CustomerQuotes extends React.Component {
+export class CustomerQuotes extends React.Component {
   
   static propTypes = {
     // TODO: Enforce CustomerQuote type
