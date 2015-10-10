@@ -1,5 +1,6 @@
 import React from 'react';
 import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe} from '../components/index';
+import {Link} from 'react-router';
 
 // Function to call when someone signs up
 var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
@@ -16,9 +17,9 @@ export default (props) => {
   return(
     <Page>
       <Navbar brandName={brandName}>
-        <NavItem>Home</NavItem>
-        <NavItem>Github</NavItem>
-        <NavItem>Documentation</NavItem>
+        <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
+        <NavItem><a href="https://github.com/dennybritz/" className="nav-link" target="_blank">Github</a></NavItem>
+        <NavItem><Link to="Home" className="nav-link">Documentation</Link></NavItem>
       </Navbar>
       <Hero heading="Declarative Landing Pages for React.js" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       <Section heading="Horizontal Split">

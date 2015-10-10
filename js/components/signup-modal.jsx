@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col} from '../helpers/bootstrap.jsx'
+import {Col} from '../helpers/bootstrap.jsx';
 
 class ModalHeader extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class ModalHeader extends React.Component {
           <span className="sr-only">Close</span>
         </button>
       </div>
-    )
+    );
   }
 }
 
@@ -66,7 +66,7 @@ export class SignupModal extends React.Component {
           </form>
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -88,6 +88,6 @@ SignupModal.Input = class extends React.Component {
         <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
         <input type="password" className="form-control" name={this.props.name} placeholder={this.props.placeholder} {... this.props}/>
       </div>
-    )
+    );
   }
-}
+};

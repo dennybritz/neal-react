@@ -1,5 +1,5 @@
 import React from 'react';
-import {HorizontalSplit} from './horizontal-split.jsx'
+import {HorizontalSplit} from './horizontal-split.jsx';
 
 export class CustomerQuote extends React.Component {
 
@@ -42,4 +42,4 @@ export class CustomerQuotes extends React.Component {
   }
 }
 
-CustomerQuotes.Quote = CustomerQuote
+CustomerQuotes.Quote = CustomerQuote;

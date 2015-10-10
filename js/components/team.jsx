@@ -1,5 +1,5 @@
 import React from 'react';
-import {HorizontalSplit} from './horizontal-split.jsx'
+import {HorizontalSplit} from './horizontal-split.jsx';
 
 class Member extends React.Component {
 

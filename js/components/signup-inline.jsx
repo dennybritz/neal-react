@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './section.jsx';
-import {Col} from '../helpers/bootstrap.jsx'
+import {Col} from '../helpers/bootstrap.jsx';
 
 export class SignupInline extends React.Component {
 

@@ -27,7 +27,7 @@ export class HorizontalSplit extends React.Component {
               <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx}>
                 {child}
               </Col>
-            )
+            );
           })}
         </Row>
       </div>

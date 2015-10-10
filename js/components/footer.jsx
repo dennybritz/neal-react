@@ -40,7 +40,7 @@ export class Footer extends React.Component {
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
       </ul>
-    )
+    );
   }
 
   
@@ -56,6 +56,6 @@ export class Footer extends React.Component {
           </span>
         </a>
       </li> 
-    )
+    );
   }
 }

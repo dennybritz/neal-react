@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export class Navbar extends React.Component {
 
@@ -18,27 +19,17 @@ export class Navbar extends React.Component {
           </div>
         </nav>
       </header>
-    )
-  }
-
-  renderNavItem(item) {
-    return 
+    );
   }
 
 }
 
 export class NavItem extends React.Component {
-  
-  static propTypes = {
-    href: React.PropTypes.string
-  }
-
   render() {
     return (
-      <li className="nav-item">
-        <a className="nav-link" href="#">{this.props.children}</a>
+      <li className="nav-item" {...this.props}>
+        { this.props.children }
       </li>
     );
   }
-
 }
