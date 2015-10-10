@@ -17,11 +17,23 @@ class ModalHeader extends React.Component {
 export class SignupModal extends React.Component {
   
   static propTypes = {
-    modalId: React.PropTypes.string.isRequired
+    modalId: React.PropTypes.string.isRequired,
+    onSubmit: React.PropTypes.func
   }
 
   static defaultProps = {
     modalId: 'signup-modal'
+  }
+
+  state = { name: null, email: null, password: null };
+
+  handleChange = (e) => {
+    this.setState({ [`${e.target.name}`]: e.target.value });
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if(this.props.onSubmit) { this.props.onSubmit(this.state); }
   }
 
   render() {
@@ -44,10 +56,10 @@ export class SignupModal extends React.Component {
     return (
       <div className="modal-body">
         <div className="container-fluid">
-          <form className="form-vertical">
-            <SignupModal.Input name="name" label="Name" placeholder="Name" />
-            <SignupModal.Input type="email" name="email" label="Email" placeholder="Email" />
-            <SignupModal.Input type="password" name="password" label="Password" placeholder="Password" />
+          <form className="form-vertical" onSubmit={this.handleSubmit}>
+            <SignupModal.Input name="name" required label="Name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
+            <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email" onChange={this.handleChange} value={this.state.email} />
+            <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
             <div className="form-group">
               <button type="submit" className="btn btn-primary btn-block">Sign up</button>
             </div>
@@ -74,7 +86,7 @@ SignupModal.Input = class extends React.Component {
     return (
       <div className="form-group blitz-signup-modal-input">
         <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
-        <input type="password" className="form-control" name={this.props.name} placeholder={this.props.placeholder}/>
+        <input type="password" className="form-control" name={this.props.name} placeholder={this.props.placeholder} {... this.props}/>
       </div>
     )
   }

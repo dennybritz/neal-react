@@ -1,7 +1,7 @@
 .blitz-section { 
   padding: $blitz-section-padding-y/2 0;
   h2 { 
-    margin-bottom: 2rem;
+    margin-bottom: $blitz-section-heading-margin-bottom;
     font-weight: 300;
   }
 }

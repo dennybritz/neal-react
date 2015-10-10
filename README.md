@@ -9,7 +9,6 @@
 
 Basic:
   
-- Signup callbacks
 - How to best deal with Routing in Navbar? (Depend on react router)
 - App Component
 - Pricing Table
