@@ -19,6 +19,6 @@ export class GoogleAnalytics extends React.Component {
   }
 
   render() {
-    return null;
+    return <div key="google-analytics"/>;
   }
 }

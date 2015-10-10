@@ -12,13 +12,19 @@ Basic:
 - How to best deal with Routing in Navbar? (Depend on react router)
 - App Component
 - Pricing Table
+- Logo Listing (e.g. Press Logos)
 
-Third-Parties:
-
-- Segment
-- Stripe
 
 ## Styling TODOs
 
 - Footer Review
+- Color Schemes
 
+## Naming Ideas
+
+- Boot
+- Incubate
+- Factory
+- Launch
+- Lean
+- Rocket

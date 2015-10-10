@@ -1,9 +1,16 @@
 import React from 'react';
-import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, GoogleAnalytics, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote} from '../components/index';
+import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote} from '../components/index';
+
+import { GoogleAnalytics, Segment, Stripe} from '../components/index';
 
 export default (props) => {
   var brandName = "SamplePage"
-  var onSignup = ({name: name, email: email, password: password}) => alert(`Yay, Welcome ${email}!`);
+  var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
+    name: 'Stripe.com',
+    description: `Hi ${name || email}. It's time to pay!`,
+    email: email,    
+    amount: 2000
+  });
 
   return(
     <Page>
@@ -12,7 +19,7 @@ export default (props) => {
         <NavItem>About</NavItem>
         <NavItem>Contact</NavItem>
       </Navbar>
-      <Hero heading="Blitz Sample Page" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+      <Hero heading="Declarative Landing Pages in React.js" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       <Section heading="Horizontal Split">
         <HorizontalSplit>
           <p> You can create Horizontal Splits with 1,2,3,4,6 or 12 columns. </p>
@@ -61,6 +68,8 @@ export default (props) => {
 
 
       <GoogleAnalytics account="ABC"/>
+      <Segment writeKey="ABC"/>
+      <Stripe stripeKey="pk_test_6pRNASCoBOKtIshFeQd4XMUh"/>
       <Footer brandName={brandName}
         facebookUrl="http://www.facebook.com"
         twitterUrl="http://www.twitter.com"
