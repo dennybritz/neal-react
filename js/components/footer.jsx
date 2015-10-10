@@ -9,18 +9,23 @@ export class Footer extends React.Component {
     facebookUrl: React.PropTypes.string,
     twitterUrl: React.PropTypes.string,
     emailUrl: React.PropTypes.string,
+    address: React.PropTypes.node
   }
 
-
   render() {
+
+    var childrenArray = React.Children.toArray(this.props.children);
+    var address = childrenArray.find((c) => c.type.name === 'FooterAddress');
+
     return (
       <footer className="blitz-footer navbar">
         <Container>
           <Row>
             <Col size={["xs-12", "sm-4"]}>
-              <div className="blitz-footer-copyright">
-                <small>Copyright © {new Date().getFullYear()} {this.props.brandName}</small>
-              </div>
+              <p className="blitz-footer-copyright">
+                Copyright © {new Date().getFullYear()}, {this.props.brandName}
+              </p>
+              {this.props.address}
             </Col>
             <Col size={["xs-12", "sm-4"]}>
             </Col>
@@ -58,4 +63,16 @@ export class Footer extends React.Component {
       </li> 
     );
   }
+}
+
+export class FooterAddress extends React.Component {
+
+  render() {
+    return (
+      <div className="blitz-footer-address">
+        { this.props.children }
+      </div>
+    );
+  }
+
 }

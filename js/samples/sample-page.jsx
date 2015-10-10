@@ -1,6 +1,8 @@
 import React from 'react';
-import {Page, Navbar, NavItem, Hero, Footer, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe} from '../components/index';
+import {Page, Navbar, NavItem, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe} from '../components/index';
 import {Link} from 'react-router';
+
+var brandName = "SamplePage"
 
 // Function to call when someone signs up
 var onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
@@ -11,9 +13,17 @@ var onSignup = ({name: name, email: email, password: password}) => Stripe.Stripe
   amount: 500
 });
 
+var businessAddress = (
+  <address>
+    <strong>{brandName}</strong><br/>
+    1355 Market Street, Suite 900<br/>
+    San Francisco, CA 94103<br/>
+    +1 (123) 456-7890
+  </address>
+)
+
 
 export default (props) => {
-  var brandName = "SamplePage"
   return(
     <Page>
       <Navbar brandName={brandName}>
@@ -67,10 +77,9 @@ export default (props) => {
           </Team.Member>
         </Team>
       </Section>
-      <Footer brandName={brandName}
-        facebookUrl="http://www.facebook.com"
-        twitterUrl="http://www.twitter.com"
-        emailUrl="mailto:info@google.com"/>
+      <Footer brandName={brandName} facebookUrl="http://www.facebook.com" twitterUrl="http://www.twitter.com"
+        emailUrl="mailto:info@google.com" address={businessAddress}>
+      </Footer>
     </Page>
   );
 };

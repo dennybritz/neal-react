@@ -1,12 +1,21 @@
 // General
 footer.blitz-footer {
+  padding: $blitz-footer-padding-y 0;
   margin-top: $blitz-footer-margin-top;
   background-color: $blitz-footer-bg-color;
+  color: $blitz-footer-text-color;
+  font-size: 0.8rem;
+  a, a:hover, a:active { color: $blitz-footer-link-color; }
 }
 
 // Social Icons
-.blitz-footer-social { }
-.blitz-footer-social-icon { }
+.blitz-footer-social {
+  font-size: 1.5rem;
+}
+.blitz-footer-social-icon { 
+  i.fa { color: $blitz-footer-social-icon-bg-color; }
+  i.fa.fa-inverse { color: $blitz-footer-social-icon-color; }
+}
 
 // Copyright
 .blitz-footer-copyright { }

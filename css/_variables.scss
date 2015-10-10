@@ -14,11 +14,17 @@ $blitz-input-padding-x: 1rem !default;
 $blitz-input-padding-y: 1rem !default;
 
 // Colors
-$brand-primary: #03A9F4;
-$brand-success: #8BC34A;
-$brand-info: #00BCD4;
-$brand-warning: #F44336;
-$brand-danger: #FF9800;
+$gray-dark: #212121 !default;
+$gray: lighten($gray-dark, 10%) !default;
+$gray-light: lighten($gray-dark, 30%) !default;
+$gray-lighter: lighten($gray-dark, 55%) !default;
+$gray-lightest: lighten($gray-dark, 80%) !default;
+
+$brand-primary: #03A9F4 !default;
+$brand-success: #8BC34A !default;
+$brand-info: #B3E5FC !default;
+$brand-warning: #F44336 !default;
+$brand-danger: #FF9800 !default;
 
 
 // Blitz Component Variables
@@ -29,7 +35,12 @@ $blitz-page-paragraph-margin: 2rem !default;
 
 // Footer Component
 $blitz-footer-margin-top: 4rem !default;
-$blitz-footer-bg-color: #ECEFF1 !default;
+$blitz-footer-bg-color: $gray !default;
+$blitz-footer-padding-y: 4rem;
+$blitz-footer-text-color: $gray-lightest;
+$blitz-footer-link-color: $gray-light;
+$blitz-footer-social-icon-color: $gray-lightest;
+$blitz-footer-social-icon-bg-color: $gray-light;
 
 // Section Component
 $blitz-section-padding-y: 8rem !default;
