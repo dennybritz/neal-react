@@ -4,7 +4,8 @@
   "description": "React components for startup landing pages.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext jsx --ext js js/"
   },
   "author": "Denny Britz",
   "license": "ISC",
