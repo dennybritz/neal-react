@@ -12,6 +12,14 @@ export class HorizontalSplit extends React.Component {
     12:["xs-12", "sm-6", "lg-3"]
   }
 
+  static propTypes = {
+    padding: React.PropTypes.oneOf(['sm', 'md', 'lg'])
+  }
+
+  static defaultProps = {
+    padding: 'sm'
+  }
+
   render() {
     var numSections = this.props.children.length;
     if(12 % numSections != 0){
@@ -20,11 +28,11 @@ export class HorizontalSplit extends React.Component {
     }
 
     return (
-      <div className="blitz-horizontal-split">
+      <div className={`blitz-horizontal-split blitz-horizontal-split-${this.props.padding}`}>
         <Row>
           {this.props.children.map(function(child, idx){
             return(
-              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx}>
+              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx} className="blitz-horizontal-split-col">
                 {child}
               </Col>
             );

@@ -74,9 +74,8 @@ export default (props) => {
 
       <Hero heading="Declarative Landing Pages for React.js" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       
-      <Section heading="Horizontal Split">
-        <p> You can create Horizontal Splits with 1, 2, 3, 4, 6 or 12 columns. Most companies use this to show off their features!</p>
-        <HorizontalSplit>
+      <Section>
+        <HorizontalSplit padding="md">
           <div>
             <p><strong>Batteries Included</strong></p>
             <p>Blitz ships with a navbar, hero unit, footer, sections, horziontal split (this text), and all the other basic elements you need for a landing page. No more repetetive coding!</p>

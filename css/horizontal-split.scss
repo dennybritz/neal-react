@@ -1,1 +1,13 @@
 .blitz-horizontal-split { }
+
+.blitz-horizontal-split-sm .blitz-horizontal-split-col {
+   padding: 0 $blitz-horizontal-split-padding-x-sm;
+}
+
+.blitz-horizontal-split-md .blitz-horizontal-split-col {
+   padding: 0 $blitz-horizontal-split-padding-x-md;
+}
+
+.blitz-horizontal-split-lg .blitz-horizontal-split-col {
+   padding: 0 $blitz-horizontal-split-padding-x-lg;
+}
