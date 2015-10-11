@@ -13,10 +13,16 @@ export class Navbar extends React.Component {
       <header className="blitz-navbar-wrapper">
         <nav className="navbar navbar-static-top blitz-navbar">
           <div className="container">
-            <a className="navbar-brand hidden-xs-down" href="#">{this.props.brandName}</a>
-            <ul className="nav navbar-nav pull-right">
-              {this.props.children}
-            </ul>
+            <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
+              data-target="#header-nav">
+              &#9776;
+            </button>
+            <a className="navbar-brand hidden-sm-down" href="#">{this.props.brandName}</a>
+            <div className="collapse navbar-toggleable-sm" id="header-nav">
+              <ul className="nav navbar-nav pull-right">
+                {this.props.children}
+              </ul>
+            </div>
           </div>
         </nav>
       </header>

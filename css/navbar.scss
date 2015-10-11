@@ -18,10 +18,12 @@ nav.blitz-navbar {
     padding: 0 $blitz-navbar-item-padding-x;
     // Don't pad the last item on the right
     &:last-child { padding-right: 0; }
+    &:first-child { padding-left: 0; }
   }
 
   a.nav-link { 
     @include nav-link;
+
   }
 
   a.navbar-brand {
