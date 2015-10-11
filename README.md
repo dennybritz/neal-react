@@ -1,16 +1,13 @@
 ## TODOs
 
-- Build as library without including react, etc?
-- Restyle Modal Signup
 - Mobile testing
-
+- Restyle Modal Signup
 
 ## Minor TODOs
 
 - Refactor Pricing Table as Cards
 - Flex Compatibility Research
 - Add Social Media to Team Members Component
-
 
 ## Naming Ideas
 

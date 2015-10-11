@@ -1,13 +1,24 @@
-.blitz-horizontal-split { }
-
-.blitz-horizontal-split-sm .blitz-horizontal-split-col {
-   padding: 0 $blitz-horizontal-split-padding-x-sm;
+.blitz-horizontal-split-col {
+  margin-bottom: $blitz-page-paragraph-margin;
 }
 
-.blitz-horizontal-split-md .blitz-horizontal-split-col {
-   padding: 0 $blitz-horizontal-split-padding-x-md;
+.blitz-horizontal-split-sm {
+  margin: 0 -$blitz-horizontal-split-padding-x-sm;
+  .blitz-horizontal-split-col {
+    padding: 0 $blitz-horizontal-split-padding-x-sm;
+  }
 }
 
-.blitz-horizontal-split-lg .blitz-horizontal-split-col {
-   padding: 0 $blitz-horizontal-split-padding-x-lg;
+.blitz-horizontal-split-md {
+  margin: 0 -$blitz-horizontal-split-padding-x-md;
+  .blitz-horizontal-split-col {
+    padding: 0 $blitz-horizontal-split-padding-x-md;
+  }
+}
+
+.blitz-horizontal-split-lg {
+  margin: 0 -$blitz-horizontal-split-padding-x-lg;
+  .blitz-horizontal-split-col {
+    padding: 0 $blitz-horizontal-split-padding-x-lg;
+  }
 }

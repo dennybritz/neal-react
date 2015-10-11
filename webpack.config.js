@@ -1,5 +1,5 @@
 module.exports = {
-  entry: ['./js/app.js', './css/base.scss'],
+  entry: ["./js/app.js", "./css/base.scss"],
   output: {
     path: __dirname + "/public/js",
     filename: "bundle.js"
@@ -9,14 +9,14 @@ module.exports = {
       {
         test: /\.jsx?|\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
+        loader: "babel",
         query: {
-          optional: ['es7.classProperties']
+          optional: ["es7.classProperties"]
         }
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass'
+        loader: "style!css!sass"
       }
     ]
   }

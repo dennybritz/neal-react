@@ -31,8 +31,10 @@ export class HorizontalSplit extends React.Component {
         <Row>
           {this.props.children.map((child, idx) => {
             return(
-              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx} className="blitz-horizontal-split-col">
-                {child}
+              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx}>
+                <div className="blitz-horizontal-split-col">
+                  {child}
+                </div>
               </Col>
             );
           })}

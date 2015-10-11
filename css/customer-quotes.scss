@@ -2,6 +2,10 @@
   .row { align-items: flex-end; }
 }
 
+.blitz-customer-quotes .blitz-customer-quote {
+  margin-bottom: $blitz-page-paragraph-margin;
+}
+
 .blitz-customer-quote-quote {
   background-color: $blitz-customer-quotes-bg-color;
   border: 2px solid $blitz-customer-quotes-border-color;
@@ -14,7 +18,7 @@
 .blitz-customer-quote-name { }
 .blitz-customer-quote-title { }
 img.blitz-customer-quote-img { 
-  float: left;
+  display: inline-block;
   width: $blitz-customer-quotes-img-width;
   margin-right: 1rem;
 }
