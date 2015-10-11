@@ -14,7 +14,7 @@ export class CustomerQuote extends React.Component {
       <div className="blitz-customer-quote">
         <div className="blitz-customer-quote-quote">{this.props.children}</div>
         <div className="blitz-customer-quote-profile">
-          <img className="blitz-customer-quote-img img-responsive img-thumbnail" src={this.props.imageUrl}/>
+          <img className="blitz-customer-quote-img img-responsive" src={this.props.imageUrl}/>
           <span className="blitz-customer-quote-name">{this.props.name}</span>,&nbsp;
           <span className="blitz-customer-quote-title">{this.props.title}</span>         
         </div>

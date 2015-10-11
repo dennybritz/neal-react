@@ -1,9 +1,13 @@
 ## Major TODOs
 
+- Buttons in Hero
+- Redo Team Component (as cards?)
 - Mobile testing
 - Build as library without including react, etc?
-- Redo Team Component (as cards?)
+
 - Style code/checking
+- Restyle Modal Signup
+
 
 ## Minor TODOs
 

@@ -108,13 +108,13 @@ export default (props) => {
       
       <Section heading="Customer Quotes">
         <CustomerQuotes>
-          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="img/people/paulgraham.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </CustomerQuote>
-          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="img/people/elonmusk.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </CustomerQuote>          
-          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="http://lorempixel.com/output/people-q-c-200-200-7.jpg">
+          <CustomerQuote name="Denny" title="Founder at BigCo" imageUrl="img/people/reidhoffman.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </CustomerQuote>
         </CustomerQuotes>
