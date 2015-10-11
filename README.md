@@ -1,14 +1,15 @@
-## Major TODOs
+## TODOs
 
+- Add Social Media to Team Members Component
 - Restyle Modal Signup
 - Mobile testing
 - Build as library without including react, etc?
-- Style code/checking
+- Style code/checking, automated
+
 
 
 ## Minor TODOs
 
-- Add Social Media to Team Members Component
 - Refactor Pricing Table as Cards
 - Flex Compatibility Research
 

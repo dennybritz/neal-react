@@ -12,7 +12,7 @@
     "classnames": "^2.1.5",
     "history": "^1.12.4",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0-rc1",
+    "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3"
   },
   "devDependencies": {
