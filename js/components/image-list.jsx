@@ -1,5 +1,5 @@
-import React from 'react';
-import classNames from 'classnames'
+import React from "react";
+import classNames from "classnames";
 
 export class ImageList extends React.Component {
 
@@ -12,7 +12,7 @@ export class ImageList extends React.Component {
   }
 
   render() {
-    let _className = classNames('blitz-image-list list-inline', {centered: this.props.centered});
+    let _className = classNames("blitz-image-list list-inline", { centered: this.props.centered });
     return (
       <ul className={_className}>
         {this.props.children}
@@ -32,7 +32,7 @@ export class ImageListItem extends React.Component {
     return (
       <li className="blitz-image-list-item">
         <a href={this.props.url} target="_blank">
-          <img src={this.props.src} className='img-responsive'/>
+          <img src={this.props.src} className="img-responsive"/>
         </a>
       </li>
     );

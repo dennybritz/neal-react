@@ -1,8 +1,8 @@
-import {Row, Col} from '../helpers/bootstrap.jsx';
-import React from 'react';
+import { Row, Col } from "../helpers/bootstrap.jsx";
+import React from "react";
 
 export class HorizontalSplit extends React.Component {
-  
+
   static COLUMN_CLASSES = {
     1: ["xs-12"],
     2: ["xs-12" ,"sm-6"],
@@ -13,24 +13,23 @@ export class HorizontalSplit extends React.Component {
   }
 
   static propTypes = {
-    padding: React.PropTypes.oneOf(['sm', 'md', 'lg'])
+    padding: React.PropTypes.oneOf(["sm", "md", "lg"])
   }
 
   static defaultProps = {
-    padding: 'sm'
+    padding: "sm"
   }
 
   render() {
-    var numSections = this.props.children.length;
-    if(12 % numSections != 0){
-      console.error(`Cannot split 12 columns into ${numSections}.`);
+    let numSections = this.props.children.length;
+    if(12 % numSections !== 0) {
       return null;
     }
 
     return (
       <div className={`blitz-horizontal-split blitz-horizontal-split-${this.props.padding}`}>
         <Row>
-          {this.props.children.map(function(child, idx){
+          {this.props.children.map((child, idx) => {
             return(
               <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx} className="blitz-horizontal-split-col">
                 {child}

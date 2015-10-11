@@ -1,6 +1,6 @@
-import React from 'react';
-import classNames from 'classnames';
-import {HorizontalSplit} from './index';
+import React from "react";
+import classNames from "classnames";
+import { HorizontalSplit } from "./index";
 
 export class PricingTable extends React.Component {
   render() {
@@ -26,8 +26,8 @@ export class PricingPlan extends React.Component {
   }
 
   static defaultProps = {
-    period: '/month',
-    buttonText: 'Sign up'
+    period: "/month",
+    buttonText: "Sign up"
   }
 
   render() {
@@ -40,13 +40,14 @@ export class PricingPlan extends React.Component {
         </div>
         <div className="blitz-pricing-plan-description">{this.props.description}</div>
         <div className="blitz-pricing-plan-action">
-          <button className="btn btn-ghost btn-primary btn-lg" onClick={this.props.onClick}>{this.props.buttonText}</button>
+          <button className="btn btn-ghost btn-primary btn-lg"
+            onClick={this.props.onClick}>{this.props.buttonText}</button>
         </div>
         <div className="blitz-pricing-plan-features">
           {Object.keys(this.props.features).map((name, idx) => {
-            var isEnabled = this.props.features[name]
-            var _className = classNames('blitz-pricing-plan-feature', {'enabled': isEnabled, 'disabled': !isEnabled});
-            return <div key={idx} className={_className}>{name}</div>
+            let isEnabled = this.props.features[name];
+            let _className = classNames("blitz-pricing-plan-feature", { "enabled": isEnabled, "disabled": !isEnabled });
+            return <div key={idx} className={_className}>{name}</div>;
           })}
         </div>
       </div>

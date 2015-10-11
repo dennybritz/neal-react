@@ -1,5 +1,5 @@
-import React from 'react';
-import {HorizontalSplit} from './horizontal-split.jsx';
+import React from "react";
+import { HorizontalSplit } from "./horizontal-split.jsx";
 
 export class CustomerQuote extends React.Component {
 
@@ -16,7 +16,7 @@ export class CustomerQuote extends React.Component {
         <div className="blitz-customer-quote-profile">
           <img className="blitz-customer-quote-img img-responsive" src={this.props.imageUrl}/>
           <span className="blitz-customer-quote-name">{this.props.name}</span>,&nbsp;
-          <span className="blitz-customer-quote-title">{this.props.title}</span>         
+          <span className="blitz-customer-quote-title">{this.props.title}</span>
         </div>
       </div>
     );
@@ -25,7 +25,7 @@ export class CustomerQuote extends React.Component {
 }
 
 export class CustomerQuotes extends React.Component {
-  
+
   static propTypes = {
     // TODO: Enforce CustomerQuote type
     children: React.PropTypes.arrayOf(React.PropTypes.element)

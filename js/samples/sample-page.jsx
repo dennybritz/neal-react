@@ -1,14 +1,14 @@
-import React from 'react';
-import {Page, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan} from '../components/index';
-import {ImageList, ImageListItem} from '../components/index';
-import {Navbar, NavItem, DropdownToggle, DropdownMenu} from '../components/index';
-import {Link} from 'react-router';
+import React from "react";
+import { Page, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan } from "../components/index";
+import { ImageList, ImageListItem } from "../components/index";
+import { Navbar, NavItem, DropdownToggle, DropdownMenu } from "../components/index";
+import { Link } from "react-router";
 
-let brandName = "SamplePage"
+let brandName = "SamplePage";
 
 // Function to call when someone signs up
-let onSignup = ({name: name, email: email, password: password}) => Stripe.StripeHandler.open({
-  name: 'Stripe Integration Included',
+let onSignup = ({ name: name, email: email, password: password }) => Stripe.StripeHandler.open({
+  name: "Stripe Integration Included",
   description: "Like this? Donate $5 <3",
   panelLabel: "Donate {{amount}}",
   email: email,
@@ -22,36 +22,36 @@ let businessAddress = (
     San Francisco, CA 94103<br/>
     +1 (123) 456-7890
   </address>
-)
+);
 
 let pricingPlan1 = {
-  name: 'Starter',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  price: '$99',
+  name: "Starter",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  price: "$99",
   features: {
-    'Fully Integrated E-Commerce': true,
-    'Sell 1 Product & Accept Donations': true,
-    'Mobile Website and Store': false,
-    'Custom Domain': false,
-    '24/7 Customer Support': false
+    "Fully Integrated E-Commerce": true,
+    "Sell 1 Product & Accept Donations": true,
+    "Mobile Website and Store": false,
+    "Custom Domain": false,
+    "24/7 Customer Support": false
   },
   onClick: onSignup
-}
+};
 
 let pricingPlan2 = Object.assign({}, pricingPlan1, {
-  price: '$499',
-  name: 'Startup',
+  price: "$499",
+  name: "Startup",
   features: Object.assign({}, pricingPlan1.features, {
-    'Mobile Website and Store': true
+    "Mobile Website and Store": true
   })
 });
 
 let pricingPlan3 = Object.assign({}, pricingPlan2, {
-  price: '$999',
-  name: 'Enterprise',
+  price: "$999",
+  name: "Enterprise",
   features: Object.assign({}, pricingPlan2.features, {
-    'Custom Domain': true,
-    '24/7 Customer Support': true
+    "Custom Domain": true,
+    "24/7 Customer Support": true
   })
 });
 
@@ -73,15 +73,17 @@ export default (props) => {
         <NavItem><Link to="Home" className="nav-link">Documentation</Link></NavItem>
       </Navbar>
 
-      <Hero heading="Declarative Landing Pages for React.js" backgroundImage="img/hero-bg-01.jpg" className="text-center">
-        <p className="lead">Build a beautiful landing page in less than an hour. No more redundant code. Easily extensible.</p>
+      <Hero heading="Declarative Landing Pages for React.js" backgroundImage="img/hero-bg-01.jpg"
+        className="text-center">
+        <p className="lead">Build a beautiful landing page in less than an hour.
+          No more redundant code. Easily extensible.</p>
         <p>
           <a className="btn btn-white">Learn More</a>
           &nbsp;
           <a className="btn btn-white">Get it on Github</a>
         </p>
       </Hero>
-      
+
       <Section>
         <HorizontalSplit padding="md">
           <div>
@@ -99,12 +101,12 @@ export default (props) => {
           </div>
         </HorizontalSplit>
       </Section>
-      
+
       <Section heading="Inline and Modal Signup components">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         <SignupInline onSubmit={onSignup}/>
         <br/>
-        <SignupModal modalId='signup-modal' onSubmit={onSignup}/>
+        <SignupModal modalId="signup-modal" onSubmit={onSignup}/>
         <p>
           <a className="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
         </p>
@@ -116,8 +118,8 @@ export default (props) => {
           <PricingPlan {... pricingPlan2} />
           <PricingPlan {... pricingPlan3} />
         </PricingTable>
-      </Section>      
-      
+      </Section>
+
       <Section heading="Customer Quotes">
         <CustomerQuotes>
           <CustomerQuote name="Denny" title="Co-founder" imageUrl="img/people/paulgraham.jpg">
@@ -125,18 +127,18 @@ export default (props) => {
           </CustomerQuote>
           <CustomerQuote name="Denny" title="Co-founder" imageUrl="img/people/elonmusk.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </CustomerQuote>          
+          </CustomerQuote>
           <CustomerQuote name="Denny" title="Co-founder" imageUrl="img/people/reidhoffman.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </CustomerQuote>
         </CustomerQuotes>
       </Section>
-      
+
       <Section heading="Team">
         <Team>
           <Team.Member name="Denny Britz" title="Co-founder" imageUrl="img/people/paulgraham.jpg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Team.Member>                 
+          </Team.Member>
           <Team.Member name="Denny Britz" title="Co-founder" imageUrl="img/people/elonmusk.jpg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </Team.Member>
@@ -148,14 +150,14 @@ export default (props) => {
 
       <Section heading="As seeen on...">
         <ImageList centered={false}>
-          <ImageListItem src='img/press/cnn-logo.png' url='http://www.cnn.com'/>
-          <ImageListItem src='img/press/forbes-logo.png' url='http://forbes.com/'/>
-          <ImageListItem src='img/press/theverge-logo.png' url='http://www.theverge.com/'/>
-          <ImageListItem src='img/press/techcrunch-logo.jpg' url='http://techcrunch.com/'/>
-          <ImageListItem src='img/press/venturebeat-logo.jpg' url='http://venturebeat.com/'/>
+          <ImageListItem src="img/press/cnn-logo.png" url="http://www.cnn.com"/>
+          <ImageListItem src="img/press/forbes-logo.png" url="http://forbes.com/"/>
+          <ImageListItem src="img/press/theverge-logo.png" url="http://www.theverge.com/"/>
+          <ImageListItem src="img/press/techcrunch-logo.jpg" url="http://techcrunch.com/"/>
+          <ImageListItem src="img/press/venturebeat-logo.jpg" url="http://venturebeat.com/"/>
         </ImageList>
       </Section>
-      
+
       <Footer brandName={brandName} facebookUrl="http://www.facebook.com" twitterUrl="http://www.twitter.com"
         emailUrl="mailto:info@google.com" address={businessAddress}>
       </Footer>

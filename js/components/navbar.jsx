@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link} from 'react-router';
-import classNames from 'classnames';
+import React from "react";
+import { Link } from "react-router";
+import classNames from "classnames";
 
 export class Navbar extends React.Component {
 
@@ -26,13 +26,13 @@ export class Navbar extends React.Component {
 }
 
 export class NavItem extends React.Component {
-  
+
   static propTypes = {
     dropdown: React.PropTypes.bool
   }
 
   render() {
-    var _className = classNames('nav-item', { dropdown: this.props.dropdown }, this.props.className)
+    let _className = classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className);
     return (
       <li {...this.props} className={_className}>
         { this.props.children }
@@ -46,12 +46,12 @@ export class DropdownToggle extends React.Component {
     return (
       <a className="nav-link" data-toggle="dropdown" role="button" {... this.props}>
         {this.props.children}
-      </a>)
+      </a>);
   }
 }
 
 export class DropdownMenu extends React.Component {
   render() {
-    return <div className="dropdown-menu" {... this.props}>{this.props.children}</div>
+    return <div className="dropdown-menu" {... this.props}>{this.props.children}</div>;
   }
 }

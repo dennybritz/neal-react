@@ -1,6 +1,6 @@
-import React from 'react';
-import {App} from '../components/index';
-import SamplePage from './sample-page.jsx';
+import React from "react";
+import { App } from "../components/index";
+import SamplePage from "./sample-page.jsx";
 
 export default class SampleApp extends React.Component {
 

@@ -1,13 +1,13 @@
-import React from 'react';
-import {GoogleAnalytics, Segment, Stripe, Page} from './index';
+import React from "react";
+import { GoogleAnalytics, Segment, Stripe, Page } from "./index";
 
 export class App extends React.Component {
-  
+
   static propTypes = {
     googleAnalyticsKey: React.PropTypes.string,
     segmentKey: React.PropTypes.string,
     stripeKey: React.PropTypes.string,
-    enableRouteTracking: React.PropTypes.bool,
+    enableRouteTracking: React.PropTypes.bool
   }
 
   static defaultProps = {
@@ -15,9 +15,9 @@ export class App extends React.Component {
   }
 
   render() {
-    var googleAnalyticsKey = this.props.googleAnalyticsKey;
-    var segmentKey = this.props.segmentKey;
-    var stripeKey = this.props.stripeKey;
+    let googleAnalyticsKey = this.props.googleAnalyticsKey;
+    let segmentKey = this.props.segmentKey;
+    let stripeKey = this.props.stripeKey;
 
     return (
       <div className="blitz-app">

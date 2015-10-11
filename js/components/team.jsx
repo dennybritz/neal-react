@@ -1,6 +1,6 @@
-import React from 'react';
-import {HorizontalSplit} from './horizontal-split.jsx';
-import {Row, Col} from '../helpers/bootstrap.jsx';
+import React from "react";
+import { HorizontalSplit } from "./horizontal-split.jsx";
+import { Row, Col } from "../helpers/bootstrap.jsx";
 
 class Member extends React.Component {
 
@@ -22,7 +22,7 @@ class Member extends React.Component {
         </div>
       </div>
     );
-  }  
+  }
 }
 
 export class Team extends React.Component {
@@ -39,8 +39,8 @@ export class Team extends React.Component {
           <div className="card-deck">
             {this.props.children.map((member) => {
               return(
-                <Col size={['xs-12', 'sm-6', 'lg-4']}>{member}</Col>
-              )
+                <Col size={["xs-12", "sm-6", "lg-4"]}>{member}</Col>
+              );
             })}
           </div>
         </Row>

@@ -1,5 +1,5 @@
-import React from 'react';
-import {Col} from '../helpers/bootstrap.jsx';
+import React from "react";
+import { Col } from "../helpers/bootstrap.jsx";
 
 class ModalHeader extends React.Component {
   render() {
@@ -15,14 +15,14 @@ class ModalHeader extends React.Component {
 }
 
 export class SignupModal extends React.Component {
-  
+
   static propTypes = {
     modalId: React.PropTypes.string.isRequired,
     onSubmit: React.PropTypes.func
   }
 
   static defaultProps = {
-    modalId: 'signup-modal'
+    modalId: "signup-modal"
   }
 
   state = { name: null, email: null, password: null };
@@ -37,10 +37,11 @@ export class SignupModal extends React.Component {
   }
 
   render() {
-    var modalId = this.props.modalId;
+    let modalId = this.props.modalId;
     return (
       <div>
-        <div className="modal fade blitz-signup-modal" key={modalId} id={modalId} tabIndex="-1" role="dialog" aria-hidden="true">
+        <div className="modal fade blitz-signup-modal" key={modalId} id={modalId}
+        tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <ModalHeader/>
@@ -57,9 +58,12 @@ export class SignupModal extends React.Component {
       <div className="modal-body">
         <div className="container-fluid">
           <form className="form-vertical" onSubmit={this.handleSubmit}>
-            <SignupModal.Input name="name" required label="Name" placeholder="Name" onChange={this.handleChange} value={this.state.name} />
-            <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email" onChange={this.handleChange} value={this.state.email} />
-            <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
+            <SignupModal.Input name="name" required label="Name" placeholder="Name"
+              onChange={this.handleChange} value={this.state.name} />
+            <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"
+              onChange={this.handleChange} value={this.state.email} />
+            <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"
+              onChange={this.handleChange} value={this.state.password} />
             <div className="form-group">
               <button type="submit" className="btn btn-primary btn-block btn-ghost-disable">Sign up</button>
             </div>
@@ -79,14 +83,15 @@ SignupModal.Input = class extends React.Component {
   }
 
   static defaultProps = {
-    type: 'text'
+    type: "text"
   }
 
-  render(){
+  render() {
     return (
       <div className="form-group blitz-signup-modal-input">
         <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
-        <input type="password" className="form-control" name={this.props.name} placeholder={this.props.placeholder} {... this.props}/>
+        <input type="password" className="form-control" name={this.props.name}
+          placeholder={this.props.placeholder} {... this.props}/>
       </div>
     );
   }

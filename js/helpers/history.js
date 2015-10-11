@@ -1,2 +1,3 @@
-import { createHashHistory, useBasename } from 'history'
+import { createHashHistory, useBasename } from "history";
 export default createHashHistory()
+;

@@ -1,5 +1,5 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 
 export class Section extends React.Component {
 
@@ -8,11 +8,11 @@ export class Section extends React.Component {
   }
 
   render() {
-    var _className = classNames('blitz-section', this.props.className);
+    let _className = classNames("blitz-section", this.props.className);
     return (
       <div {... this.props} className={_className}>
         <div className="container">
-          { this.props.heading ?  <h2>{this.props.heading}</h2> : null }  
+          { this.props.heading ?  <h2>{this.props.heading}</h2> : null }
           {this.props.children}
         </div>
       </div>
