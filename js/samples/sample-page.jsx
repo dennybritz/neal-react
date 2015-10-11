@@ -1,5 +1,6 @@
 import React from 'react';
 import {Page, Navbar, NavItem, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan} from '../components/index';
+import {ImageList, ImageListItem} from '../components/index';
 import {Link} from 'react-router';
 
 let brandName = "SamplePage"
@@ -123,6 +124,16 @@ export default (props) => {
           TODO
           </Team.Member>
         </Team>
+      </Section>
+
+      <Section heading="As seeen on...">
+        <ImageList centered={false}>
+          <ImageListItem src='img/press/cnn-logo.png' url='http://www.cnn.com'/>
+          <ImageListItem src='img/press/forbes-logo.png' url='http://forbes.com/'/>
+          <ImageListItem src='img/press/theverge-logo.png' url='http://www.theverge.com/'/>
+          <ImageListItem src='img/press/techcrunch-logo.jpg' url='http://techcrunch.com/'/>
+          <ImageListItem src='img/press/venturebeat-logo.jpg' url='http://venturebeat.com/'/>
+        </ImageList>
       </Section>
       
       <Footer brandName={brandName} facebookUrl="http://www.facebook.com" twitterUrl="http://www.twitter.com"

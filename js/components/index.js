@@ -3,6 +3,7 @@ export * from './customer-quotes.jsx';
 export * from './footer.jsx';
 export * from './hero.jsx';
 export * from './horizontal-split.jsx';
+export * from './image-list.jsx';
 export * from './navbar.jsx';
 export * from './page.jsx';
 export * from './pricing-table.jsx';

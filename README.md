@@ -1,11 +1,13 @@
 ## Major TODOs
 
+- Allow dropdowns in navbar
+- Mobile testing
 - Build as library without including react, etc?
-- Logo Listing (e.g. Press Logos) Component
+- Redo Team
 
 ## Minor TODOs
 
-- Flex Compatibility
+- Non-Flex Compatibility
 
 ## Naming Ideas
 
