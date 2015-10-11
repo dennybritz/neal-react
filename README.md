@@ -1,10 +1,9 @@
 ## Major TODOs
 
-- Code
+- Restyle Modal Signup
 - Mobile testing
 - Build as library without including react, etc?
 - Style code/checking
-- Restyle Modal Signup
 
 
 ## Minor TODOs
