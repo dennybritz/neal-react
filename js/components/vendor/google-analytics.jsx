@@ -1,5 +1,5 @@
-import React from 'react';
-import history from '../../helpers/history';
+import React from "react";
+import history from "../../helpers/history";
 
 export class GoogleAnalytics extends React.Component {
 
@@ -15,16 +15,16 @@ export class GoogleAnalytics extends React.Component {
 
   componentDidMount() {
     // Initialize Google Analytics
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', this.props.account, 'auto');
-    let src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) ;};ga.l = +new Date;
+    ga("create", this.props.account, "auto");
+    let src = ("https:" === document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
     jQuery.getScript(src);
 
     // Track route changes
-    if(this.props.enableRouteTracking){
+    if(this.props.enableRouteTracking) {
       history.listen((newLocation) => {
-        ga('send', 'pageview');
-      })
+        ga("send", "pageview");
+      });
     }
   }
 

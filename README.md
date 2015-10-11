@@ -1,7 +1,6 @@
 ## TODOs
 
 - Build as library without including react, etc?
-- Style code/checking, automated
 - Restyle Modal Signup
 - Mobile testing
 
