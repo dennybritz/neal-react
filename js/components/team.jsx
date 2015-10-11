@@ -1,5 +1,6 @@
 import React from 'react';
 import {HorizontalSplit} from './horizontal-split.jsx';
+import {Row, Col} from '../helpers/bootstrap.jsx';
 
 class Member extends React.Component {
 
@@ -11,11 +12,12 @@ class Member extends React.Component {
 
   render() {
     return(
-      <div className="blitz-team-member">
-        <img className="blitz-team-member-img img-responsive img-thumbnail" src={this.props.imageUrl}/>
-        <div className="blitz-team-member-profile">
-          <span className="blitz-team-member-name">{this.props.name}</span>,&nbsp;
-          <span className="blitz-team-member-title">{this.props.title}</span>
+      <div className="card blitz-team-member">
+        <img className="card-img-top blitz-team-member-img img-responsive" src={this.props.imageUrl}/>
+        <div className="card-block blitz-team-member-profile">
+          <h4 className="card-title lead blitz-team-member-name">
+            {this.props.name}, {this.props.title}</h4>
+          <br/>
           <div className="blitz-team-member-description">{this.props.children}</div>
         </div>
       </div>
@@ -32,10 +34,16 @@ export class Team extends React.Component {
 
   render() {
     return (
-      <div className="blitz-team">
-        <HorizontalSplit>
-          {this.props.children}
-        </HorizontalSplit>
+      <div className="card-deck-wrapper blitz-team">
+        <Row>
+          <div className="card-deck">
+            {this.props.children.map((member) => {
+              return(
+                <Col size={['xs-12', 'sm-6', 'lg-4']}>{member}</Col>
+              )
+            })}
+          </div>
+        </Row>
       </div>
     );
   }
