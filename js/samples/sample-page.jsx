@@ -1,6 +1,12 @@
 import React from "react";
-import { Page, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan } from "../components/index";
-import { ImageList, ImageListItem } from "../components/index";
+import { Page, Hero, Footer, FooterAddress, Section } from "../components/index";
+import { SignupInline, SignupModal } from "../components/index";
+import { HorizontalSplit } from "../components/index";
+import { CustomerQuotes, CustomerQuote } from "../components/index";
+import { PricingTable, PricingPlan } from "../components/index";
+import { Team } from "../components/index";
+import { Stripe } from "../components/index";
+import { ImageList,  ImageListItem } from "../components/index";
 import { Navbar, NavItem, DropdownToggle, DropdownMenu } from "../components/index";
 import { Link } from "react-router";
 
