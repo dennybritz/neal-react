@@ -1,6 +1,6 @@
 ## TODOs
 
-- Mobile testing
+- Add mobile nav
 - Restyle Modal Signup
 
 ## Minor TODOs
