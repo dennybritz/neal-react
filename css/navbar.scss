@@ -1,14 +1,10 @@
-.blitz-navbar-wrapper { }
+.blitz-navbar-wrapper {
+  background-color: $blitz-navbar-bg-color;
+}
 
 nav.blitz-navbar {
 
-  li.nav-item {
-    padding: 0 $blitz-navbar-item-padding-x;
-    // Don't pad the last item on the right
-    &:last-child { padding-right: 0; }
-  }
-
-  a.nav-link { 
+  @mixin nav-link {
     font-weight: 500;
     font-size: $font-size-sm;
     text-transform: uppercase;
@@ -18,9 +14,31 @@ nav.blitz-navbar {
     }
   }
 
+  li.nav-item {
+    padding: 0 $blitz-navbar-item-padding-x;
+    // Don't pad the last item on the right
+    &:last-child { padding-right: 0; }
+  }
+
+  a.nav-link { 
+    @include nav-link;
+  }
+
   a.navbar-brand {
     font-weight: 900;
     color: $blitz-navbar-brand-color;
+  }
+
+  .dropdown-menu {
+    left: inherit;
+    border: 1px solid $gray-lightest;
+    background-color: $blitz-navbar-bg-color;
+    background-clip: inherit;
+    padding: 0;
+    a {
+      @include nav-link;
+      padding: 0.5rem 1rem;
+    }
   }
 
 }

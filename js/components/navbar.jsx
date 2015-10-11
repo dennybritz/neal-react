@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import classNames from 'classnames';
 
 export class Navbar extends React.Component {
 
@@ -25,11 +26,32 @@ export class Navbar extends React.Component {
 }
 
 export class NavItem extends React.Component {
+  
+  static propTypes = {
+    dropdown: React.PropTypes.bool
+  }
+
   render() {
+    var _className = classNames('nav-item', { dropdown: this.props.dropdown }, this.props.className)
     return (
-      <li className="nav-item" {...this.props}>
+      <li {...this.props} className={_className}>
         { this.props.children }
       </li>
     );
+  }
+}
+
+export class DropdownToggle extends React.Component {
+  render() {
+    return (
+      <a className="nav-link" data-toggle="dropdown" role="button" {... this.props}>
+        {this.props.children}
+      </a>)
+  }
+}
+
+export class DropdownMenu extends React.Component {
+  render() {
+    return <div className="dropdown-menu" {... this.props}>{this.props.children}</div>
   }
 }

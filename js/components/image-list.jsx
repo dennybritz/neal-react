@@ -1,0 +1,41 @@
+import React from 'react';
+import classNames from 'classnames'
+
+export class ImageList extends React.Component {
+
+  static propTypes = {
+    centered: React.PropTypes.bool.isRequired
+  }
+
+  static defaultProps = {
+    centered: true
+  }
+
+  render() {
+    let _className = classNames('blitz-image-list list-inline', {centered: this.props.centered});
+    return (
+      <ul className={_className}>
+        {this.props.children}
+      </ul>
+    );
+  }
+}
+
+export class ImageListItem extends React.Component {
+
+  static propTypes = {
+    src: React.PropTypes.string.isRequired,
+    url: React.PropTypes.string
+  }
+
+  render() {
+    return (
+      <li className="blitz-image-list-item">
+        <a href={this.props.url} target="_blank">
+          <img src={this.props.src} className='img-responsive'/>
+        </a>
+      </li>
+    );
+  }
+
+}

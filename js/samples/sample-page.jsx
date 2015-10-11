@@ -1,6 +1,7 @@
 import React from 'react';
-import {Page, Navbar, NavItem, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan} from '../components/index';
+import {Page, Hero, Footer, FooterAddress, SignupInline, SignupModal, Section, HorizontalSplit, CustomerQuotes, Team, CustomerQuote, Stripe, PricingTable, PricingPlan} from '../components/index';
 import {ImageList, ImageListItem} from '../components/index';
+import {Navbar, NavItem, DropdownToggle, DropdownMenu} from '../components/index';
 import {Link} from 'react-router';
 
 let brandName = "SamplePage"
@@ -60,9 +61,17 @@ export default (props) => {
     <Page>
       <Navbar brandName={brandName}>
         <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
+        <NavItem dropdown={true}>
+          <DropdownToggle>Dropdown</DropdownToggle>
+          <DropdownMenu>
+            <Link to="Home" className="dropdown-item">Action</Link>
+            <Link to="Home" className="dropdown-item">Another action</Link>
+          </DropdownMenu>
+        </NavItem>
         <NavItem><a href="https://github.com/dennybritz/" className="nav-link" target="_blank">Github</a></NavItem>
         <NavItem><Link to="Home" className="nav-link">Documentation</Link></NavItem>
       </Navbar>
+
       <Hero heading="Declarative Landing Pages for React.js" backgroundImage='img/hero-bg-01.jpg' subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       
       <Section heading="Horizontal Split">

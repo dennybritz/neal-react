@@ -1,0 +1,12 @@
+ul.blitz-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &.centered { justify-content: center; }
+}
+
+
+li.blitz-image-list-item {
+  padding: 0rem $blitz-image-list-item-padding-x;
+  max-width: $blitz-image-list-item-max-width;
+}
