@@ -18,6 +18,6 @@
   color: $gray-dark;
   background-color: #fff;
   @if $blitz-button-ghost-enable {
-    @include ghost-button(#fff, #fafafa);
+    @include ghost-button(#fff, rgba(#fff, 0.80));
   }
 }
