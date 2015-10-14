@@ -2,6 +2,15 @@ import React from "react";
 import { Col } from "../helpers/bootstrap.jsx";
 
 class ModalHeader extends React.Component {
+
+  static propTypes = {
+    title: React.PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    title: "Sign up"
+  }
+
   render() {
     return (
       <div className="modal-header">
@@ -9,19 +18,44 @@ class ModalHeader extends React.Component {
           <span aria-hidden="true">&times;</span>
           <span className="sr-only">Close</span>
         </button>
+        <h4 className="modal-title lead">{this.props.title}</h4>
       </div>
     );
   }
 }
 
+class ModalFooter extends React.Component {
+
+  static propTypes = {
+    buttonText: React.PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    buttonText: "Sign up"
+  }
+
+  render() {
+    return (
+      <div className="modal-footer">
+        <button type="submit" className="btn btn-primary btn-block">Sign up</button>
+      </div>
+    );
+  }
+}
+
+
 export class SignupModal extends React.Component {
 
   static propTypes = {
+    title: React.PropTypes.string.isRequired,
+    buttonText: React.PropTypes.string.isRequired,
     modalId: React.PropTypes.string.isRequired,
     onSubmit: React.PropTypes.func
   }
 
   static defaultProps = {
+    title: "Sign up",
+    buttonText: "Sign up",
     modalId: "signup-modal"
   }
 
@@ -44,8 +78,18 @@ export class SignupModal extends React.Component {
         tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <ModalHeader/>
-              {this.renderModalBody()}
+              <ModalHeader title={this.props.title}/>
+              <form className="form-vertical" onSubmit={this.handleSubmit}>
+              <div className="modal-body">
+                <SignupModal.Input name="name" required label="Name" placeholder="Name"
+                  onChange={this.handleChange} value={this.state.name} />
+                <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"
+                  onChange={this.handleChange} value={this.state.email} />
+                <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"
+                  onChange={this.handleChange} value={this.state.password} />
+              </div>
+              <ModalFooter buttonText={this.props.buttonText} />
+              </form>
             </div>
           </div>
         </div>
@@ -53,25 +97,6 @@ export class SignupModal extends React.Component {
     );
   }
 
-  renderModalBody() {
-    return (
-      <div className="modal-body">
-        <div className="container-fluid">
-          <form className="form-vertical" onSubmit={this.handleSubmit}>
-            <SignupModal.Input name="name" required label="Name" placeholder="Name"
-              onChange={this.handleChange} value={this.state.name} />
-            <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"
-              onChange={this.handleChange} value={this.state.email} />
-            <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"
-              onChange={this.handleChange} value={this.state.password} />
-            <div className="form-group">
-              <button type="submit" className="btn btn-primary btn-block btn-ghost-disable">Sign up</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    );
-  }
 }
 
 SignupModal.Input = class extends React.Component {

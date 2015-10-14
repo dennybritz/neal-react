@@ -101,7 +101,7 @@ export default (props) => {
             <p>Blitz includes integration components for <a>Google Analytics</a>, <a>Segment</a>, and <a>Stripe</a>. No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page, using the react-router library.</p>
           </div>
           <div>
-            <p className="lead">Open-source. Used in production.</p>
+            <p className="lead">Open-source. Used in production. </p>
             <p>I use Blitz in production, so you can be sure it's maintained.
             </p>
           </div>

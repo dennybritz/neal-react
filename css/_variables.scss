@@ -3,7 +3,7 @@
 
 // Global
 $blitz-link-color: #0088cc !default;
-$blitz-font-family: Roboto, sans-serif !default;
+$blitz-font-family: Noto Sans, Roboto, Open Sans, sans-serif !default;
 
 // Buttons
 $blitz-button-ghost-enable: true !default;
@@ -46,7 +46,7 @@ $blitz-footer-social-icon-bg-color: $gray-lighter;
 
 // Section Component
 $blitz-section-padding-y: 8rem !default;
-$blitz-section-heading-margin-bottom: 4rem !default;
+$blitz-section-heading-margin-bottom: 2rem !default;
 
 // Navbar Component
 $blitz-navbar-bg-color: #fff;
@@ -78,6 +78,10 @@ $blitz-customer-quotes-img-width: 25% !default;
 // N/A
 
 // Signup Modal
+$blitz-signup-modal-header-bg-color: #455A64;
+$blitz-signup-modal-header-text-color: #fff;
+$blitz-signup-modal-padding-x: 3rem;
+
 // N/A
 
 // Pricing Table
