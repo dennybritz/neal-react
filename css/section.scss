@@ -2,6 +2,8 @@
   padding: $blitz-section-padding-y/2 0;
   h2 { 
     margin-bottom: $blitz-section-heading-margin-bottom;
+    padding-bottom: $blitz-section-heading-margin-bottom;
+    border-bottom: $blitz-section-border-bottom;
     font-weight: 300;
   }
 }
