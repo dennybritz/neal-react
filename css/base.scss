@@ -1,10 +1,12 @@
 // Load variables and base styles
 @import './_variables.scss';
 @import '../bower_components/bootstrap/scss/bootstrap.scss';
+@import "vendor/prism.css";
 
 // Component Styles
 @import './buttons.scss';
 @import './customer-quotes.scss';
+@import './figure.scss';
 @import './footer.scss';
 @import './hero.scss';
 @import './horizontal-split.scss';
@@ -21,4 +23,21 @@
 // Forms
 form .form-group {
   margin: 0.5rem 0;
+}
+
+// TODO: Refactor
+.blitz-section ul {
+  margin: $blitz-page-paragraph-margin 0;
+  li { margin: 0.5rem 0; }
+}
+
+// Prism code
+.blitz-page {
+
+  code[class*="language-"], pre[class*="language-"] {
+    background-color: $gray-uberlight;
+  }
+  pre[class*="language-"] {
+    padding: 0rem 1.5rem;
+  }
 }

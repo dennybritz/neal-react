@@ -1,7 +1,9 @@
 ## TODOs
 
-- Add mobile nav
-- Restyle Modal Signup
+- Fix landing page sections
+- Add code example
+- Add figure example
+- Clean up CSS classes
 
 ## Minor TODOs
 

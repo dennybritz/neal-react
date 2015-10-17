@@ -7,7 +7,7 @@ nav.blitz-navbar {
   @mixin nav-link {
     font-weight: 500;
     font-size: $font-size-sm;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $blitz-navbar-link-color;
     &:hover, &:active {
       color: $blitz-header-link-color-hover;
@@ -39,7 +39,7 @@ nav.blitz-navbar {
     padding: 0;
     a {
       @include nav-link;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1.5rem;
     }
   }
 

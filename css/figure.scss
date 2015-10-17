@@ -1,0 +1,12 @@
+.blitz-figure {
+  margin: $blitz-page-paragraph-margin 0;
+  border: $blitz-figure-border;
+  figcaption { 
+    background-color: $blitz-figure-caption-bg-color;
+    padding: 1rem;
+  }
+  img {
+    padding: $blitz-figure-img-padding;
+  }
+}
+

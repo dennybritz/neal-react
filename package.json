@@ -1,8 +1,8 @@
 {
-  "name": "react-startup",
+  "name": "blitz-react",
   "version": "0.0.1",
   "description": "React components for startup landing pages.",
-  "main": "index.js",
+  "main": "js/components/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext jsx --ext js js/"
@@ -24,6 +24,7 @@
     "css-loader": "^0.18.0",
     "eslint": "^1.6.0",
     "eslint-plugin-react": "^3.5.1",
+    "exports-loader": "^0.6.2",
     "node-sass": "^3.3.3",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.12.4",

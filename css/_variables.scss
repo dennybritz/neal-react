@@ -3,7 +3,7 @@
 
 // Global
 $blitz-link-color: #0088cc !default;
-$blitz-font-family: Noto Sans, Roboto, Open Sans, sans-serif !default;
+$blitz-font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif, Roboto, sans-serif !default;
 
 // Buttons
 $blitz-button-ghost-enable: true !default;
@@ -45,7 +45,7 @@ $blitz-footer-social-icon-color: #fff;
 $blitz-footer-social-icon-bg-color: $gray-lighter;
 
 // Section Component
-$blitz-section-padding-y: 12rem !default;
+$blitz-section-padding-y: 10rem !default;
 $blitz-section-heading-margin-bottom: 2rem !default;
 $blitz-section-border-bottom: 1px solid $gray-lightest;
 
@@ -96,6 +96,12 @@ $blitz-image-list-item-max-width: 150px;
 
 // Team
 // N/A
+
+// Figure
+
+$blitz-figure-border: 1px solid $gray-lightest;
+$blitz-figure-caption-bg-color: $gray-uberlight;
+$blitz-figure-img-padding: 0rem;
  
 
 
