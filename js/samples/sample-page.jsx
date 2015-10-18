@@ -62,8 +62,7 @@ let pricingPlan3 = Object.assign({}, pricingPlan2, {
   })
 });
 
-let sampleCode = `
-<Page>
+let sampleCode = `<Page>
   <Hero heading="Declarative Landing Pages for React.js"></Hero>
   <Section heading="Hello!">
     <HorizontalSplit padding="md"> { /* Content */} </HorizontalSplit>

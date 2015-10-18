@@ -1,5 +1,7 @@
 ## TODOs
 
+Separate sample page from library
+
 ## Minor TODOs
 
 - Refactor Pricing Table as Cards
