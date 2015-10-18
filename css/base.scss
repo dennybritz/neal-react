@@ -5,6 +5,7 @@
 
 // Component Styles
 @import './buttons.scss';
+@import './code.scss';
 @import './customer-quotes.scss';
 @import './figure.scss';
 @import './footer.scss';
@@ -18,26 +19,4 @@
 @import './singup-inline.scss';
 @import './singup-modal.scss';
 @import './team.scss';
-
-
-// Forms
-form .form-group {
-  margin: 0.5rem 0;
-}
-
-// TODO: Refactor
-.blitz-section ul {
-  margin: $blitz-page-paragraph-margin 0;
-  li { margin: 0.5rem 0; }
-}
-
-// Prism code
-.blitz-page {
-
-  code[class*="language-"], pre[class*="language-"] {
-    background-color: $gray-uberlight;
-  }
-  pre[class*="language-"] {
-    padding: 0rem 1.5rem;
-  }
-}
+@import './typography.scss';

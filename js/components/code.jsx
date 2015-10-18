@@ -13,7 +13,9 @@ export class Code extends React.Component {
     let highlightedCode = Prism.highlight(this.props.children, Prism.languages[this.props.lang]);
     let codeElement = <code className={langClass} dangerouslySetInnerHTML={{ __html: highlightedCode }}/>;
     if (this.props.block) {
-      return (<pre className={langClass}>{codeElement}</pre>);
+      return (
+        <pre className={langClass}>{codeElement}</pre>
+      );
     } else {
       return codeElement;
     }
