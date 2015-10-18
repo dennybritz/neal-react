@@ -2,7 +2,7 @@ import React from "react";
 import { HorizontalSplit } from "./horizontal-split.jsx";
 import { Row, Col } from "../helpers/bootstrap.jsx";
 
-class Member extends React.Component {
+export class TeamMember extends React.Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired,
@@ -49,5 +49,3 @@ export class Team extends React.Component {
   }
 
 }
-
-Team.Member = Member;

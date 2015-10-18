@@ -1,9 +1,7 @@
 ## TODOs
 
-- Fix landing page sections
-- Add code example
-- Add figure example
 - Clean up CSS classes
+
 
 ## Minor TODOs
 

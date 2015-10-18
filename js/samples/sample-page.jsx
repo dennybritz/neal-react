@@ -1,10 +1,11 @@
 import React from "react";
 import { Page, Hero, Footer, FooterAddress, Section } from "../components/index";
+import { Code } from "../components/index";
 import { SignupInline, SignupModal } from "../components/index";
 import { HorizontalSplit } from "../components/index";
 import { CustomerQuotes, CustomerQuote } from "../components/index";
 import { PricingTable, PricingPlan } from "../components/index";
-import { Team } from "../components/index";
+import { Team, TeamMember } from "../components/index";
 import { Stripe } from "../components/index";
 import { ImageList,  ImageListItem } from "../components/index";
 import { Navbar, NavItem, DropdownToggle, DropdownMenu } from "../components/index";
@@ -61,6 +62,29 @@ let pricingPlan3 = Object.assign({}, pricingPlan2, {
   })
 });
 
+let sampleCode = `
+<Page>
+  <Hero heading="Declarative Landing Pages for React.js"></Hero>
+  <Section heading="Hello!">
+    <HorizontalSplit padding="md"> { /* Content */} </HorizontalSplit>
+  </Section>
+  <Section>
+    <Team>
+      <TeamMember name="Link" title="Co-founder" imageUrl="img/link.jpg"> { /* Description */} </TeamMember>
+      <TeamMember name="Yoshi" title="Co-founder" imageUrl="img/yoshi.jpg"> { /* Description */} </TeamMember>
+    </Team>
+  </Section>
+  <Section>
+    <PricingTable>
+      <PricingPlan {... pricingPlan1} />
+      <PricingPlan {... pricingPlan2} />
+      <PricingPlan {... pricingPlan3} />
+    </PricingTable>
+    <SignupInline onSubmit={onSignupCallback}/>
+  </Section>
+</Page>
+`;
+
 
 export default (props) => {
   return(
@@ -89,6 +113,10 @@ export default (props) => {
           <a className="btn btn-white">Get it on Github</a>
         </p>
       </Hero>
+
+      <Section heading="What it looks like...">
+        <Code lang="jsx" block>{sampleCode}</Code>
+      </Section>
 
       <Section>
         <HorizontalSplit padding="md">
@@ -141,15 +169,15 @@ export default (props) => {
 
       <Section heading="Team">
         <Team>
-          <Team.Member name="Denny Britz" title="Co-founder" imageUrl="img/people/paulgraham.jpg">
+          <TeamMember name="Denny Britz" title="Co-founder" imageUrl="img/people/paulgraham.jpg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Team.Member>
-          <Team.Member name="Denny Britz" title="Co-founder" imageUrl="img/people/elonmusk.jpg">
+          </TeamMember>
+          <TeamMember name="Denny Britz" title="Co-founder" imageUrl="img/people/elonmusk.jpg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Team.Member>
-          <Team.Member name="Denny Britz" title="Co-founder" imageUrl="img/people/reidhoffman.jpg">
+          </TeamMember>
+          <TeamMember name="Denny Britz" title="Co-founder" imageUrl="img/people/reidhoffman.jpg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Team.Member>
+          </TeamMember>
         </Team>
       </Section>
 
