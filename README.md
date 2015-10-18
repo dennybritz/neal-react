@@ -1,8 +1,5 @@
 ## TODOs
 
-- Clean up CSS classes
-
-
 ## Minor TODOs
 
 - Refactor Pricing Table as Cards
