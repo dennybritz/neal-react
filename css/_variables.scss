@@ -15,6 +15,8 @@ $blitz-input-padding-x: 1rem !default;
 $blitz-input-padding-y: 1rem !default;
 
 // Colors
+$primary-color: #0091EA !default;
+$accent-color: #455A64 !default;
 $gray-dark: #212121 !default;
 $gray: lighten($gray-dark, 10%) !default;
 $gray-light: lighten($gray-dark, 30%) !default;
@@ -22,7 +24,8 @@ $gray-lighter: lighten($gray-dark, 55%) !default;
 $gray-lightest: lighten($gray-dark, 80%) !default;
 $gray-uberlight: lighten($gray-dark, 85%) !default;
 
-$brand-primary: #0091EA !default;
+// Bootstrap color variables
+$brand-primary: $primary-color !default;
 $brand-success: #8BC34A !default;
 $brand-info: #B3E5FC !default;
 $brand-warning: #F44336 !default;
@@ -37,15 +40,15 @@ $blitz-page-paragraph-margin: 2rem !default;
 
 // Footer Component
 $blitz-footer-margin-top: 4rem !default;
-$blitz-footer-bg-color: #263238 !default;
-$blitz-footer-padding-y: 4rem;
-$blitz-footer-text-color: $gray-lightest;
-$blitz-footer-link-color: $gray-light;
-$blitz-footer-social-icon-color: #fff;
-$blitz-footer-social-icon-bg-color: $gray-lighter;
+$blitz-footer-bg-color: darken($accent-color, 15%) !default;
+$blitz-footer-padding-y: 4rem !default;
+$blitz-footer-text-color: $gray-lightest !default;
+$blitz-footer-link-color: $gray-light !default;
+$blitz-footer-social-icon-color: #fff !default;
+$blitz-footer-social-icon-bg-color: $gray-lighter !default;
 
 // Code component
-$blitz-code-padding: 1rem 1.5rem;
+$blitz-code-padding: 1rem 1.5rem !default;
 
 // Section Component
 $blitz-section-padding-y: 10rem !default;
@@ -53,7 +56,7 @@ $blitz-section-heading-margin-bottom: 2rem !default;
 $blitz-section-border-bottom: 1px solid $gray-lightest;
 
 // Navbar Component
-$blitz-navbar-bg-color: #fff;
+$blitz-navbar-bg-color: #fff !default;
 $blitz-navbar-padding-y: 1rem !default;
 $blitz-navbar-link-color: #666 !default;
 $blitz-header-link-color-hover: darken($blitz-navbar-link-color, 25%) !default;
@@ -67,11 +70,9 @@ $blitz-hero-bg-color: #263238 !default;
 $blitz-hero-text-color: #fff !default;
 
 // Horizontal Split: 
-$blitz-horizontal-split-padding-x-sm: 0rem;
-$blitz-horizontal-split-padding-x-md: 2rem;
-$blitz-horizontal-split-padding-x-lg: 3rem;
-// N/A
-
+$blitz-horizontal-split-padding-x-sm: 0rem !default;
+$blitz-horizontal-split-padding-x-md: 2rem !default;
+$blitz-horizontal-split-padding-x-lg: 3rem !default;
 
 // Customer Quotes Component
 $blitz-customer-quotes-bg-color: $gray-uberlight !default;
@@ -82,29 +83,29 @@ $blitz-customer-quotes-img-width: 25% !default;
 // N/A
 
 // Signup Modal
-$blitz-signup-modal-header-bg-color: #455A64;
-$blitz-signup-modal-header-text-color: #fff;
-$blitz-signup-modal-padding-x: 3rem;
+$blitz-signup-modal-header-bg-color: $accent-color !default;
+$blitz-signup-modal-header-text-color: #fff !default;
+$blitz-signup-modal-padding-x: 3rem !default;
 
 // N/A
 
 // Pricing Table
-$blitz-pricing-plan-border-color: $gray-lightest;
-$blitz-pricing-plan-header-bg-color: #455A64;
-$blitz-pricing-plan-header-text-color: #fff;
+$blitz-pricing-plan-border-color: $gray-lightest !default;
+$blitz-pricing-plan-header-bg-color: $accent-color !default;
+$blitz-pricing-plan-header-text-color: #fff !default;
 
 // Image List
-$blitz-image-list-item-padding-x: 1.5rem;
-$blitz-image-list-item-max-width: 150px;
+$blitz-image-list-item-padding-x: 1.5rem !default;
+$blitz-image-list-item-max-width: 150px !default;
 
 // Team
 // N/A
 
 // Figure
 
-$blitz-figure-border: 1px solid $gray-lightest;
-$blitz-figure-caption-bg-color: $gray-uberlight;
-$blitz-figure-img-padding: 0rem;
+$blitz-figure-border: 1px solid $gray-lightest !default;
+$blitz-figure-caption-bg-color: $gray-uberlight !default;
+$blitz-figure-img-padding: 0rem !default;
  
 
 

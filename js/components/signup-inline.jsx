@@ -34,7 +34,7 @@ export class SignupInline extends React.Component {
               onChange={this.handleChange}/>
           </Col>
           <Col className="form-group" size={["xs-12", "lg-2"]}>
-            <button type="submit" className="btn btn-primary">Sign up</button>
+            <button type="submit" className="btn btn-primary btn-ghost">Sign up</button>
           </Col>
         </form>
       </div>

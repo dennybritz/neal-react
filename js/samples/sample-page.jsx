@@ -142,7 +142,7 @@ export default (props) => {
         <SignupInline onSubmit={onSignup}/>
         <SignupModal modalId="signup-modal" onSubmit={onSignup}/>
         <p>
-          <a className="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
+          <a className="btn btn-primary btn-ghost" data-toggle="modal" data-target="#signup-modal">Show Signup modal</a>
         </p>
       </Section>
 

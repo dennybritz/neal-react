@@ -1,6 +1,5 @@
 ## TODOs
 
-- Better button abstractions (ghost and non ghost)
 - Typeform Integration
 - Separate sample page from library
 - Refactor Pricing Table as Cards
