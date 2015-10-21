@@ -2,5 +2,5 @@ node_modules/
 bower_components/
 *.sublime-workspace
 
-# Compiled bundle
+# Compiled bundles
 bundle.js

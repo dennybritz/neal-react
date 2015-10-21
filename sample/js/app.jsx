@@ -14,7 +14,6 @@ class SampleApp extends React.Component {
   }
 }
 
-
 ReactDOM.render((
   <Router>
     <Route path="/" component={SampleApp}>

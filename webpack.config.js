@@ -1,7 +1,7 @@
 module.exports = {
-  entry: ["./js/vendor/prism.js", "./js/app.js"],
+  entry: ["./js/app.js"],
   output: {
-    path: __dirname + "/public/js",
+    path: __dirname + "/js",
     filename: "bundle.js"
   },
   module: {
