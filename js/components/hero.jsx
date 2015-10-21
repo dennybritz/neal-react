@@ -5,7 +5,6 @@ import classNames from "classnames";
 export class Hero extends React.Component {
 
   static propTypes = {
-    heading: React.PropTypes.string.isRequired,
     backgroundImage: React.PropTypes.string
   }
 
@@ -18,7 +17,6 @@ export class Hero extends React.Component {
     return (
       <div {... this.props} className={_className} style={_style}>
         <Container>
-          <h1 className="display-1">{this.props.heading}</h1>
           { this.props.children }
         </Container>
       </div>

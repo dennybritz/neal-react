@@ -102,8 +102,9 @@ export default (props) => {
         <NavItem><Link to="Home" className="nav-link">Documentation</Link></NavItem>
       </Navbar>
 
-      <Hero heading="Declarative Landing Pages for React.js" backgroundImage="img/hero-bg-01.jpg"
+      <Hero backgroundImage="img/hero-bg-01.jpg"
         className="text-center">
+        <h1 className="display-1"> Declarative Landing Pages for React.js </h1>
         <p className="lead">Build a beautiful landing page in less than an hour.
           No more redundant code. Easily extensible.</p>
         <p>
