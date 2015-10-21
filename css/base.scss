@@ -1,22 +1,22 @@
 // Load variables and base styles
-@import './_variables.scss';
-@import '../bower_components/bootstrap/scss/bootstrap.scss';
-@import "vendor/prism.css";
+@import '_variables';
+@import '../bower_components/bootstrap/scss/bootstrap';
+@import "vendor/prism";
 
 // Component Styles
-@import './buttons.scss';
-@import './code.scss';
-@import './customer-quotes.scss';
-@import './figure.scss';
-@import './footer.scss';
-@import './hero.scss';
-@import './horizontal-split.scss';
-@import './image-list.scss';
-@import './navbar.scss';
-@import './page.scss';
-@import './pricing-table.scss';
-@import './section.scss';
-@import './singup-inline.scss';
-@import './singup-modal.scss';
-@import './team.scss';
-@import './typography.scss';
+@import 'buttons.scss';
+@import 'code.scss';
+@import 'customer-quotes.scss';
+@import 'figure.scss';
+@import 'footer.scss';
+@import 'hero.scss';
+@import 'horizontal-split.scss';
+@import 'image-list.scss';
+@import 'navbar.scss';
+@import 'page.scss';
+@import 'pricing-table.scss';
+@import 'section.scss';
+@import 'singup-inline.scss';
+@import 'singup-modal.scss';
+@import 'team.scss';
+@import 'typography.scss';

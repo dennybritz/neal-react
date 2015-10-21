@@ -1,7 +1,7 @@
 module.exports = {
-  entry: ["./js/vendor/prism.js", "./js/app.js"],
+  entry: ["./js/app.jsx", "./css/main.scss"],
   output: {
-    path: __dirname + "/public/js",
+    path: __dirname,
     filename: "bundle.js"
   },
   module: {
@@ -13,6 +13,10 @@ module.exports = {
         query: {
           optional: ["es7.classProperties"]
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: "style!css!sass"
       }
     ]
   }

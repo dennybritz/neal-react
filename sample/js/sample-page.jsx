@@ -1,15 +1,22 @@
 import React from "react";
-import { Page, Hero, Footer, FooterAddress, Section } from "../components/index";
-import { Code } from "../components/index";
-import { SignupInline, SignupModal } from "../components/index";
-import { HorizontalSplit } from "../components/index";
-import { CustomerQuotes, CustomerQuote } from "../components/index";
-import { PricingTable, PricingPlan } from "../components/index";
-import { Team, TeamMember } from "../components/index";
-import { Stripe } from "../components/index";
-import { ImageList,  ImageListItem } from "../components/index";
-import { Navbar, NavItem, DropdownToggle, DropdownMenu } from "../components/index";
 import { Link } from "react-router";
+import {
+  Code,
+  CustomerQuote, CustomerQuotes,
+  DropdownMenu, DropdownToggle,
+  Footer, FooterAddress,
+  Hero,
+  HorizontalSplit,
+  ImageList, ImageListItem,
+  Navbar, NavItem,
+  Page,
+  PricingPlan, PricingTable,
+  Section,
+  SignupInline, SignupModal,
+  Stripe,
+  Team,
+  TeamMember
+} from "../../js/components/index";
 
 let brandName = "SamplePage";
 let brand = <span>{brandName}</span>;
