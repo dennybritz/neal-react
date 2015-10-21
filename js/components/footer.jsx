@@ -40,7 +40,7 @@ export class Footer extends React.Component {
 
   renderSocialIcons() {
     return (
-      <ul className="nav navbar-nav blitz-footer-social">
+      <ul className="nav navbar-nav blitz-footer-social pull-right">
         { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
