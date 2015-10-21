@@ -5,7 +5,7 @@ import classNames from "classnames";
 export class Navbar extends React.Component {
 
   static propTypes = {
-    brandName: React.PropTypes.string.isRequired
+    brand: React.PropTypes.string.isRequired
   }
 
   render() {
@@ -17,7 +17,7 @@ export class Navbar extends React.Component {
               data-target="#header-nav">
               &#9776;
             </button>
-            <a className="navbar-brand hidden-sm-down" href="#">{this.props.brandName}</a>
+            <a className="navbar-brand hidden-sm-down" href="/">{this.props.brand}</a>
             <div className="collapse navbar-toggleable-sm" id="header-nav">
               <ul className="nav navbar-nav pull-right">
                 {this.props.children}

@@ -12,6 +12,7 @@ import { Navbar, NavItem, DropdownToggle, DropdownMenu } from "../components/ind
 import { Link } from "react-router";
 
 let brandName = "SamplePage";
+let brand = <span>{brandName}</span>;
 
 // Function to call when someone signs up
 let onSignup = ({ name: name, email: email, password: password }) => Stripe.StripeHandler.open({
@@ -89,7 +90,7 @@ export default (props) => {
   return(
     <Page>
 
-      <Navbar brandName={brandName}>
+      <Navbar brand={brand}>
         <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
         <NavItem dropdown={true}>
           <DropdownToggle>Dropdown</DropdownToggle>
