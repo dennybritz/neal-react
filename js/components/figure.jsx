@@ -9,7 +9,7 @@ export class Figure extends React.Component {
   }
 
   render() {
-    let figureClasses = classNames("blitz-figure figure", this.props.className);
+    let figureClasses = classNames("neal-figure figure", this.props.className);
     return (
       <figure {... this.props} className={figureClasses}>
         <img src={this.props.src} alt={this.props.caption}/>

@@ -1,21 +1,21 @@
-.blitz-navbar-wrapper {
-  background-color: $blitz-navbar-bg-color;
+.neal-navbar-wrapper {
+  background-color: $neal-navbar-bg-color;
 }
 
-nav.blitz-navbar {
+nav.neal-navbar {
 
   @mixin nav-link {
     font-weight: 500;
     font-size: $font-size-sm;
     // text-transform: uppercase;
-    color: $blitz-navbar-link-color;
+    color: $neal-navbar-link-color;
     &:hover, &:active {
-      color: $blitz-header-link-color-hover;
+      color: $neal-header-link-color-hover;
     }
   }
 
   li.nav-item {
-    padding: 0 $blitz-navbar-item-padding-x;
+    padding: 0 $neal-navbar-item-padding-x;
     // Don't pad the last item on the right
     &:last-child { padding-right: 0; }
     &:first-child { padding-left: 0; }
@@ -28,13 +28,13 @@ nav.blitz-navbar {
 
   a.navbar-brand {
     font-weight: 900;
-    color: $blitz-navbar-brand-color;
+    color: $neal-navbar-brand-color;
   }
 
   .dropdown-menu {
     left: inherit;
     border: 1px solid $gray-lightest;
-    background-color: $blitz-navbar-bg-color;
+    background-color: $neal-navbar-bg-color;
     background-clip: inherit;
     padding: 0;
     a {

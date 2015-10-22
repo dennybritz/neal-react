@@ -74,7 +74,7 @@ export class SignupModal extends React.Component {
     let modalId = this.props.modalId;
     return (
       <div>
-        <div className="modal fade blitz-signup-modal" key={modalId} id={modalId}
+        <div className="modal fade neal-signup-modal" key={modalId} id={modalId}
         tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
@@ -113,7 +113,7 @@ SignupModal.Input = class extends React.Component {
 
   render() {
     return (
-      <div className="form-group blitz-signup-modal-input">
+      <div className="form-group neal-signup-modal-input">
         <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
         <input type="password" className="form-control" name={this.props.name}
           placeholder={this.props.placeholder} {... this.props}/>

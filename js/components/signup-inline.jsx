@@ -21,7 +21,7 @@ export class SignupInline extends React.Component {
 
   render() {
     return (
-      <div className="blitz-signup-inline">
+      <div className="neal-signup-inline">
         <form className="form-inline row" onSubmit={this.handleSubmit}>
           <Col className="form-group" size={["xs-12", "lg-5"]}>
             <label className="sr-only" htmlFor="email">Email address</label>

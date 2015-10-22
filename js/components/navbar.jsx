@@ -10,8 +10,8 @@ export class Navbar extends React.Component {
 
   render() {
     return (
-      <header className="blitz-navbar-wrapper">
-        <nav className="navbar navbar-static-top blitz-navbar">
+      <header className="neal-navbar-wrapper">
+        <nav className="navbar navbar-static-top neal-navbar">
           <div className="container">
             <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
               data-target="#header-nav">

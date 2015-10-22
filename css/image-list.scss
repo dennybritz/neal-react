@@ -1,4 +1,4 @@
-ul.blitz-image-list {
+ul.neal-image-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -6,7 +6,7 @@ ul.blitz-image-list {
 }
 
 
-li.blitz-image-list-item {
-  padding: 0rem $blitz-image-list-item-padding-x;
-  max-width: $blitz-image-list-item-max-width;
+li.neal-image-list-item {
+  padding: 0rem $neal-image-list-item-padding-x;
+  max-width: $neal-image-list-item-max-width;
 }

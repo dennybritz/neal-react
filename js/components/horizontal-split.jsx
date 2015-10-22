@@ -27,12 +27,12 @@ export class HorizontalSplit extends React.Component {
     }
 
     return (
-      <div className={`blitz-horizontal-split blitz-horizontal-split-${this.props.padding}`}>
+      <div className={`neal-horizontal-split neal-horizontal-split-${this.props.padding}`}>
         <Row>
           {this.props.children.map((child, idx) => {
             return(
               <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx}>
-                <div className="blitz-horizontal-split-col">
+                <div className="neal-horizontal-split-col">
                   {child}
                 </div>
               </Col>

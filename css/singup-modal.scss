@@ -1,20 +1,20 @@
-.blitz-signup-modal {
+.neal-signup-modal {
 
   .modal-header {
     border: none;
-    background-color: $blitz-signup-modal-header-bg-color;
-    color: $blitz-signup-modal-header-text-color;    
-    padding: 1rem $blitz-signup-modal-padding-x;
-    button.close { color: $blitz-signup-modal-header-text-color; }
+    background-color: $neal-signup-modal-header-bg-color;
+    color: $neal-signup-modal-header-text-color;    
+    padding: 1rem $neal-signup-modal-padding-x;
+    button.close { color: $neal-signup-modal-header-text-color; }
   }
 
   .modal-footer {
     border: none;
-    padding: 0rem $blitz-signup-modal-padding-x 2rem;
+    padding: 0rem $neal-signup-modal-padding-x 2rem;
   }
 
   .modal-body {
-    padding: 2rem $blitz-signup-modal-padding-x;
+    padding: 2rem $neal-signup-modal-padding-x;
   }
 
 }

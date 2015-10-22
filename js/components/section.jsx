@@ -8,7 +8,7 @@ export class Section extends React.Component {
   }
 
   render() {
-    let _className = classNames("blitz-section", this.props.className);
+    let _className = classNames("neal-section", this.props.className);
     return (
       <div {... this.props} className={_className}>
         <div className="container">

@@ -1,13 +1,13 @@
-.blitz-section { 
-  padding: $blitz-section-padding-y/2 0;
+.neal-section { 
+  padding: $neal-section-padding-y/2 0;
   h2 { 
-    margin-bottom: $blitz-section-heading-margin-bottom;
-    padding-bottom: $blitz-section-heading-margin-bottom;
-    border-bottom: $blitz-section-border-bottom;
+    margin-bottom: $neal-section-heading-margin-bottom;
+    padding-bottom: $neal-section-heading-margin-bottom;
+    border-bottom: $neal-section-border-bottom;
     font-weight: 300;
   }
 }
 
-.blitz-section.gray {
+.neal-section.gray {
   background-color: $gray-uberlight;
 }

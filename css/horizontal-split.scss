@@ -1,27 +1,27 @@
-.blitz-horizontal-split-col {
-  margin-bottom: $blitz-page-paragraph-margin;
+.neal-horizontal-split-col {
+  margin-bottom: $neal-page-paragraph-margin;
 }
 
-.blitz-horizontal-split-sm {
-  margin-left: -$blitz-horizontal-split-padding-x-sm;
-  margin-right: -$blitz-horizontal-split-padding-x-sm;
-  .blitz-horizontal-split-col {
-    padding: 0 $blitz-horizontal-split-padding-x-sm;
+.neal-horizontal-split-sm {
+  margin-left: -$neal-horizontal-split-padding-x-sm;
+  margin-right: -$neal-horizontal-split-padding-x-sm;
+  .neal-horizontal-split-col {
+    padding: 0 $neal-horizontal-split-padding-x-sm;
   }
 }
 
-.blitz-horizontal-split-md {
-  margin-left: -$blitz-horizontal-split-padding-x-md;
-  margin-right: -$blitz-horizontal-split-padding-x-md;
-  .blitz-horizontal-split-col {
-    padding: 0 $blitz-horizontal-split-padding-x-md;
+.neal-horizontal-split-md {
+  margin-left: -$neal-horizontal-split-padding-x-md;
+  margin-right: -$neal-horizontal-split-padding-x-md;
+  .neal-horizontal-split-col {
+    padding: 0 $neal-horizontal-split-padding-x-md;
   }
 }
 
-.blitz-horizontal-split-lg {
-  margin-left: -$blitz-horizontal-split-padding-x-lg;
-  margin-right: -$blitz-horizontal-split-padding-x-lg;
-  .blitz-horizontal-split-col {
-    padding: 0 $blitz-horizontal-split-padding-x-lg;
+.neal-horizontal-split-lg {
+  margin-left: -$neal-horizontal-split-padding-x-lg;
+  margin-right: -$neal-horizontal-split-padding-x-lg;
+  .neal-horizontal-split-col {
+    padding: 0 $neal-horizontal-split-padding-x-lg;
   }
 }

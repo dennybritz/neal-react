@@ -130,15 +130,15 @@ export default (props) => {
         <HorizontalSplit padding="md">
           <div>
             <p className="lead">Batteries Included</p>
-            <p>Blitz ships with a navbar, hero unit, footer, sections, horziontal split (this text), and all the other basic elements you need for a landing page. No more repetetive coding!</p>
+            <p>Neal ships with a navbar, hero unit, footer, sections, horziontal split (this text), and all the other basic elements you need for a landing page. No more repetetive coding!</p>
           </div>
           <div>
             <p className="lead">Third-Party Integrations</p>
-            <p>Blitz includes integration components for <a>Google Analytics</a>, <a>Segment</a>, and <a>Stripe</a>. No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page, using the react-router library.</p>
+            <p>Neal includes integration components for <a>Google Analytics</a>, <a>Segment</a>, and <a>Stripe</a>. No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page, using the react-router library.</p>
           </div>
           <div>
             <p className="lead">Open-source. Used in production. </p>
-            <p>I use Blitz in production, so you can be sure it's maintained.
+            <p>I use Neal in production, so you can be sure it's maintained.
             </p>
           </div>
         </HorizontalSplit>

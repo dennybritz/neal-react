@@ -1,18 +1,18 @@
-// Blitz Global Variables
+// Neal Global Variables
 // ========================================
 
 // Global
-$blitz-link-color: #0088cc !default;
-$blitz-font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif !default;
+$neal-link-color: #0088cc !default;
+$neal-font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif !default;
 
 // Buttons
-$blitz-button-ghost-enable: true !default;
-$blitz-button-padding-x: 3rem !default;
-$blitz-button-padding-y: 1rem !default;
+$neal-button-ghost-enable: true !default;
+$neal-button-padding-x: 3rem !default;
+$neal-button-padding-y: 1rem !default;
 
 // Inputs
-$blitz-input-padding-x: 1rem !default;
-$blitz-input-padding-y: 1rem !default;
+$neal-input-padding-x: 1rem !default;
+$neal-input-padding-y: 1rem !default;
 
 // Colors
 $primary-color: #0091EA !default;
@@ -32,80 +32,80 @@ $brand-warning: #F44336 !default;
 $brand-danger: #FF9800 !default;
 
 
-// Blitz Component Variables
+// Neal Component Variables
 // ========================================
 
 // Page
-$blitz-page-paragraph-margin: 2rem !default;
+$neal-page-paragraph-margin: 2rem !default;
 
 // Footer Component
-$blitz-footer-margin-top: 4rem !default;
-$blitz-footer-bg-color: darken($accent-color, 15%) !default;
-$blitz-footer-padding-y: 4rem !default;
-$blitz-footer-text-color: $gray-lightest !default;
-$blitz-footer-link-color: $gray-lighter !default;
-$blitz-footer-social-icon-color: #fff !default;
-$blitz-footer-social-icon-bg-color: $gray-lighter !default;
+$neal-footer-margin-top: 4rem !default;
+$neal-footer-bg-color: darken($accent-color, 15%) !default;
+$neal-footer-padding-y: 4rem !default;
+$neal-footer-text-color: $gray-lightest !default;
+$neal-footer-link-color: $gray-lighter !default;
+$neal-footer-social-icon-color: #fff !default;
+$neal-footer-social-icon-bg-color: $gray-lighter !default;
 
 // Code component
-$blitz-code-padding: 1rem 1.5rem !default;
+$neal-code-padding: 1rem 1.5rem !default;
 
 // Section Component
-$blitz-section-padding-y: 10rem !default;
-$blitz-section-heading-margin-bottom: 2rem !default;
-$blitz-section-border-bottom: 1px solid $gray-lightest;
+$neal-section-padding-y: 10rem !default;
+$neal-section-heading-margin-bottom: 2rem !default;
+$neal-section-border-bottom: 1px solid $gray-lightest;
 
 // Navbar Component
-$blitz-navbar-bg-color: #fff !default;
-$blitz-navbar-padding-y: 1rem !default;
-$blitz-navbar-link-color: #666 !default;
-$blitz-header-link-color-hover: darken($blitz-navbar-link-color, 25%) !default;
-$blitz-navbar-brand-color: #333 !default;
-$blitz-navbar-item-padding-x: 1.5rem !default;
+$neal-navbar-bg-color: #fff !default;
+$neal-navbar-padding-y: 1rem !default;
+$neal-navbar-link-color: #666 !default;
+$neal-header-link-color-hover: darken($neal-navbar-link-color, 25%) !default;
+$neal-navbar-brand-color: #333 !default;
+$neal-navbar-item-padding-x: 1.5rem !default;
 
 // Hero Component
-$blitz-hero-padding-y: 10rem !default;
-$blitz-hero-margin-bottom: $blitz-section-padding-y/2 !default;
-$blitz-hero-bg-color: #263238 !default;
-$blitz-hero-text-color: #fff !default;
+$neal-hero-padding-y: 10rem !default;
+$neal-hero-margin-bottom: $neal-section-padding-y/2 !default;
+$neal-hero-bg-color: #263238 !default;
+$neal-hero-text-color: #fff !default;
 
 // Horizontal Split: 
-$blitz-horizontal-split-padding-x-sm: 0rem !default;
-$blitz-horizontal-split-padding-x-md: 2rem !default;
-$blitz-horizontal-split-padding-x-lg: 3rem !default;
+$neal-horizontal-split-padding-x-sm: 0rem !default;
+$neal-horizontal-split-padding-x-md: 2rem !default;
+$neal-horizontal-split-padding-x-lg: 3rem !default;
 
 // Customer Quotes Component
-$blitz-customer-quotes-bg-color: $gray-uberlight !default;
-$blitz-customer-quotes-border-color: $gray-uberlight !default;
-$blitz-customer-quotes-img-width: 25% !default;
+$neal-customer-quotes-bg-color: $gray-uberlight !default;
+$neal-customer-quotes-border-color: $gray-uberlight !default;
+$neal-customer-quotes-img-width: 25% !default;
 
 // Signup Inline
 // N/A
 
 // Signup Modal
-$blitz-signup-modal-header-bg-color: $accent-color !default;
-$blitz-signup-modal-header-text-color: #fff !default;
-$blitz-signup-modal-padding-x: 3rem !default;
+$neal-signup-modal-header-bg-color: $accent-color !default;
+$neal-signup-modal-header-text-color: #fff !default;
+$neal-signup-modal-padding-x: 3rem !default;
 
 // N/A
 
 // Pricing Table
-$blitz-pricing-plan-border-color: $gray-lightest !default;
-$blitz-pricing-plan-header-bg-color: $accent-color !default;
-$blitz-pricing-plan-header-text-color: #fff !default;
+$neal-pricing-plan-border-color: $gray-lightest !default;
+$neal-pricing-plan-header-bg-color: $accent-color !default;
+$neal-pricing-plan-header-text-color: #fff !default;
 
 // Image List
-$blitz-image-list-item-padding-x: 1.5rem !default;
-$blitz-image-list-item-max-width: 150px !default;
+$neal-image-list-item-padding-x: 1.5rem !default;
+$neal-image-list-item-max-width: 150px !default;
 
 // Team
 // N/A
 
 // Figure
 
-$blitz-figure-border: 1px solid $gray-lightest !default;
-$blitz-figure-caption-bg-color: $gray-uberlight !default;
-$blitz-figure-img-padding: 0rem !default;
+$neal-figure-border: 1px solid $gray-lightest !default;
+$neal-figure-caption-bg-color: $gray-uberlight !default;
+$neal-figure-img-padding: 0rem !default;
  
 
 
@@ -115,25 +115,25 @@ $blitz-figure-img-padding: 0rem !default;
 $enable-flex: true;
 $enable-rounded: false;
 $border-radius: 0;
-$link-color: $blitz-link-color !default;
-$font-family-sans-serif: $blitz-font-family !default;
-$jumbotron-padding: $blitz-hero-padding-y !default;
+$link-color: $neal-link-color !default;
+$font-family-sans-serif: $neal-font-family !default;
+$jumbotron-padding: $neal-hero-padding-y !default;
 
 // Button Paddings
-$btn-padding-x: $blitz-button-padding-x;
-$btn-padding-y: $blitz-button-padding-y;
+$btn-padding-x: $neal-button-padding-x;
+$btn-padding-y: $neal-button-padding-y;
 $btn-padding-x-sm: $btn-padding-x;
 $btn-padding-y-sm: $btn-padding-y;
 $btn-padding-x-lg: $btn-padding-x;
 $btn-padding-y-lg: $btn-padding-y;
 
 // Input Paddings
-$input-padding-x: $blitz-input-padding-x;
-$input-padding-y: $blitz-input-padding-y;
+$input-padding-x: $neal-input-padding-x;
+$input-padding-y: $neal-input-padding-y;
 $input-padding-x-sm: $input-padding-x;
 $input-padding-y-sm: $input-padding-y;
 $input-padding-x-lg: $input-padding-x;
 $input-padding-y-lg: $input-padding-y;
 
 // Navbar
-$navbar-padding-vertical: $blitz-navbar-padding-y;
+$navbar-padding-vertical: $neal-navbar-padding-y;

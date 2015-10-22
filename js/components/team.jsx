@@ -12,13 +12,13 @@ export class TeamMember extends React.Component {
 
   render() {
     return(
-      <div className="card blitz-team-member">
-        <img className="card-img-top blitz-team-member-img img-responsive" src={this.props.imageUrl}/>
-        <div className="card-block blitz-team-member-profile">
-          <h4 className="card-title lead blitz-team-member-name">
+      <div className="card neal-team-member">
+        <img className="card-img-top neal-team-member-img img-responsive" src={this.props.imageUrl}/>
+        <div className="card-block neal-team-member-profile">
+          <h4 className="card-title lead neal-team-member-name">
             {this.props.name}, {this.props.title}</h4>
           <br/>
-          <div className="blitz-team-member-description">{this.props.children}</div>
+          <div className="neal-team-member-description">{this.props.children}</div>
         </div>
       </div>
     );
@@ -34,7 +34,7 @@ export class Team extends React.Component {
 
   render() {
     return (
-      <div className="card-deck-wrapper blitz-team">
+      <div className="card-deck-wrapper neal-team">
         <Row>
           <div className="card-deck">
             {this.props.children.map((member, idx) => {

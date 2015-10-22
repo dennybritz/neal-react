@@ -4,6 +4,7 @@
 		{
 			"path": ".",
       "file_exclude_patterns": ["bundle.js"],
+      "folder_exclude_patterns": ["node_modules", "bower_components"]
 		}
 	]
 }

@@ -1,53 +1,53 @@
-.blitz-pricing-table { }
+.neal-pricing-table { }
 
-.blitz-pricing-plan { 
-  border: 1px solid $blitz-pricing-plan-border-color;
+.neal-pricing-plan { 
+  border: 1px solid $neal-pricing-plan-border-color;
 }
 
-.blitz-pricing-plan-name {
+.neal-pricing-plan-name {
   font-weight: 900;
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
-  background-color: $blitz-pricing-plan-header-bg-color;
-  color: $blitz-pricing-plan-header-text-color;
+  background-color: $neal-pricing-plan-header-bg-color;
+  color: $neal-pricing-plan-header-text-color;
   margin-bottom: 1rem;
 }
 
-.blitz-pricing-plan-price {
+.neal-pricing-plan-price {
   text-align: center;
   padding: 1rem;
 }
 
-.blitz-pricing-plan-price-amount {
+.neal-pricing-plan-price-amount {
   display: inline-block;
   font-size: 2rem;
   font-weight: 900;
 }
 
-.blitz-pricing-plan-price-period {
+.neal-pricing-plan-price-period {
   display: inline-block;
   font-weight: 300;
 }
 
-.blitz-pricing-plan-action {
+.neal-pricing-plan-action {
   text-align: center;
   padding: 1rem;
 }
 
-.blitz-pricing-plan-description { 
+.neal-pricing-plan-description { 
   text-align: center;
   padding: 1rem;
   font-weight: 300;
 }
 
-.blitz-pricing-plan-features {
-  border-top: 1px solid $blitz-pricing-plan-border-color;
+.neal-pricing-plan-features {
+  border-top: 1px solid $neal-pricing-plan-border-color;
   margin-top: 1rem;
   padding: 1rem;
 }
 
-.blitz-pricing-plan-feature {
+.neal-pricing-plan-feature {
   font-size: 0.8rem;
   padding: 0.5rem 0;
   &.enabled { color: $gray-dark; }
