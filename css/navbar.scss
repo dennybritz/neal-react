@@ -43,12 +43,17 @@ nav.neal-navbar {
     }
   }
 
+  .navbar-toggler {
+    margin-left: -1rem;
+  }
+
+
   .neal-mobile-nav {
-    margin: 0.5rem 0rem; 
+    margin: 0.5rem 0rem;
     li.nav-item, li.nav-item:first-child {
       float: none;
       padding-left: 0;
-      margin-left: 1rem;
+      margin-left: 0rem;
     }
   }
 
