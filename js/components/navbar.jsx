@@ -14,15 +14,20 @@ export class Navbar extends React.Component {
         <nav className="navbar navbar-static-top neal-navbar">
           <div className="container">
             <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
-              data-target="#header-nav">
+              data-target="#mobile-nav">
               &#9776;
             </button>
             <a className="navbar-brand hidden-sm-down" href="/">{this.props.brand}</a>
-            <div className="collapse navbar-toggleable-sm" id="header-nav">
+            <div className="navbar-toggleable-sm hidden-sm-down" id="header-nav">
               <ul className="nav navbar-nav pull-right">
                 {this.props.children}
               </ul>
             </div>
+            <div className="collapse navbar-toggleable-sm hidden-md-up neal-mobile-nav" id="mobile-nav">
+              <ul className="nav navbar-nav">
+                {this.props.children}
+              </ul>
+            </div>            
           </div>
         </nav>
       </header>
