@@ -2,7 +2,12 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jquery": true
+  },
+  "globals" {
+    "analytics": true,
+    "StripeCheckout": true
   },
   "ecmaFeatures": {
     "jsx": true

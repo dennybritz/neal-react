@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleAnalytics, Segment, Stripe, Page } from "./index";
+import { GoogleAnalytics, Segment, Stripe, Page, TypeformIntegration } from "./index";
 
 export class App extends React.Component {
 
@@ -7,23 +7,20 @@ export class App extends React.Component {
     googleAnalyticsKey: React.PropTypes.string,
     segmentKey: React.PropTypes.string,
     stripeKey: React.PropTypes.string,
-    enableRouteTracking: React.PropTypes.bool
-  }
-
-  static defaultProps = {
-    enableRouteTracking: true
+    history: React.PropTypes.object
   }
 
   render() {
     let googleAnalyticsKey = this.props.googleAnalyticsKey;
     let segmentKey = this.props.segmentKey;
     let stripeKey = this.props.stripeKey;
+    let history = this.props.history;
 
     return (
       <div className="blitz-app">
         { this.props.children }
-        { googleAnalyticsKey ? <GoogleAnalytics account={googleAnalyticsKey}/> : null }
-        { segmentKey ? <Segment writeKey={segmentKey}/> : null }
+        { googleAnalyticsKey ? <GoogleAnalytics account={googleAnalyticsKey} history={history} /> : null }
+        { segmentKey ? <Segment writeKey={segmentKey} history={history} /> : null }
         { stripeKey ? <Stripe stripeKey={stripeKey}/> : null }
       </div>
     );

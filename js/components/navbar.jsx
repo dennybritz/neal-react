@@ -5,7 +5,7 @@ import classNames from "classnames";
 export class Navbar extends React.Component {
 
   static propTypes = {
-    brand: React.PropTypes.string.isRequired
+    brand: React.PropTypes.node.isRequired
   }
 
   render() {

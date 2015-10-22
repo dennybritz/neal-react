@@ -5,10 +5,10 @@ import Navbar from "./navbar.jsx";
 export class Footer extends React.Component {
 
   static propTypes = {
-    brandName: React.PropTypes.string.isRequired,
+    brandName: React.PropTypes.node.isRequired,
     facebookUrl: React.PropTypes.string,
     twitterUrl: React.PropTypes.string,
-    emailUrl: React.PropTypes.string,
+    email: React.PropTypes.string,
     address: React.PropTypes.node
   }
 
@@ -23,9 +23,12 @@ export class Footer extends React.Component {
           <Row>
             <Col size={["xs-12", "md-4"]}>
               <p className="blitz-footer-copyright">
-                Copyright © {new Date().getFullYear()}, {this.props.brandName}
+                © {new Date().getFullYear()}, {this.props.brandName}
               </p>
               {this.props.address}
+              <p>
+                 <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
+              </p>
             </Col>
             <Col size={["xs-12", "md-4"]}>
             </Col>
@@ -41,7 +44,6 @@ export class Footer extends React.Component {
   renderSocialIcons() {
     return (
       <ul className="nav navbar-nav blitz-footer-social pull-right">
-        { this.renderSocialIcon("fa-envelope-square", this.props.emailUrl) }
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
       </ul>

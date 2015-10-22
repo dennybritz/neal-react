@@ -4,7 +4,7 @@ import classNames from "classnames";
 export class Section extends React.Component {
 
   static propTypes = {
-    heading: React.PropTypes.string
+    heading: React.PropTypes.node
   }
 
   render() {

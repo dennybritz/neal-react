@@ -1,30 +1,24 @@
 import React from "react";
-import history from "../../helpers/history";
 
 export class Segment extends React.Component {
 
   static propTypes ={
     writeKey: React.PropTypes.string.isRequired,
-    enableRouteTracking: React.PropTypes.bool
-  }
-
-  static defaultProps = {
-    enableRouteTracking: true
+    history: React.PropTypes.object
   }
 
   componentDidMount() {
-    var writeKey = this.props.writeKey;
-    !function() { var analytics = window.analytics = window.analytics || [];if(!analytics.initialize)if(analytics.invoked)window.console && console.error && console.error("Segment snippet included twice.");else { analytics.invoked = !0;analytics.methods = ["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory = function(t) { return function() { var e = Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics ; } ; };for(var t = 0;t < analytics.methods.length;t++) { var e = analytics.methods[t];analytics[e] = analytics.factory(e); }analytics.load = function(t) { var e = document.createElement("script");e.type = "text/javascript";e.async = !0;e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";var n = document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); };analytics.SNIPPET_VERSION = "3.1.0";
-      analytics.load(writeKey);
-      analytics.page();
-    } }();
-
-    // Track Route changes
-    if(this.props.enableRouteTracking) {
-      history.listen((newLocation) => {
-        analytics.page();
-      });
-    }
+    const writeKey = this.props.writeKey;
+    const scriptProtocol = ("https:" === document.location.protocol ? "https://" : "http://");
+    const scriptSrc = `${scriptProtocol}cdn.segment.com/analytics.js/v1/${writeKey}/analytics.min.js`;
+    jQuery.getScript(scriptSrc, () => {
+      // Track Route changes
+      if(this.props.history) {
+        this.props.history.listen((newLocation) => {
+          analytics.page();
+        });
+      }
+    });
   }
 
   render() {

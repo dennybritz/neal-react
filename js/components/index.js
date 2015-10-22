@@ -15,4 +15,5 @@ export * from "./signup-modal.jsx";
 export * from "./team.jsx";
 export * from "./vendor/segment.jsx";
 export * from "./vendor/stripe.jsx";
+export * from "./vendor/typeform.jsx";
 export * from "./vendor/google-analytics.jsx";

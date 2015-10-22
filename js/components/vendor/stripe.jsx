@@ -9,9 +9,9 @@ export class Stripe extends React.Component {
   }
 
   componentDidMount() {
-    var stripeKey = this.props.stripeKey;
-    var stripeOptions = this.props.stripeOptions;
-    jQuery.getScript("https://checkout.stripe.com/checkout.js", function(data, textStatus, jqxhr) {
+    let stripeKey = this.props.stripeKey;
+    let stripeOptions = this.props.stripeOptions;
+    jQuery.getScript("https://checkout.stripe.com/checkout.js", (data, textStatus, jqxhr) => {
       Stripe.StripeHandler = StripeCheckout.configure(Object.assign({}, { key: stripeKey }, stripeOptions));
     });
   }
