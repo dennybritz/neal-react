@@ -1,5 +1,9 @@
 .neal-horizontal-split-col {
-  margin-bottom: $neal-page-paragraph-margin;
+  margin-bottom: $neal-page-paragraph-margin * 3;
+}
+
+.neal-horizontal-split {
+  margin-bottom: -$neal-page-paragraph-margin * 3;
 }
 
 .neal-horizontal-split-sm {
