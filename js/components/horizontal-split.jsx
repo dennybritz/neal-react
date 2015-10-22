@@ -1,4 +1,4 @@
-import { Row, Col } from "../helpers/bootstrap.jsx";
+import { Row, Col, Container } from "../helpers/bootstrap.jsx";
 import React from "react";
 
 export class HorizontalSplit extends React.Component {
@@ -27,19 +27,15 @@ export class HorizontalSplit extends React.Component {
     }
 
     return (
-      <div className={`neal-horizontal-split neal-horizontal-split-${this.props.padding}`}>
-        <Row>
+        <Row className={`neal-horizontal-split neal-horizontal-split-${this.props.padding}`}>
           {this.props.children.map((child, idx) => {
             return(
-              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} key={idx}>
-                <div className="neal-horizontal-split-col">
+              <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} className="neal-horizontal-split-col" key={idx}>
                   {child}
-                </div>
               </Col>
             );
           })}
         </Row>
-      </div>
     );
   }
 }

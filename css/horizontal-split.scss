@@ -3,25 +3,19 @@
 }
 
 .neal-horizontal-split-sm {
-  margin-left: -$neal-horizontal-split-padding-x-sm;
-  margin-right: -$neal-horizontal-split-padding-x-sm;
   .neal-horizontal-split-col {
-    padding: 0 $neal-horizontal-split-padding-x-sm;
+    padding-right: $neal-horizontal-split-padding-x-sm * 2;
   }
 }
 
 .neal-horizontal-split-md {
-  margin-left: -$neal-horizontal-split-padding-x-md;
-  margin-right: -$neal-horizontal-split-padding-x-md;
   .neal-horizontal-split-col {
-    padding: 0 $neal-horizontal-split-padding-x-md;
+    padding-right: $neal-horizontal-split-padding-x-md * 2;
   }
 }
 
 .neal-horizontal-split-lg {
-  margin-left: -$neal-horizontal-split-padding-x-lg;
-  margin-right: -$neal-horizontal-split-padding-x-lg;
   .neal-horizontal-split-col {
-    padding: 0 $neal-horizontal-split-padding-x-lg;
+    padding-right: $neal-horizontal-split-padding-x-lg * 2;
   }
 }

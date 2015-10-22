@@ -2,7 +2,10 @@ import React from "react";
 import classNames from "classnames";
 
 export const Container = (props) => {
-  let _className = classNames("container", props.className);
+  let _className = classNames({
+    "container": !props.fluid,
+    "container-fluid": props.fluid
+  }, props.className);
   return <div {... props} className={_className}> {props.children} </div>;
 };
 export const Row = (props) => {
