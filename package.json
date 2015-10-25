@@ -5,7 +5,7 @@
   "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext jsx --ext js js/"
+    "lint": "./node_modules/.bin/eslint --ext js,jsx js/"
   },
   "author": "Denny Britz",
   "license": "ISC",
