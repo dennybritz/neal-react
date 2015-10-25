@@ -7,6 +7,7 @@ Neal is a reactjs framework for building landing pages.
 - Doc: How to deploy to AWS
 - Doc: Write README
 - Doc: Update Sample Page: Overview, code example, AWS, etc
+- New site generator
 
 ## Minor TODOs:
 
