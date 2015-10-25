@@ -8,7 +8,6 @@ Neal is a reactjs framework for building landing pages.
 
 ## Minor TODOs:
 
-- Restyle Signup modal
 - Refactor Pricing Table as Cards
 - Flex Compatibility Research
 - Add Social Media to Team Members Component
