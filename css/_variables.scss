@@ -54,6 +54,7 @@ $neal-code-padding: 1rem 1.5rem !default;
 $neal-section-padding-y: 10rem !default;
 $neal-section-heading-margin-bottom: 2rem !default;
 $neal-section-border-bottom: 1px solid $gray-lightest;
+$neal-subhero-bg-color: $gray-uberlight;
 
 // Navbar Component
 $neal-navbar-bg-color: #fff !default;
@@ -95,8 +96,8 @@ $neal-pricing-plan-header-bg-color: $accent-color !default;
 $neal-pricing-plan-header-text-color: #fff !default;
 
 // Image List
-$neal-image-list-item-padding-x: 1.5rem !default;
-$neal-image-list-item-max-width: 150px !default;
+$neal-image-list-item-padding-x: 2.5rem !default;
+$neal-image-list-item-max-height: 50px !default;
 
 // Team
 // N/A

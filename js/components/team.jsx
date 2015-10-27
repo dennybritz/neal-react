@@ -6,7 +6,7 @@ export class TeamMember extends React.Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired,
-    title: React.PropTypes.string.isRequired,
+    title: React.PropTypes.string,
     imageUrl: React.PropTypes.string.isRequired
   }
 
@@ -16,7 +16,9 @@ export class TeamMember extends React.Component {
         <img className="card-img-top neal-team-member-img img-responsive" src={this.props.imageUrl}/>
         <div className="card-block neal-team-member-profile">
           <h4 className="card-title lead neal-team-member-name">
-            {this.props.name}, {this.props.title}</h4>
+            {this.props.name}
+            {this.props.title ? `, ${this.props.title}` : null}
+          </h4>
           <br/>
           <div className="neal-team-member-description">{this.props.children}</div>
         </div>

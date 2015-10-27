@@ -8,5 +8,5 @@ ul.neal-image-list {
 
 li.neal-image-list-item {
   padding: 0rem $neal-image-list-item-padding-x;
-  max-width: $neal-image-list-item-max-width;
+  img { max-height: $neal-image-list-item-max-height; }
 }

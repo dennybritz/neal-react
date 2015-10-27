@@ -32,7 +32,7 @@ export class ImageListItem extends React.Component {
     return (
       <li className="neal-image-list-item">
         <a href={this.props.url} target="_blank">
-          <img src={this.props.src} className="img-responsive"/>
+          <img src={this.props.src} />
         </a>
       </li>
     );
