@@ -1,6 +1,6 @@
 {
   "name": "neal-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react components for startup landing pages.",
   "repository": "https://github.com/dennybritz/neal-react",
   "main": "js/app.js",
