@@ -1,6 +1,7 @@
-# Neal React
+# neal-react
 
-`neal-react` is a collection of reactjs components to quickly build landing pages. 
+`neal-react` is a collection of reactjs components to quickly build landing pages. I found that using hosted services like Launchrock don't give me enough flexibility, but frameworks like Bootstrap are too low-level and lead to lots of repetitive code. I wanted something in between these two extremees.
+
 
 ## Visit the Sample Page
 
@@ -36,7 +37,7 @@ Third-Party integrations
 
 ## Documentation
 
-The best way to learn about the components is to look at the [code for the sample page](https://github.com/dennybritz/neal-sample). But, basically:
+The best way to learn about the components is to look at the [code for the sample page](https://github.com/dennybritz/neal-sample/blob/master/js/sample-page.jsx). But, basically:
 
 ```bash
 npm install --save neal-react
