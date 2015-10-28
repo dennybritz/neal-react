@@ -42,4 +42,19 @@ The best way to learn about the components is to look at the [code for the sampl
 
 ## Deploying to AWS
 
-Simply copy the `public/` directory to an AWS S3 bucket and enable [Static Website Hosting](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html).
+Simply copy the `public/` directory to an AWS S3 bucket and enable [Static Website Hosting](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html). You can use a script such as this to minifify and upload:
+
+
+```bash
+#! /usr/bin/env bash
+
+S3_BUCKET=yourbucket
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd $BASE_DIR
+
+# Build the assets
+webpack -p
+
+# Upload to S3
+aws s3 cp $BASE_DIR/public/ s3://$S3_BUCKET --recursive
+```
