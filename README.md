@@ -41,7 +41,7 @@ The best way to learn about the components is to look at the [code for the sampl
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
-import { App, Page } from "neal-react";
+import { App, Page, Section, Hero, Navbar, HorizontalSplit } from "neal-react";
 
 ReactDOM.render((
   <App googleAnalyticsKey="UA-42490151-3">
@@ -51,12 +51,7 @@ ReactDOM.render((
       <Section heading="Hello!">
         <HorizontalSplit padding="md"> { /* Content */ } </HorizontalSplit>
       </Section>
-      <Section>
-        <Team>
-          <TeamMember name="Link" title="Co-founder" imageUrl="img/link.jpg"> { /* Description */ } </TeamMember>
-          <TeamMember name="Yoshi" title="Co-founder" imageUrl="img/yoshi.jpg"> { /* Description */ } </TeamMember>
-        </Team>
-      </Section>
+      { /* More ... */ }
     </Page>
   </App>
 ), document.getElementById("main"));
