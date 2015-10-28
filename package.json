@@ -2,6 +2,7 @@
   "name": "neal-react",
   "version": "0.1.0",
   "description": "react components for startup landing pages.",
+  "repository": "https://github.com/dennybritz/neal-react",
   "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
