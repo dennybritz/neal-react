@@ -1,5 +1,7 @@
 # Neal React
 
+Neal is a collection of reactjs components to quickly build landing pages. 
+
 ## Visit the Sample Page
 
 - Hosted Sample Page
