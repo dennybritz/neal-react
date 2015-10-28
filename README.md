@@ -39,7 +39,28 @@ Third-Party integrations
 The best way to learn about the components is to look at the [code for the sample page](https://github.com/dennybritz/neal-sample). But, basically:
 
 ```javascript
-// TODO
+import React from "react";
+import ReactDOM from "react-dom";
+import { App, Page } from "neal-react";
+
+ReactDOM.render((
+  <App googleAnalyticsKey="UA-42490151-3">
+    <Page>
+      <Navbar brand="hello">{ /* Your nav */ }</Navbar>
+      <Hero className="text-center"> <h1>{ /* Content */ }</h1> </Hero>
+      <Section heading="Hello!">
+        <HorizontalSplit padding="md"> { /* Content */ } </HorizontalSplit>
+      </Section>
+      <Section>
+        <Team>
+          <TeamMember name="Link" title="Co-founder" imageUrl="img/link.jpg"> { /* Description */ } </TeamMember>
+          <TeamMember name="Yoshi" title="Co-founder" imageUrl="img/yoshi.jpg"> { /* Description */ } </TeamMember>
+        </Team>
+      </Section>
+    </Page>
+  </App>
+), document.getElementById("main"));
+
 ```
 
 ## Deploying to AWS
