@@ -62,6 +62,18 @@ ReactDOM.render((
 
 ```
 
+Other dependencies that should be included from a CDN:
+
+- jQuery
+- Bootstrap v4 Javascript (https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js)
+- Font Awesome
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+```
+
 ## Custom Styling
 
 Styling can be overwritten by setting the [appropriate SASS Variables](https://github.com/dennybritz/neal-react/blob/master/css/_variables.scss) in your code.
