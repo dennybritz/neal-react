@@ -17,7 +17,7 @@ export class GoogleAnalytics extends React.Component {
       ga("create", account, "auto");
       if(this.props.history) {
         this.props.history.listen((newLocation) => {
-          ga("send", "pageview");
+          ga("send", "pageview", newLocation.pathname);
         });
       }
     });
