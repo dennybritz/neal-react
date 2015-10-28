@@ -53,8 +53,8 @@ $neal-code-padding: 1rem 1.5rem !default;
 // Section Component
 $neal-section-padding-y: 10rem !default;
 $neal-section-heading-margin-bottom: 2rem !default;
-$neal-section-border-bottom: 1px solid $gray-lightest;
-$neal-subhero-bg-color: $gray-uberlight;
+$neal-section-border-bottom: 1px solid $gray-lightest !default;;
+$neal-subhero-bg-color: $gray-uberlight !default;;
 
 // Navbar Component
 $neal-navbar-bg-color: #fff !default;
@@ -113,9 +113,9 @@ $neal-figure-img-padding: 0rem !default;
 // Bootstrap Overrides
 // ========================================
 
-$enable-flex: true;
-$enable-rounded: false;
-$border-radius: 0;
+$enable-flex: true !default;;
+$enable-rounded: false !default;;
+$border-radius: 0 !default;;
 $link-color: $neal-link-color !default;
 $font-family-sans-serif: $neal-font-family !default;
 $jumbotron-padding: $neal-hero-padding-y !default;
