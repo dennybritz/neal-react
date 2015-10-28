@@ -1,9 +1,10 @@
 module.exports = {
   entry: ["./js/app.js"],
   output: {
-    path: __dirname + "/js",
-    filename: "build/bundle.js"
+    path: __dirname + "/build",
+    filename: "bundle.js"
   },
+  externals: ['react', 'classnames'],
   module: {
     loaders: [
       {

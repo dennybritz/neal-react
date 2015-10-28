@@ -15,9 +15,6 @@ export class Footer extends React.Component {
 
   render() {
 
-    let childrenArray = React.Children.toArray(this.props.children);
-    let address = childrenArray.find((c) => c.type.name === "FooterAddress");
-
     return (
       <footer className="neal-footer navbar">
         <Container>

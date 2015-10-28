@@ -1,10 +1,11 @@
 {
   "name": "neal-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "react components for startup landing pages.",
   "repository": "https://github.com/dennybritz/neal-react",
-  "main": "js/app.js",
+  "main": "build/bundle.js",
   "scripts": {
+    "build": "node node_modules/webpack/bin/webpack.js -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint --ext js,jsx js/"
   },
