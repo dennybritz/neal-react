@@ -1,6 +1,6 @@
 # Neal React
 
-neal-react is a collection of reactjs components to quickly build landing pages. 
+`neal-react` is a collection of reactjs components to quickly build landing pages. 
 
 ## Visit the Sample Page
 
@@ -37,6 +37,10 @@ Third-Party integrations
 ## Documentation
 
 The best way to learn about the components is to look at the [code for the sample page](https://github.com/dennybritz/neal-sample). But, basically:
+
+```bash
+npm install --save neal-react
+```
 
 ```javascript
 import React from "react";
