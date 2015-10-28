@@ -10,8 +10,8 @@ export class GoogleAnalytics extends React.Component {
   componentDidMount() {
     window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments)  }; ga.l = +new Date;
     const account = this.props.account;
-    const scriptProtocol = ("https:" === document.location.protocol ? "https://ssl" : "http://www");
-    const scriptSrc = `${scriptProtocol}.google-analytics.com/ga.js`;
+    // const scriptProtocol = ("https:" === document.location.protocol ? "https://ssl" : "http://www");
+    const scriptSrc = `//google-analytics.com/analytics.js`;
     jQuery.getScript(scriptSrc, () => {
       // Track Route changes
       ga("create", account, "auto");
