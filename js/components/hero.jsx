@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "../helpers/bootstrap.jsx";
+import { Container, Row, Col } from "../helpers/bootstrap";
 import classNames from "classnames";
 
 export class Hero extends React.Component {

@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "../helpers/bootstrap.jsx";
-import Navbar from "./navbar.jsx";
+import { Container, Row, Col } from "../helpers/bootstrap";
+import Navbar from "./navbar";
 
 export class Footer extends React.Component {
 

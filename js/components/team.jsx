@@ -1,6 +1,6 @@
 import React from "react";
-import { HorizontalSplit } from "./horizontal-split.jsx";
-import { Row, Col } from "../helpers/bootstrap.jsx";
+import { HorizontalSplit } from "./horizontal-split";
+import { Row, Col } from "../helpers/bootstrap";
 
 export class TeamMember extends React.Component {
 

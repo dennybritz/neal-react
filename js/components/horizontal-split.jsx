@@ -1,4 +1,4 @@
-import { Row, Col, Container } from "../helpers/bootstrap.jsx";
+import { Row, Col, Container } from "../helpers/bootstrap";
 import React from "react";
 
 export class HorizontalSplit extends React.Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "../helpers/bootstrap.jsx";
+import { Col } from "../helpers/bootstrap";
 
 class ModalHeader extends React.Component {
 

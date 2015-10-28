@@ -1,5 +1,5 @@
 import React from "react";
-import Prism from "exports?Prism!./../vendor/prism.js";
+import Prism from "../vendor/prism.js";
 
 export class Code extends React.Component {
 
