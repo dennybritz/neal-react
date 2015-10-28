@@ -8,6 +8,7 @@ export class Footer extends React.Component {
     brandName: React.PropTypes.node.isRequired,
     facebookUrl: React.PropTypes.string,
     twitterUrl: React.PropTypes.string,
+    githubUrl: React.PropTypes.string,
     email: React.PropTypes.string,
     address: React.PropTypes.node
   }
@@ -46,6 +47,7 @@ export class Footer extends React.Component {
       <ul className="nav navbar-nav neal-footer-social pull-right">
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
+        { this.renderSocialIcon("fa-github", this.props.githubUrl) }
       </ul>
     );
   }
