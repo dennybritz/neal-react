@@ -66,6 +66,10 @@ ReactDOM.render((
 
 Styling can be overwritten by setting the [appropriate SASS Variables](https://github.com/dennybritz/neal-react/blob/master/css/_variables.scss) in your code.
 
+## A note on Bootstrap
+
+`neal-react` uses [Boostrap 4](http://v4-alpha.getbootstrap.com/), which is currently in alpha. Because the alpha version is not published on npm its styles are included manually here until it's officially avalailable.
+
 ## Deploying to AWS
 
 If you are using third-party integrations like Stripe or Typeform to capture user information there is no need to write your on backend and you can simply copy your `public/` directory to an AWS S3 bucket and enable [Static Website Hosting](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html). You can use a script such as this to minifify and upload:
