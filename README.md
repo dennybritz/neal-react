@@ -24,7 +24,7 @@ Main components:
 - `PricingTable`
 - `Section`
 - `SignupInline`
-- `SignupModel`
+- `SignupModal`
 - `Team`
 
 Third-Party integrations
