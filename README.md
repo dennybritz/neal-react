@@ -12,27 +12,28 @@
 
 Main components:
 
-- `App`
-- `Code`
-- `CustomerQuotes`
-- `Footer`
-- `Hero`
-- `HorizontalSplit`
-- `ImageList`
-- `Navbar`
-- `Page`
-- `PricingTable`
-- `Section`
-- `SignupInline`
-- `SignupModal`
-- `Team`
+- [`App`](https://github.com/dennybritz/neal-react/blob/master/js/components/app.jsx)
+- [`Code`](https://github.com/dennybritz/neal-react/blob/master/js/components/code.jsx)
+- [`CustomerQuotes`](https://github.com/dennybritz/neal-react/blob/master/js/components/customer-quotes.jsx)
+- [`Footer`](https://github.com/dennybritz/neal-react/blob/master/js/components/footer.jsx)
+- [`Figure`](https://github.com/dennybritz/neal-react/blob/master/js/components/figure.jsx)
+- [`Hero`](https://github.com/dennybritz/neal-react/blob/master/js/components/hero.jsx)
+- [`HorizontalSplit`](https://github.com/dennybritz/neal-react/blob/master/js/components/horizontal-split.jsx)
+- [`ImageList`](https://github.com/dennybritz/neal-react/blob/master/js/components/image-list.jsx)
+- [`Navbar`](https://github.com/dennybritz/neal-react/blob/master/js/components/navbar.jsx)
+- [`Page`](https://github.com/dennybritz/neal-react/blob/master/js/components/page.jsx)
+- [`PricingTable`](https://github.com/dennybritz/neal-react/blob/master/js/components/pricing-table.jsx)
+- [`Section`](https://github.com/dennybritz/neal-react/blob/master/js/components/section.jsx)
+- [`SignupInline`](https://github.com/dennybritz/neal-react/blob/master/js/components/signup-inline.jsx)
+- [`SignupModal`](https://github.com/dennybritz/neal-react/blob/master/js/components/signup-modal.jsx)
+- [`Team`](https://github.com/dennybritz/neal-react/blob/master/js/components/team.jsx)
 
 Third-Party integrations
 
-- `GoogleAnalytics`
-- `Segment`
-- `Stripe`
-- `Typeform`
+- [`GoogleAnalytics`](https://github.com/dennybritz/neal-react/blob/master/js/components/vendor/google-analytics.jsx)
+- [`Segment`](https://github.com/dennybritz/neal-react/blob/master/js/components/vendor/segment.jsx)
+- [`Stripe`](https://github.com/dennybritz/neal-react/blob/master/js/components/vendor/stripe.jsx)
+- [`Typeform`](https://github.com/dennybritz/neal-react/blob/master/js/components/vendor/typeform.jsx)
 
 
 ## Documentation
