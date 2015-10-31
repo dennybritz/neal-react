@@ -5,9 +5,9 @@
   "repository": "https://github.com/dennybritz/neal-react",
   "main": "build/app.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel js --out-dir build",
+    "build": "babel js --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint --ext js,jsx js/"
+    "lint": "eslint --ext js,jsx js/"
   },
   "author": "Denny Britz",
   "license": "ISC",
