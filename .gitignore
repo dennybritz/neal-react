@@ -4,3 +4,6 @@ bower_components/
 
 # Compiled bundles
 bundle.js
+
+# npm debug file
+npm-debug.log

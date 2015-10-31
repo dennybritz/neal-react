@@ -26,7 +26,7 @@ export class Navbar extends React.Component {
               <ul className="nav navbar-nav">
                 {this.props.children}
               </ul>
-            </div>            
+            </div>
           </div>
         </nav>
       </header>
