@@ -95,7 +95,7 @@ var ModalFooter = (function (_React$Component2) {
         _react2["default"].createElement(
           "button",
           { type: "submit", className: "btn btn-primary btn-block btn-ghost" },
-          "Sign up"
+          this.props.buttonText
         )
       );
     }
