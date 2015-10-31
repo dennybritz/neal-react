@@ -37,7 +37,7 @@ class ModalFooter extends React.Component {
   render() {
     return (
       <div className="modal-footer">
-        <button type="submit" className="btn btn-primary btn-block btn-ghost">Sign up</button>
+        <button type="submit" className="btn btn-primary btn-block btn-ghost">{this.props.buttonText}</button>
       </div>
     );
   }
