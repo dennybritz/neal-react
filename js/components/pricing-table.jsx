@@ -22,12 +22,12 @@ export class PricingPlan extends React.Component {
     period: React.PropTypes.string,
     features: React.PropTypes.objectOf(React.PropTypes.bool),
     buttonText: React.PropTypes.string,
-    onClick: React.PropTypes.func
+    onClick: React.PropTypes.func,
   }
 
   static defaultProps = {
     period: "/month",
-    buttonText: "Sign up"
+    buttonText: "Sign up",
   }
 
   render() {
@@ -45,8 +45,8 @@ export class PricingPlan extends React.Component {
         </div>
         <div className="neal-pricing-plan-features">
           {Object.keys(this.props.features).map((name, idx) => {
-            let isEnabled = this.props.features[name];
-            let _className = classNames("neal-pricing-plan-feature", { "enabled": isEnabled, "disabled": !isEnabled });
+            const isEnabled = this.props.features[name];
+            const _className = classNames("neal-pricing-plan-feature", { "enabled": isEnabled, "disabled": !isEnabled });
             return <div key={idx} className={_className}>{name}</div>;
           })}
         </div>

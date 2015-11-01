@@ -7,11 +7,11 @@ export class TeamMember extends React.Component {
   static propTypes = {
     name: React.PropTypes.string.isRequired,
     title: React.PropTypes.string,
-    imageUrl: React.PropTypes.string.isRequired
+    imageUrl: React.PropTypes.string.isRequired,
   }
 
   render() {
-    return(
+    return (
       <div className="card neal-team-member">
         <img className="card-img-top neal-team-member-img img-responsive" src={this.props.imageUrl}/>
         <div className="card-block neal-team-member-profile">
@@ -31,7 +31,7 @@ export class Team extends React.Component {
 
   static propTypes = {
     // TODO: Enforce Member type
-    children: React.PropTypes.arrayOf(React.PropTypes.element)
+    children: React.PropTypes.arrayOf(React.PropTypes.element),
   }
 
   render() {
@@ -40,7 +40,7 @@ export class Team extends React.Component {
         <Row>
           <div className="card-deck">
             {this.props.children.map((member, idx) => {
-              return(
+              return (
                 <Col size={["xs-12", "sm-6", "lg-4"]} key={idx}>{member}</Col>
               );
             })}

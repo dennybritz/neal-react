@@ -7,14 +7,14 @@ export class App extends React.Component {
     googleAnalyticsKey: React.PropTypes.string,
     segmentKey: React.PropTypes.string,
     stripeKey: React.PropTypes.string,
-    history: React.PropTypes.object
+    history: React.PropTypes.object,
   }
 
   render() {
-    let googleAnalyticsKey = this.props.googleAnalyticsKey;
-    let segmentKey = this.props.segmentKey;
-    let stripeKey = this.props.stripeKey;
-    let history = this.props.history;
+    const googleAnalyticsKey = this.props.googleAnalyticsKey;
+    const segmentKey = this.props.segmentKey;
+    const stripeKey = this.props.stripeKey;
+    const history = this.props.history;
 
     return (
       <div className="neal-app">

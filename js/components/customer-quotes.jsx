@@ -6,11 +6,11 @@ export class CustomerQuote extends React.Component {
   static propTypes = {
     name: React.PropTypes.string.isRequired,
     title: React.PropTypes.string,
-    imageUrl: React.PropTypes.string.isRequired
+    imageUrl: React.PropTypes.string.isRequired,
   }
 
   render() {
-    return(
+    return (
       <div className="neal-customer-quote">
         <div className="neal-customer-quote-quote">{this.props.children}</div>
         <div className="neal-customer-quote-profile">
@@ -28,7 +28,7 @@ export class CustomerQuotes extends React.Component {
 
   static propTypes = {
     // TODO: Enforce CustomerQuote type
-    children: React.PropTypes.arrayOf(React.PropTypes.element)
+    children: React.PropTypes.arrayOf(React.PropTypes.element),
   }
 
   render() {

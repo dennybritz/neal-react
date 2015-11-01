@@ -4,7 +4,7 @@ import classNames from "classnames";
 export class Navbar extends React.Component {
 
   static propTypes = {
-    brand: React.PropTypes.node.isRequired
+    brand: React.PropTypes.node.isRequired,
   }
 
   render() {
@@ -38,11 +38,11 @@ export class Navbar extends React.Component {
 export class NavItem extends React.Component {
 
   static propTypes = {
-    dropdown: React.PropTypes.bool
+    dropdown: React.PropTypes.bool,
   }
 
   render() {
-    let _className = classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className);
+    const _className = classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className);
     return (
       <li {...this.props} className={_className}>
         { this.props.children }

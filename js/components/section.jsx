@@ -4,15 +4,15 @@ import classNames from "classnames";
 export class Section extends React.Component {
 
   static propTypes = {
-    heading: React.PropTypes.node
+    heading: React.PropTypes.node,
   }
 
   render() {
-    let _className = classNames("neal-section", this.props.className);
+    const _className = classNames("neal-section", this.props.className);
     return (
       <div {... this.props} className={_className}>
         <div className="container">
-          { this.props.heading ?  <h2>{this.props.heading}</h2> : null }
+          { this.props.heading ? <h2>{this.props.heading}</h2> : null }
           {this.props.children}
         </div>
       </div>

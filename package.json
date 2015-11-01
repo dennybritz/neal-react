@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.1.5",
+    "eslint-config-defaults": "^7.1.1",
     "react": "^0.14.0"
   },
   "devDependencies": {

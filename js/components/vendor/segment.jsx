@@ -4,7 +4,7 @@ export class Segment extends React.Component {
 
   static propTypes ={
     writeKey: React.PropTypes.string.isRequired,
-    history: React.PropTypes.object
+    history: React.PropTypes.object,
   }
 
   componentDidMount() {
@@ -13,7 +13,7 @@ export class Segment extends React.Component {
     const scriptSrc = `${scriptProtocol}cdn.segment.com/analytics.js/v1/${writeKey}/analytics.min.js`;
     jQuery.getScript(scriptSrc, () => {
       // Track Route changes
-      if(this.props.history) {
+      if (this.props.history) {
         this.props.history.listen((newLocation) => {
           analytics.page();
         });

@@ -4,11 +4,11 @@ import { Col } from "../helpers/bootstrap";
 class ModalHeader extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string.isRequired
+    title: React.PropTypes.string.isRequired,
   }
 
   static defaultProps = {
-    title: "Sign up"
+    title: "Sign up",
   }
 
   render() {
@@ -27,11 +27,11 @@ class ModalHeader extends React.Component {
 class ModalFooter extends React.Component {
 
   static propTypes = {
-    buttonText: React.PropTypes.string.isRequired
+    buttonText: React.PropTypes.string.isRequired,
   }
 
   static defaultProps = {
-    buttonText: "Sign up"
+    buttonText: "Sign up",
   }
 
   render() {
@@ -50,13 +50,13 @@ export class SignupModal extends React.Component {
     title: React.PropTypes.string.isRequired,
     buttonText: React.PropTypes.string.isRequired,
     modalId: React.PropTypes.string.isRequired,
-    onSubmit: React.PropTypes.func
+    onSubmit: React.PropTypes.func,
   }
 
   static defaultProps = {
     title: "Sign up",
     buttonText: "Sign up",
-    modalId: "signup-modal"
+    modalId: "signup-modal",
   }
 
   state = { name: null, email: null, password: null };
@@ -67,11 +67,11 @@ export class SignupModal extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.props.onSubmit) { this.props.onSubmit(this.state); }
+    if (this.props.onSubmit) { this.props.onSubmit(this.state); }
   }
 
   render() {
-    let modalId = this.props.modalId;
+    const modalId = this.props.modalId;
     return (
       <div>
         <div className="modal fade neal-signup-modal" key={modalId} id={modalId}
@@ -104,11 +104,11 @@ SignupModal.Input = class extends React.Component {
     type: React.PropTypes.string,
     name: React.PropTypes.string.isRequired,
     label: React.PropTypes.string.isRequired,
-    placeholder: React.PropTypes.string.isRequired
+    placeholder: React.PropTypes.string.isRequired,
   }
 
   static defaultProps = {
-    type: "text"
+    type: "text",
   }
 
   render() {

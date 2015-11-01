@@ -10,11 +10,10 @@ export class Footer extends React.Component {
     twitterUrl: React.PropTypes.string,
     githubUrl: React.PropTypes.string,
     email: React.PropTypes.string,
-    address: React.PropTypes.node
+    address: React.PropTypes.node,
   }
 
   render() {
-
     return (
       <footer className="neal-footer navbar">
         <Container>
@@ -51,9 +50,9 @@ export class Footer extends React.Component {
 
 
   renderSocialIcon(iconClass, url) {
-    if(!url || !iconClass ) { return null; }
+    if (!url || !iconClass ) { return null; }
     return (
-     <li className={`nav-item neal-footer-social-icon ${iconClass.replace("fa-","")}`}>
+     <li className={`nav-item neal-footer-social-icon ${iconClass.replace("fa-", "")}`}>
         <a href={url} target="_blank">
           <span className="fa-stack">
             <i className="fa fa-circle fa-stack-2x"></i>

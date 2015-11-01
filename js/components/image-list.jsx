@@ -4,15 +4,15 @@ import classNames from "classnames";
 export class ImageList extends React.Component {
 
   static propTypes = {
-    centered: React.PropTypes.bool.isRequired
+    centered: React.PropTypes.bool.isRequired,
   }
 
   static defaultProps = {
-    centered: true
+    centered: true,
   }
 
   render() {
-    let _className = classNames("neal-image-list list-inline", { centered: this.props.centered });
+    const _className = classNames("neal-image-list list-inline", { centered: this.props.centered });
     return (
       <ul className={_className}>
         {this.props.children}
@@ -25,7 +25,7 @@ export class ImageListItem extends React.Component {
 
   static propTypes = {
     src: React.PropTypes.string.isRequired,
-    url: React.PropTypes.string
+    url: React.PropTypes.string,
   }
 
   render() {

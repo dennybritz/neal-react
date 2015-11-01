@@ -5,15 +5,15 @@ import classNames from "classnames";
 export class Hero extends React.Component {
 
   static propTypes = {
-    backgroundImage: React.PropTypes.string
+    backgroundImage: React.PropTypes.string,
   }
 
   render() {
-    let _style = {};
+    const _style = {};
     if (this.props.backgroundImage) {
-      _style["backgroundImage"] = `url(${this.props.backgroundImage})`;
+      _style.backgroundImage = `url(${this.props.backgroundImage})`;
     }
-    let _className = classNames("neal-hero jumbotron jumbotron-fluid", this.props.className);
+    const _className = classNames("neal-hero jumbotron jumbotron-fluid", this.props.className);
     return (
       <div {... this.props} className={_className} style={_style}>
         <Container>

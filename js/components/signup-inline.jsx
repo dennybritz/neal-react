@@ -5,7 +5,7 @@ import { Col } from "../helpers/bootstrap";
 export class SignupInline extends React.Component {
 
   static propTypes = {
-    onSubmit: React.PropTypes.func
+    onSubmit: React.PropTypes.func,
   }
 
   state = { email: null, password: null };
@@ -16,7 +16,7 @@ export class SignupInline extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.props.onSubmit) { this.props.onSubmit(this.state); }
+    if (this.props.onSubmit) { this.props.onSubmit(this.state); }
   }
 
   render() {
