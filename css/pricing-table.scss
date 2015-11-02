@@ -50,6 +50,6 @@
 .neal-pricing-plan-feature {
   font-size: 0.8rem;
   padding: 0.5rem 0;
-  &.enabled { color: $gray-dark; }
-  &.disabled { color: $gray-lighter; }
+  &.isEnabled { color: $gray-dark; }
+  &.isDisabled { color: $gray-lighter; }
 }

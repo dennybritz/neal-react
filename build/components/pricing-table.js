@@ -69,34 +69,34 @@ var PricingPlan = (function (_React$Component2) {
 
       return _react2["default"].createElement(
         "div",
-        { className: "neal-pricing-plan" },
+        { className: "card neal-pricing-plan" },
         _react2["default"].createElement(
           "div",
-          { className: "neal-pricing-plan-name" },
+          { className: "card-header neal-pricing-plan-name" },
           this.props.name
         ),
         _react2["default"].createElement(
           "div",
-          { className: "neal-pricing-plan-price" },
+          { className: "card-block" },
           _react2["default"].createElement(
             "div",
-            { className: "neal-pricing-plan-price-amount" },
-            this.props.price
+            { className: "neal-pricing-plan-price" },
+            _react2["default"].createElement(
+              "h4",
+              { className: "card-title neal-pricing-plan-price-amount" },
+              this.props.price
+            ),
+            _react2["default"].createElement(
+              "span",
+              { className: "neal-pricing-plan-price-period" },
+              this.props.period
+            )
           ),
           _react2["default"].createElement(
-            "div",
-            { className: "neal-pricing-plan-price-period" },
-            this.props.period
-          )
-        ),
-        _react2["default"].createElement(
-          "div",
-          { className: "neal-pricing-plan-description" },
-          this.props.description
-        ),
-        _react2["default"].createElement(
-          "div",
-          { className: "neal-pricing-plan-action" },
+            "p",
+            { className: "card-text" },
+            this.props.description
+          ),
           _react2["default"].createElement(
             "button",
             { className: "btn btn-ghost btn-primary btn-lg",
@@ -105,13 +105,13 @@ var PricingPlan = (function (_React$Component2) {
           )
         ),
         _react2["default"].createElement(
-          "div",
-          { className: "neal-pricing-plan-features" },
+          "ol",
+          { className: "list-group list-group-flush neal-pricing-plan-features" },
           Object.keys(this.props.features).map(function (name, idx) {
             var isEnabled = _this.props.features[name];
-            var _className = (0, _classnames2["default"])("neal-pricing-plan-feature", { "enabled": isEnabled, "disabled": !isEnabled });
+            var _className = (0, _classnames2["default"])("list-group-item neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
             return _react2["default"].createElement(
-              "div",
+              "li",
               { key: idx, className: _className },
               name
             );
