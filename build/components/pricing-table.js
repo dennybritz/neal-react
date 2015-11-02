@@ -124,7 +124,7 @@ var PricingPlan = (function (_React$Component2) {
     value: {
       name: _react2["default"].PropTypes.string.isRequired,
       description: _react2["default"].PropTypes.string,
-      price: _react2["default"].PropTypes.string.isRequired,
+      price: _react2["default"].PropTypes.node.isRequired,
       period: _react2["default"].PropTypes.string,
       features: _react2["default"].PropTypes.objectOf(_react2["default"].PropTypes.bool),
       buttonText: _react2["default"].PropTypes.string,

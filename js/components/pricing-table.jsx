@@ -18,7 +18,7 @@ export class PricingPlan extends React.Component {
   static propTypes = {
     name: React.PropTypes.string.isRequired,
     description: React.PropTypes.string,
-    price: React.PropTypes.string.isRequired,
+    price: React.PropTypes.node.isRequired,
     period: React.PropTypes.string,
     features: React.PropTypes.objectOf(React.PropTypes.bool),
     buttonText: React.PropTypes.string,
