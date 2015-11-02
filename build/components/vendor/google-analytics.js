@@ -30,10 +30,11 @@ var GoogleAnalytics = (function (_React$Component) {
   _createClass(GoogleAnalytics, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this = this;
+      var _arguments2 = arguments,
+          _this = this;
 
       window.ga = window.ga || function () {
-        (ga.q = ga.q || []).push(arguments);
+        (ga.q = ga.q || []).push(_arguments2);
       };ga.l = +new Date();
       var account = this.props.account;
       // const scriptProtocol = ("https:" === document.location.protocol ? "https://ssl" : "http://www");

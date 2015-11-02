@@ -43,9 +43,8 @@ var Code = (function (_React$Component) {
           { className: langClass },
           codeElement
         );
-      } else {
-        return codeElement;
       }
+      return codeElement;
     }
   }], [{
     key: "propProps",

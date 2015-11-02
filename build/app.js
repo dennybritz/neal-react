@@ -10,6 +10,8 @@ function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaul
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj["default"] = obj; return newObj; } }
 
+require("babel-polyfill");
+
 var _helpersBootstrap = require("./helpers/bootstrap");
 
 var bootstrapHelpers = _interopRequireWildcard(_helpersBootstrap);

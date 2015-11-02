@@ -12,6 +12,7 @@
   "author": "Denny Britz",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.0.16",
     "classnames": "^2.1.5",
     "react": "^0.14.0"
   },

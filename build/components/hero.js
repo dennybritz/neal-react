@@ -40,7 +40,7 @@ var Hero = (function (_React$Component) {
     value: function render() {
       var _style = {};
       if (this.props.backgroundImage) {
-        _style["backgroundImage"] = "url(" + this.props.backgroundImage + ")";
+        _style.backgroundImage = "url(" + this.props.backgroundImage + ")";
       }
       var _className = (0, _classnames2["default"])("neal-hero jumbotron jumbotron-fluid", this.props.className);
       return _react2["default"].createElement(
