@@ -116,7 +116,7 @@ var Footer = (function (_React$Component) {
       facebookUrl: _react2["default"].PropTypes.string,
       twitterUrl: _react2["default"].PropTypes.string,
       githubUrl: _react2["default"].PropTypes.string,
-      email: _react2["default"].PropTypes.string,
+      email: _react2["default"].PropTypes.node,
       address: _react2["default"].PropTypes.node
     },
     enumerable: true

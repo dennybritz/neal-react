@@ -9,7 +9,7 @@ export class Footer extends React.Component {
     facebookUrl: React.PropTypes.string,
     twitterUrl: React.PropTypes.string,
     githubUrl: React.PropTypes.string,
-    email: React.PropTypes.string,
+    email: React.PropTypes.node,
     address: React.PropTypes.node,
   }
 
