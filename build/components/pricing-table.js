@@ -69,7 +69,7 @@ var PricingPlan = (function (_React$Component2) {
 
       return _react2["default"].createElement(
         "div",
-        { className: "card neal-pricing-plan" },
+        { className: "card" },
         _react2["default"].createElement(
           "div",
           { className: "card-header neal-pricing-plan-name" },
@@ -80,7 +80,7 @@ var PricingPlan = (function (_React$Component2) {
           { className: "card-block" },
           _react2["default"].createElement(
             "div",
-            { className: "neal-pricing-plan-price" },
+            { className: "text-center neal-pricing-plan-price" },
             _react2["default"].createElement(
               "h4",
               { className: "card-title neal-pricing-plan-price-amount" },
@@ -98,18 +98,22 @@ var PricingPlan = (function (_React$Component2) {
             this.props.description
           ),
           _react2["default"].createElement(
-            "button",
-            { className: "btn btn-ghost btn-primary btn-lg",
-              onClick: this.props.onClick },
-            this.props.buttonText
+            "div",
+            { className: "text-center" },
+            _react2["default"].createElement(
+              "button",
+              { className: "btn btn-ghost btn-primary btn-lg",
+                onClick: this.props.onClick },
+              this.props.buttonText
+            )
           )
         ),
         _react2["default"].createElement(
-          "ol",
+          "ul",
           { className: "list-group list-group-flush neal-pricing-plan-features" },
           Object.keys(this.props.features).map(function (name, idx) {
             var isEnabled = _this.props.features[name];
-            var _className = (0, _classnames2["default"])("list-group-item neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
+            var _className = (0, _classnames2["default"])("neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
             return _react2["default"].createElement(
               "li",
               { key: idx, className: _className },

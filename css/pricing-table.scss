@@ -11,11 +11,9 @@
   text-align: center;
   background-color: $neal-pricing-plan-header-bg-color;
   color: $neal-pricing-plan-header-text-color;
-  margin-bottom: 1rem;
 }
 
 .neal-pricing-plan-price {
-  text-align: center;
   padding: 1rem;
 }
 
@@ -30,26 +28,23 @@
   font-weight: 300;
 }
 
-.neal-pricing-plan-action {
-  text-align: center;
-  padding: 1rem;
-}
-
 .neal-pricing-plan-description { 
-  text-align: center;
-  padding: 1rem;
   font-weight: 300;
 }
 
 .neal-pricing-plan-features {
   border-top: 1px solid $neal-pricing-plan-border-color;
-  margin-top: 1rem;
   padding: 1rem;
+  margin: 0 0 !important;
 }
 
 .neal-pricing-plan-feature {
   font-size: 0.8rem;
-  padding: 0.5rem 0;
   &.isEnabled { color: $gray-dark; }
   &.isDisabled { color: $gray-lighter; }
+  position: relative;
+  display: block;
+  padding: .5rem 0;
+  margin: 0 0 -.0625rem !important;
 }
+
