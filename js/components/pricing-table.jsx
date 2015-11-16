@@ -45,13 +45,13 @@ export class PricingPlan extends React.Component {
             <button className="btn btn-ghost btn-primary btn-lg"
                 onClick={this.props.onClick}>{this.props.buttonText}</button>
         </div>
-        <ol className="list-group list-group-flush neal-pricing-plan-features">
+        <ul className="list-group list-group-flush neal-pricing-plan-features">
           {Object.keys(this.props.features).map((name, idx) => {
             const isEnabled = this.props.features[name];
             const _className = classNames("list-group-item neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
             return <li key={idx} className={_className}>{name}</li>;
           })}
-        </ol>
+        </ul>
       </div>
     );
   }

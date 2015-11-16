@@ -84,6 +84,10 @@ Styling can be overwritten by setting the [appropriate SASS Variables](https://g
 
 `neal-react` uses [Boostrap 4](http://v4-alpha.getbootstrap.com/), which is currently in alpha. Because the alpha version is not published on npm its styles are included manually here until it's officially avalailable.
 
+## Using with [Structor](https://github.com/ipselon/structor)
+
+Structor is a visual development environment for node.js web applications with React UI. You can find a boilerplate project for neal on the [Structor Marketplace](http://helmetrex.com/) and the corresponding code in [this repository](https://github.com/ipselon/neal-react-prepack). A big thanks to [ispelon](https://github.com/ipselon) for implementing this.
+
 ## Deploying to AWS
 
 If you are using third-party integrations like Stripe or Typeform to capture user information there is no need to write your on backend and you can simply copy your `public/` directory to an AWS S3 bucket and enable [Static Website Hosting](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html). You can use a script such as this to minifify and upload:
