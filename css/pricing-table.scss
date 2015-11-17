@@ -1,50 +1,54 @@
-.neal-pricing-table { }
+.neal-pricing-table {
 
-.neal-pricing-plan { 
-  border: 1px solid $neal-pricing-plan-border-color;
+  .neal-pricing-plan { 
+    border: 1px solid $neal-pricing-plan-border-color;
+  }
+
+  .neal-pricing-plan-name {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: $neal-pricing-plan-header-bg-color;
+    color: $neal-pricing-plan-header-text-color;
+  }
+
+  .neal-pricing-plan-price {
+    padding: 1rem;
+  }
+
+  .neal-pricing-plan-price-amount {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .neal-pricing-plan-price-period {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .neal-pricing-plan-description { 
+    font-weight: 300;
+  }
+
+  p.neal-pricing-plan-action { 
+    margin-bottom: 1rem;
+  }
+
+  .neal-pricing-plan-features {
+    border-top: 1px solid $neal-pricing-plan-border-color;
+    & > ul { margin: 0 }
+  }
+
+  .neal-pricing-plan-feature {
+    font-size: 0.8rem;
+    &.isEnabled { color: $gray-dark; }
+    &.isDisabled { color: $gray-lighter; }
+    position: relative;
+    display: block;
+    padding: .5rem 0;
+    margin: 0 0 -.0625rem !important;
+  }
+
 }
-
-.neal-pricing-plan-name {
-  font-weight: 900;
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: $neal-pricing-plan-header-bg-color;
-  color: $neal-pricing-plan-header-text-color;
-}
-
-.neal-pricing-plan-price {
-  padding: 1rem;
-}
-
-.neal-pricing-plan-price-amount {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.neal-pricing-plan-price-period {
-  display: inline-block;
-  font-weight: 300;
-}
-
-.neal-pricing-plan-description { 
-  font-weight: 300;
-}
-
-.neal-pricing-plan-features {
-  border-top: 1px solid $neal-pricing-plan-border-color;
-  padding: 1rem;
-  margin: 0 0 !important;
-}
-
-.neal-pricing-plan-feature {
-  font-size: 0.8rem;
-  &.isEnabled { color: $gray-dark; }
-  &.isDisabled { color: $gray-lighter; }
-  position: relative;
-  display: block;
-  padding: .5rem 0;
-  margin: 0 0 -.0625rem !important;
-}
-

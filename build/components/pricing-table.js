@@ -94,32 +94,35 @@ var PricingPlan = (function (_React$Component2) {
           ),
           _react2["default"].createElement(
             "p",
-            { className: "card-text" },
+            { className: "card-text text-center neal-pricing-plan-description" },
             this.props.description
           ),
           _react2["default"].createElement(
-            "div",
-            { className: "text-center" },
+            "p",
+            { className: "card-text text-center neal-pricing-plan-action" },
             _react2["default"].createElement(
               "button",
-              { className: "btn btn-ghost btn-primary btn-lg",
-                onClick: this.props.onClick },
+              { className: "btn btn-ghost btn-primary btn-lg", onClick: this.props.onClick },
               this.props.buttonText
             )
           )
         ),
         _react2["default"].createElement(
-          "ul",
-          { className: "list-group list-group-flush neal-pricing-plan-features" },
-          Object.keys(this.props.features).map(function (name, idx) {
-            var isEnabled = _this.props.features[name];
-            var _className = (0, _classnames2["default"])("neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
-            return _react2["default"].createElement(
-              "li",
-              { key: idx, className: _className },
-              name
-            );
-          })
+          "div",
+          { className: "card-block neal-pricing-plan-features" },
+          _react2["default"].createElement(
+            "ul",
+            { className: "list-group list-group-flush" },
+            Object.keys(this.props.features).map(function (name, idx) {
+              var isEnabled = _this.props.features[name];
+              var _className = (0, _classnames2["default"])("neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
+              return _react2["default"].createElement(
+                "li",
+                { key: idx, className: _className },
+                name
+              );
+            })
+          )
         )
       );
     }
