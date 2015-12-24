@@ -59,7 +59,7 @@ export class SignupModal extends React.Component {
     modalId: "signup-modal",
   }
 
-  state = { name: null, email: null, password: null };
+  state = { };
 
   handleChange = (e) => {
     this.setState({ [`${e.target.name}`]: e.target.value });
@@ -70,6 +70,17 @@ export class SignupModal extends React.Component {
     if (this.props.onSubmit) { this.props.onSubmit(this.state); }
   }
 
+  renderBody = () => {
+    if (this.props.children) return this.props.children;
+    return (
+      <div>
+        <SignupModal.Input name="name" required label="Name" placeholder="Name"/>
+        <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"/>
+        <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"/>
+      </div>
+    );
+  };
+
   render() {
     const modalId = this.props.modalId;
     return (
@@ -79,14 +90,9 @@ export class SignupModal extends React.Component {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <ModalHeader title={this.props.title}/>
-              <form className="form-vertical" onSubmit={this.handleSubmit}>
+              <form className="form-vertical" onSubmit={this.handleSubmit} onChange={this.handleChange}>
               <div className="modal-body">
-                <SignupModal.Input name="name" required label="Name" placeholder="Name"
-                  onChange={this.handleChange} value={this.state.name} />
-                <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"
-                  onChange={this.handleChange} value={this.state.email} />
-                <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"
-                  onChange={this.handleChange} value={this.state.password} />
+                { this.renderBody() }
               </div>
               <ModalFooter buttonText={this.props.buttonText} />
               </form>
@@ -115,7 +121,7 @@ SignupModal.Input = class extends React.Component {
     return (
       <div className="form-group neal-signup-modal-input">
         <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
-        <input type="password" className="form-control" name={this.props.name}
+        <input type="text" className="form-control" name={this.props.name}
           placeholder={this.props.placeholder} {... this.props}/>
       </div>
     );

@@ -126,7 +126,7 @@ var SignupModal = (function (_React$Component3) {
 
     _get(Object.getPrototypeOf(SignupModal.prototype), "constructor", this).apply(this, arguments);
 
-    this.state = { name: null, email: null, password: null };
+    this.state = {};
 
     this.handleChange = function (e) {
       _this.setState(_defineProperty({}, "" + e.target.name, e.target.value));
@@ -137,6 +137,17 @@ var SignupModal = (function (_React$Component3) {
       if (_this.props.onSubmit) {
         _this.props.onSubmit(_this.state);
       }
+    };
+
+    this.renderBody = function () {
+      if (_this.props.children) return _this.props.children;
+      return _react2["default"].createElement(
+        "div",
+        null,
+        _react2["default"].createElement(SignupModal.Input, { name: "name", required: true, label: "Name", placeholder: "Name" }),
+        _react2["default"].createElement(SignupModal.Input, { type: "email", required: true, name: "email", label: "Email", placeholder: "Email" }),
+        _react2["default"].createElement(SignupModal.Input, { type: "password", required: true, name: "password", label: "Password", placeholder: "Password" })
+      );
     };
   }
 
@@ -160,16 +171,11 @@ var SignupModal = (function (_React$Component3) {
               _react2["default"].createElement(ModalHeader, { title: this.props.title }),
               _react2["default"].createElement(
                 "form",
-                { className: "form-vertical", onSubmit: this.handleSubmit },
+                { className: "form-vertical", onSubmit: this.handleSubmit, onChange: this.handleChange },
                 _react2["default"].createElement(
                   "div",
                   { className: "modal-body" },
-                  _react2["default"].createElement(SignupModal.Input, { name: "name", required: true, label: "Name", placeholder: "Name",
-                    onChange: this.handleChange, value: this.state.name }),
-                  _react2["default"].createElement(SignupModal.Input, { type: "email", required: true, name: "email", label: "Email", placeholder: "Email",
-                    onChange: this.handleChange, value: this.state.email }),
-                  _react2["default"].createElement(SignupModal.Input, { type: "password", required: true, name: "password", label: "Password", placeholder: "Password",
-                    onChange: this.handleChange, value: this.state.password })
+                  this.renderBody()
                 ),
                 _react2["default"].createElement(ModalFooter, { buttonText: this.props.buttonText })
               )
@@ -222,7 +228,7 @@ SignupModal.Input = (function (_React$Component4) {
           { className: "sr-only", htmlFor: this.props.name },
           this.props.label
         ),
-        _react2["default"].createElement("input", _extends({ type: "password", className: "form-control", name: this.props.name,
+        _react2["default"].createElement("input", _extends({ type: "text", className: "form-control", name: this.props.name,
           placeholder: this.props.placeholder }, this.props))
       );
     }
