@@ -80,10 +80,6 @@ Other dependencies that should be included from a CDN:
 
 Styling can be overwritten by setting the [appropriate SASS Variables](https://github.com/dennybritz/neal-react/blob/master/css/_variables.scss) in your code.
 
-## A note on Bootstrap
-
-`neal-react` uses [Boostrap 4](http://v4-alpha.getbootstrap.com/), which is currently in alpha. Because the alpha version is not published on npm its styles are included manually here until it's officially avalailable.
-
 ## Using with [Structor](https://github.com/ipselon/structor)
 
 Structor is a visual development environment for node.js web applications with React UI. You can find a boilerplate project for neal on the [Structor Marketplace](http://helmetrex.com/) and the corresponding code in [this repository](https://github.com/ipselon/neal-react-prepack). A big thanks to [ispelon](https://github.com/ipselon) for implementing this.

@@ -1,6 +1,6 @@
 // Load variables and base styles
 @import '_variables';
-@import 'vendor/bootstrap-v4/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import "vendor/prism";
 
 // Component Styles
