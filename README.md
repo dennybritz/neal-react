@@ -53,7 +53,7 @@ ReactDOM.render((
   <App googleAnalyticsKey="UA-42490151-3">
     <Page>
       <Navbar brand="hello">{ /* Your nav */ }</Navbar>
-      <Hero className="text-center"> <h1>{ /* Content */ }</h1> </Hero>
+      <Hero className="text-xs-center"> <h1>{ /* Content */ }</h1> </Hero>
       <Section heading="Hello!">
         <HorizontalSplit padding="md"> { /* Content */ } </HorizontalSplit>
       </Section>

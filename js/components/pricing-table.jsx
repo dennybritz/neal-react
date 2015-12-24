@@ -37,12 +37,12 @@ export class PricingPlan extends React.Component {
           {this.props.name}
         </div>
         <div className="card-block">
-          <div className="text-center neal-pricing-plan-price">
+          <div className="text-xs-center neal-pricing-plan-price">
             <h4 className="card-title neal-pricing-plan-price-amount">{this.props.price}</h4>
             <span className="neal-pricing-plan-price-period">{this.props.period}</span>
           </div>
-          <p className="card-text text-center neal-pricing-plan-description">{this.props.description}</p>
-          <p className="card-text text-center neal-pricing-plan-action">
+          <p className="card-text text-xs-center neal-pricing-plan-description">{this.props.description}</p>
+          <p className="card-text text-xs-center neal-pricing-plan-action">
             <button className="btn btn-ghost btn-primary btn-lg" onClick={this.props.onClick}>
               {this.props.buttonText}
             </button>

@@ -80,7 +80,7 @@ var PricingPlan = (function (_React$Component2) {
           { className: "card-block" },
           _react2["default"].createElement(
             "div",
-            { className: "text-center neal-pricing-plan-price" },
+            { className: "text-xs-center neal-pricing-plan-price" },
             _react2["default"].createElement(
               "h4",
               { className: "card-title neal-pricing-plan-price-amount" },
@@ -94,12 +94,12 @@ var PricingPlan = (function (_React$Component2) {
           ),
           _react2["default"].createElement(
             "p",
-            { className: "card-text text-center neal-pricing-plan-description" },
+            { className: "card-text text-xs-center neal-pricing-plan-description" },
             this.props.description
           ),
           _react2["default"].createElement(
             "p",
-            { className: "card-text text-center neal-pricing-plan-action" },
+            { className: "card-text text-xs-center neal-pricing-plan-action" },
             _react2["default"].createElement(
               "button",
               { className: "btn btn-ghost btn-primary btn-lg", onClick: this.props.onClick },

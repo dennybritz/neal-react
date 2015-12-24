@@ -10,7 +10,7 @@
 
 .neal-section.subhero {
   background-color: $neal-subhero-bg-color;
-  padding: 0;
+  padding: $neal-page-paragraph-margin/2 0;
   margin-top: -$neal-section-padding-y/2;
 }
 
