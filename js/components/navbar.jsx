@@ -5,7 +5,7 @@ export class Navbar extends React.Component {
 
   static propTypes = {
     brand: React.PropTypes.node.isRequired,
-  }
+  };
 
   render() {
     return (
@@ -39,7 +39,7 @@ export class NavItem extends React.Component {
 
   static propTypes = {
     dropdown: React.PropTypes.bool,
-  }
+  };
 
   render() {
     const _className = classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className);

@@ -5,11 +5,11 @@ class ModalHeader extends React.Component {
 
   static propTypes = {
     title: React.PropTypes.string.isRequired,
-  }
+  };
 
   static defaultProps = {
     title: "Sign up",
-  }
+  };
 
   render() {
     return (
@@ -28,11 +28,11 @@ class ModalFooter extends React.Component {
 
   static propTypes = {
     buttonText: React.PropTypes.string.isRequired,
-  }
+  };
 
   static defaultProps = {
     buttonText: "Sign up",
-  }
+  };
 
   render() {
     return (
@@ -51,24 +51,24 @@ export class SignupModal extends React.Component {
     buttonText: React.PropTypes.string.isRequired,
     modalId: React.PropTypes.string.isRequired,
     onSubmit: React.PropTypes.func,
-  }
+  };
 
   static defaultProps = {
     title: "Sign up",
     buttonText: "Sign up",
     modalId: "signup-modal",
-  }
+  };
 
   state = { };
 
   handleChange = (e) => {
     this.setState({ [`${e.target.name}`]: e.target.value });
-  }
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.props.onSubmit) { this.props.onSubmit(this.state); }
-  }
+  };
 
   renderBody = () => {
     if (this.props.children) return this.props.children;
@@ -111,11 +111,11 @@ SignupModal.Input = class extends React.Component {
     name: React.PropTypes.string.isRequired,
     label: React.PropTypes.string.isRequired,
     placeholder: React.PropTypes.string.isRequired,
-  }
+  };
 
   static defaultProps = {
     type: "text",
-  }
+  };
 
   render() {
     return (

@@ -6,7 +6,7 @@ export class Stripe extends React.Component {
     stripeKey: React.PropTypes.string.isRequired,
     // Optional options we pass to Stripe Checkout configuration
     stripeOptions: React.PropTypes.object,
-  }
+  };
 
   componentDidMount() {
     const stripeKey = this.props.stripeKey;

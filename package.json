@@ -5,26 +5,30 @@
   "repository": "https://github.com/dennybritz/neal-react",
   "main": "build/app.js",
   "scripts": {
+    "clean": "rimraf ./build",
     "build": "babel js --out-dir build",
+    "start": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext js,jsx js/"
   },
   "author": "Denny Britz",
   "license": "ISC",
   "dependencies": {
-    "babel-polyfill": "^6.0.16",
+    "babel-polyfill": "^6.5.0",
     "bootstrap": "^4.0.0-alpha.2",
-    "classnames": "^2.1.5",
-    "react": "^0.14.0"
+    "classnames": "^2.2.3",
+    "react": "^0.14.7"
   },
   "devDependencies": {
-    "babel": "^5.8.29",
-    "babel-eslint": "^4.1.3",
-    "eslint": "^1.6.0",
-    "eslint-plugin-react": "^3.5.1",
-    "eslint-config-defaults": "^7.1.1"
-  },
-  "babel": {
-    "optional": "es7.classProperties"
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^4.1.8",
+    "babel-plugin-syntax-class-properties": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^2.0.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-react": "^3.16.1",
+    "rimraf": "^2.5.2"
   }
 }

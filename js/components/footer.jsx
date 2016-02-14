@@ -11,7 +11,7 @@ export class Footer extends React.Component {
     githubUrl: React.PropTypes.string,
     email: React.PropTypes.node,
     address: React.PropTypes.node,
-  }
+  };
 
   render() {
     return (
@@ -50,7 +50,7 @@ export class Footer extends React.Component {
 
 
   renderSocialIcon(iconClass, url) {
-    if (!url || !iconClass ) { return null; }
+    if (!url || !iconClass) { return null; }
     return (
      <li className={`nav-item neal-footer-social-icon ${iconClass.replace("fa-", "")}`}>
         <a href={url} target="_blank">

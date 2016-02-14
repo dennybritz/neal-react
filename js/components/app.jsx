@@ -8,7 +8,7 @@ export class App extends React.Component {
     segmentKey: React.PropTypes.string,
     stripeKey: React.PropTypes.string,
     history: React.PropTypes.object,
-  }
+  };
 
   render() {
     const googleAnalyticsKey = this.props.googleAnalyticsKey;

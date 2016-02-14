@@ -5,11 +5,11 @@ export class ImageList extends React.Component {
 
   static propTypes = {
     centered: React.PropTypes.bool.isRequired,
-  }
+  };
 
   static defaultProps = {
     centered: true,
-  }
+  };
 
   render() {
     const _className = classNames("neal-image-list list-inline", { centered: this.props.centered });
@@ -26,7 +26,7 @@ export class ImageListItem extends React.Component {
   static propTypes = {
     src: React.PropTypes.string.isRequired,
     url: React.PropTypes.string,
-  }
+  };
 
   render() {
     return (
