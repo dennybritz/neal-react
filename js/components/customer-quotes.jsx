@@ -7,7 +7,7 @@ export class CustomerQuote extends React.Component {
     name: React.PropTypes.string.isRequired,
     title: React.PropTypes.string,
     imageUrl: React.PropTypes.string.isRequired,
-  }
+  };
 
   render() {
     return (
@@ -29,7 +29,7 @@ export class CustomerQuotes extends React.Component {
   static propTypes = {
     // TODO: Enforce CustomerQuote type
     children: React.PropTypes.arrayOf(React.PropTypes.element),
-  }
+  };
 
   render() {
     return (

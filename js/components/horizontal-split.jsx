@@ -10,15 +10,15 @@ export class HorizontalSplit extends React.Component {
     4: ["xs-12", "sm-6", "lg-3"],
     6: ["xs-12", "sm-6", "lg-4"],
     12: ["xs-12", "sm-6", "lg-3"],
-  }
+  };
 
   static propTypes = {
     padding: React.PropTypes.oneOf(["sm", "md", "lg"]),
-  }
+  };
 
   static defaultProps = {
     padding: "sm",
-  }
+  };
 
   render() {
     const numSections = this.props.children.length;

@@ -3,22 +3,32 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.BootstrapHelpers = undefined;
 
-function _interopExportWildcard(obj, defaults) { var newObj = defaults({}, obj); delete newObj["default"]; return newObj; }
+var _index = require("./components/index");
 
-function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+var _loop = function _loop(_key2) {
+  if (_key2 === "default") return "continue";
+  Object.defineProperty(exports, _key2, {
+    enumerable: true,
+    get: function get() {
+      return _index[_key2];
+    }
+  });
+};
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj["default"] = obj; return newObj; } }
+for (var _key2 in _index) {
+  var _ret = _loop(_key2);
+
+  if (_ret === "continue") continue;
+}
 
 require("babel-polyfill");
 
-var _helpersBootstrap = require("./helpers/bootstrap");
+var _bootstrap = require("./helpers/bootstrap");
 
-var bootstrapHelpers = _interopRequireWildcard(_helpersBootstrap);
+var bootstrapHelpers = _interopRequireWildcard(_bootstrap);
 
-var _componentsIndex = require("./components/index");
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-_defaults(exports, _interopExportWildcard(_componentsIndex, _defaults));
-
-var BootstrapHelpers = bootstrapHelpers;
-exports.BootstrapHelpers = BootstrapHelpers;
+var BootstrapHelpers = exports.BootstrapHelpers = bootstrapHelpers;

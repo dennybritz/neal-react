@@ -6,7 +6,7 @@ export class Figure extends React.Component {
   static propTypes = {
     src: React.PropTypes.string.isRequired,
     caption: React.PropTypes.node.isRequired,
-  }
+  };
 
   render() {
     const figureClasses = classNames("neal-figure figure", this.props.className);

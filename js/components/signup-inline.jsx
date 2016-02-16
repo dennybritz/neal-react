@@ -6,18 +6,18 @@ export class SignupInline extends React.Component {
 
   static propTypes = {
     onSubmit: React.PropTypes.func,
-  }
+  };
 
   state = { email: null, password: null };
 
   handleChange = (e) => {
     this.setState({ [`${e.target.name}`]: e.target.value });
-  }
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.props.onSubmit) { this.props.onSubmit(this.state); }
-  }
+  };
 
   render() {
     return (

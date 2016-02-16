@@ -23,12 +23,12 @@ export class PricingPlan extends React.Component {
     features: React.PropTypes.objectOf(React.PropTypes.bool),
     buttonText: React.PropTypes.string,
     onClick: React.PropTypes.func,
-  }
+  };
 
   static defaultProps = {
     period: "/month",
     buttonText: "Sign up",
-  }
+  };
 
   render() {
     return (
@@ -52,7 +52,7 @@ export class PricingPlan extends React.Component {
           <ul className="list-group list-group-flush">
             {Object.keys(this.props.features).map((name, idx) => {
               const isEnabled = this.props.features[name];
-              const _className = classNames("neal-pricing-plan-feature", { "isEnabled": isEnabled, "isDisabled": !isEnabled });
+              const _className = classNames("neal-pricing-plan-feature", { isEnabled, "isDisabled": !isEnabled });
               return <li key={idx} className={_className}>{name}</li>;
             })}
           </ul>

@@ -8,7 +8,7 @@ export class TeamMember extends React.Component {
     name: React.PropTypes.string.isRequired,
     title: React.PropTypes.string,
     imageUrl: React.PropTypes.string.isRequired,
-  }
+  };
 
   render() {
     return (
@@ -32,7 +32,7 @@ export class Team extends React.Component {
   static propTypes = {
     // TODO: Enforce Member type
     children: React.PropTypes.arrayOf(React.PropTypes.element),
-  }
+  };
 
   render() {
     return (

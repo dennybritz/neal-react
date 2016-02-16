@@ -5,7 +5,7 @@ export class Segment extends React.Component {
   static propTypes ={
     writeKey: React.PropTypes.string.isRequired,
     history: React.PropTypes.object,
-  }
+  };
 
   componentDidMount() {
     const writeKey = this.props.writeKey;

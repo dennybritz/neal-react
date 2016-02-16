@@ -5,7 +5,7 @@ export class Section extends React.Component {
 
   static propTypes = {
     heading: React.PropTypes.node,
-  }
+  };
 
   render() {
     const _className = classNames("neal-section", this.props.className);
