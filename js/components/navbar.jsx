@@ -8,9 +8,10 @@ export class Navbar extends React.Component {
   };
 
   render() {
+    const _className = classNames("navbar neal-navbar", this.props.className);
     return (
       <header className="neal-navbar-wrapper">
-        <nav className="navbar navbar-static-top neal-navbar">
+        <nav className={_className}>
           <div className="container">
             <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
               data-target="#mobile-nav">
@@ -32,7 +33,6 @@ export class Navbar extends React.Component {
       </header>
     );
   }
-
 }
 
 export class NavItem extends React.Component {

@@ -7,21 +7,15 @@ exports.BootstrapHelpers = undefined;
 
 var _index = require("./components/index");
 
-var _loop = function _loop(_key2) {
-  if (_key2 === "default") return "continue";
-  Object.defineProperty(exports, _key2, {
+Object.keys(_index).forEach(function (key) {
+  if (key === "default") return;
+  Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _index[_key2];
+      return _index[key];
     }
   });
-};
-
-for (var _key2 in _index) {
-  var _ret = _loop(_key2);
-
-  if (_ret === "continue") continue;
-}
+});
 
 require("babel-polyfill");
 
