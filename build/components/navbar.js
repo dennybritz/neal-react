@@ -37,12 +37,13 @@ var Navbar = exports.Navbar = function (_React$Component) {
   _createClass(Navbar, [{
     key: "render",
     value: function render() {
+      var _className = (0, _classnames2.default)("navbar neal-navbar", this.props.className);
       return _react2.default.createElement(
         "header",
         { className: "neal-navbar-wrapper" },
         _react2.default.createElement(
           "nav",
-          { className: "navbar navbar-static-top neal-navbar" },
+          { className: _className },
           _react2.default.createElement(
             "div",
             { className: "container" },
