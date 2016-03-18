@@ -8,5 +8,3 @@ bundle.js
 # npm debug file
 npm-debug.log
 .idea/
-
-build/
