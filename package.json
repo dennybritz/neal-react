@@ -1,6 +1,6 @@
 {
   "name": "neal-react",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "react components for startup landing pages.",
   "repository": "https://github.com/dennybritz/neal-react",
   "main": "build/app.js",
@@ -18,8 +18,7 @@
     "classnames": "2.x.x"
   },
   "peerDependencies": {
-    "react": ">=0.14.7 || >15.0.0-rc",
-    "babel-polyfill": "6.x.x"
+    "react": ">=0.14.7 || >15.0.0-rc"
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
