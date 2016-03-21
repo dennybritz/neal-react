@@ -14,12 +14,12 @@
   "author": "Denny Britz",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.7.2",
     "bootstrap": ">4.0.0-alpha",
     "classnames": "2.x.x"
   },
   "peerDependencies": {
-    "react": ">=0.14.7 || >15.0.0-rc",
-    "babel-polyfill": "6.x.x"
+    "react": ">=0.14.7 || >15.0.0-rc"
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
