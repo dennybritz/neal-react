@@ -31,7 +31,7 @@ var Figure = exports.Figure = function (_React$Component) {
   function Figure() {
     _classCallCheck(this, Figure);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Figure).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Figure.__proto__ || Object.getPrototypeOf(Figure)).apply(this, arguments));
   }
 
   _createClass(Figure, [{

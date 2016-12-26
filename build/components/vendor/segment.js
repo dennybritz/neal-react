@@ -25,7 +25,7 @@ var Segment = exports.Segment = function (_React$Component) {
   function Segment() {
     _classCallCheck(this, Segment);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Segment).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Segment.__proto__ || Object.getPrototypeOf(Segment)).apply(this, arguments));
   }
 
   _createClass(Segment, [{

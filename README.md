@@ -15,6 +15,7 @@ Main components:
 - [`App`](https://github.com/dennybritz/neal-react/blob/master/js/components/app.jsx)
 - [`Code`](https://github.com/dennybritz/neal-react/blob/master/js/components/code.jsx)
 - [`CustomerQuotes`](https://github.com/dennybritz/neal-react/blob/master/js/components/customer-quotes.jsx)
+- [`Countdown`](https://github.com/dennybritz/neal-react/blob/master/js/components/countdown.jsx)
 - [`Footer`](https://github.com/dennybritz/neal-react/blob/master/js/components/footer.jsx)
 - [`Figure`](https://github.com/dennybritz/neal-react/blob/master/js/components/figure.jsx)
 - [`Hero`](https://github.com/dennybritz/neal-react/blob/master/js/components/hero.jsx)

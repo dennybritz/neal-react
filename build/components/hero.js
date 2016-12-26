@@ -33,7 +33,7 @@ var Hero = exports.Hero = function (_React$Component) {
   function Hero() {
     _classCallCheck(this, Hero);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Hero).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).apply(this, arguments));
   }
 
   _createClass(Hero, [{

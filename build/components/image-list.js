@@ -29,7 +29,7 @@ var ImageList = exports.ImageList = function (_React$Component) {
   function ImageList() {
     _classCallCheck(this, ImageList);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ImageList).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ImageList.__proto__ || Object.getPrototypeOf(ImageList)).apply(this, arguments));
   }
 
   _createClass(ImageList, [{
@@ -60,7 +60,7 @@ var ImageListItem = exports.ImageListItem = function (_React$Component2) {
   function ImageListItem() {
     _classCallCheck(this, ImageListItem);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ImageListItem).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ImageListItem.__proto__ || Object.getPrototypeOf(ImageListItem)).apply(this, arguments));
   }
 
   _createClass(ImageListItem, [{

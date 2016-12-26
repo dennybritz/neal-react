@@ -31,7 +31,7 @@ var Footer = exports.Footer = function (_React$Component) {
   function Footer() {
     _classCallCheck(this, Footer);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
   }
 
   _createClass(Footer, [{
@@ -52,7 +52,7 @@ var Footer = exports.Footer = function (_React$Component) {
               _react2.default.createElement(
                 "p",
                 { className: "neal-footer-copyright" },
-                "© ",
+                "\xA9 ",
                 new Date().getFullYear(),
                 ", ",
                 this.props.brandName
@@ -130,7 +130,7 @@ var FooterAddress = exports.FooterAddress = function (_React$Component2) {
   function FooterAddress() {
     _classCallCheck(this, FooterAddress);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(FooterAddress).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FooterAddress.__proto__ || Object.getPrototypeOf(FooterAddress)).apply(this, arguments));
   }
 
   _createClass(FooterAddress, [{

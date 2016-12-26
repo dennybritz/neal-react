@@ -29,7 +29,7 @@ var TeamMember = exports.TeamMember = function (_React$Component) {
   function TeamMember() {
     _classCallCheck(this, TeamMember);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(TeamMember).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TeamMember.__proto__ || Object.getPrototypeOf(TeamMember)).apply(this, arguments));
   }
 
   _createClass(TeamMember, [{
@@ -74,7 +74,7 @@ var Team = exports.Team = function (_React$Component2) {
   function Team() {
     _classCallCheck(this, Team);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Team).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).apply(this, arguments));
   }
 
   _createClass(Team, [{

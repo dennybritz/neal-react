@@ -25,7 +25,7 @@ var Stripe = exports.Stripe = function (_React$Component) {
   function Stripe() {
     _classCallCheck(this, Stripe);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Stripe).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Stripe.__proto__ || Object.getPrototypeOf(Stripe)).apply(this, arguments));
   }
 
   _createClass(Stripe, [{

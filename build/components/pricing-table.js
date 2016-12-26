@@ -31,7 +31,7 @@ var PricingTable = exports.PricingTable = function (_React$Component) {
   function PricingTable() {
     _classCallCheck(this, PricingTable);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(PricingTable).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PricingTable.__proto__ || Object.getPrototypeOf(PricingTable)).apply(this, arguments));
   }
 
   _createClass(PricingTable, [{
@@ -58,7 +58,7 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
   function PricingPlan() {
     _classCallCheck(this, PricingPlan);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(PricingPlan).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PricingPlan.__proto__ || Object.getPrototypeOf(PricingPlan)).apply(this, arguments));
   }
 
   _createClass(PricingPlan, [{

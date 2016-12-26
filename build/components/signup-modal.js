@@ -33,7 +33,7 @@ var ModalHeader = function (_React$Component) {
   function ModalHeader() {
     _classCallCheck(this, ModalHeader);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ModalHeader).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ModalHeader.__proto__ || Object.getPrototypeOf(ModalHeader)).apply(this, arguments));
   }
 
   _createClass(ModalHeader, [{
@@ -48,7 +48,7 @@ var ModalHeader = function (_React$Component) {
           _react2.default.createElement(
             "span",
             { "aria-hidden": "true" },
-            "×"
+            "\xD7"
           ),
           _react2.default.createElement(
             "span",
@@ -81,7 +81,7 @@ var ModalFooter = function (_React$Component2) {
   function ModalFooter() {
     _classCallCheck(this, ModalFooter);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ModalFooter).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ModalFooter.__proto__ || Object.getPrototypeOf(ModalFooter)).apply(this, arguments));
   }
 
   _createClass(ModalFooter, [{
@@ -113,7 +113,7 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
   _inherits(SignupModal, _React$Component3);
 
   function SignupModal() {
-    var _Object$getPrototypeO;
+    var _ref;
 
     var _temp, _this3, _ret;
 
@@ -123,7 +123,7 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this3 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(SignupModal)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this3), _this3.state = {}, _this3.handleChange = function (e) {
+    return _ret = (_temp = (_this3 = _possibleConstructorReturn(this, (_ref = SignupModal.__proto__ || Object.getPrototypeOf(SignupModal)).call.apply(_ref, [this].concat(args))), _this3), _this3.state = {}, _this3.handleChange = function (e) {
       _this3.setState(_defineProperty({}, "" + e.target.name, e.target.value));
     }, _this3.handleSubmit = function (e) {
       e.preventDefault();
@@ -199,7 +199,7 @@ SignupModal.Input = (_temp2 = _class = function (_React$Component4) {
   function _class() {
     _classCallCheck(this, _class);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(_class).apply(this, arguments));
+    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
   }
 
   _createClass(_class, [{

@@ -25,7 +25,7 @@ var Typeform = exports.Typeform = function (_React$Component) {
   function Typeform() {
     _classCallCheck(this, Typeform);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Typeform).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Typeform.__proto__ || Object.getPrototypeOf(Typeform)).apply(this, arguments));
   }
 
   _createClass(Typeform, [{
