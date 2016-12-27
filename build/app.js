@@ -8,7 +8,7 @@ exports.BootstrapHelpers = undefined;
 var _index = require("./components/index");
 
 Object.keys(_index).forEach(function (key) {
-  if (key === "default") return;
+  if (key === "default" || key === "__esModule") return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {

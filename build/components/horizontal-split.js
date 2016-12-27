@@ -27,7 +27,7 @@ var HorizontalSplit = exports.HorizontalSplit = function (_React$Component) {
   function HorizontalSplit() {
     _classCallCheck(this, HorizontalSplit);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(HorizontalSplit).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HorizontalSplit.__proto__ || Object.getPrototypeOf(HorizontalSplit)).apply(this, arguments));
   }
 
   _createClass(HorizontalSplit, [{

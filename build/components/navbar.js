@@ -31,7 +31,7 @@ var Navbar = exports.Navbar = function (_React$Component) {
   function Navbar() {
     _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Navbar).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
   }
 
   _createClass(Navbar, [{
@@ -51,7 +51,7 @@ var Navbar = exports.Navbar = function (_React$Component) {
               "button",
               { className: "navbar-toggler hidden-md-up", type: "button", "data-toggle": "collapse",
                 "data-target": "#mobile-nav" },
-              "☰"
+              "\u2630"
             ),
             _react2.default.createElement(
               "a",
@@ -95,7 +95,7 @@ var NavItem = exports.NavItem = function (_React$Component2) {
   function NavItem() {
     _classCallCheck(this, NavItem);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(NavItem).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NavItem.__proto__ || Object.getPrototypeOf(NavItem)).apply(this, arguments));
   }
 
   _createClass(NavItem, [{
@@ -123,7 +123,7 @@ var DropdownToggle = exports.DropdownToggle = function (_React$Component3) {
   function DropdownToggle() {
     _classCallCheck(this, DropdownToggle);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(DropdownToggle).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DropdownToggle.__proto__ || Object.getPrototypeOf(DropdownToggle)).apply(this, arguments));
   }
 
   _createClass(DropdownToggle, [{
@@ -146,7 +146,7 @@ var DropdownMenu = exports.DropdownMenu = function (_React$Component4) {
   function DropdownMenu() {
     _classCallCheck(this, DropdownMenu);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(DropdownMenu).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DropdownMenu.__proto__ || Object.getPrototypeOf(DropdownMenu)).apply(this, arguments));
   }
 
   _createClass(DropdownMenu, [{

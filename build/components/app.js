@@ -27,7 +27,7 @@ var App = exports.App = function (_React$Component) {
   function App() {
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
   }
 
   _createClass(App, [{

@@ -27,7 +27,7 @@ var CustomerQuote = exports.CustomerQuote = function (_React$Component) {
   function CustomerQuote() {
     _classCallCheck(this, CustomerQuote);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CustomerQuote).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CustomerQuote.__proto__ || Object.getPrototypeOf(CustomerQuote)).apply(this, arguments));
   }
 
   _createClass(CustomerQuote, [{
@@ -75,7 +75,7 @@ var CustomerQuotes = exports.CustomerQuotes = function (_React$Component2) {
   function CustomerQuotes() {
     _classCallCheck(this, CustomerQuotes);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CustomerQuotes).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CustomerQuotes.__proto__ || Object.getPrototypeOf(CustomerQuotes)).apply(this, arguments));
   }
 
   _createClass(CustomerQuotes, [{

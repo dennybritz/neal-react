@@ -29,7 +29,7 @@ var Code = exports.Code = function (_React$Component) {
   function Code() {
     _classCallCheck(this, Code);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Code).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
   }
 
   _createClass(Code, [{

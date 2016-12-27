@@ -25,7 +25,7 @@ var Page = exports.Page = function (_React$Component) {
   function Page() {
     _classCallCheck(this, Page);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Page).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Page.__proto__ || Object.getPrototypeOf(Page)).apply(this, arguments));
   }
 
   _createClass(Page, [{

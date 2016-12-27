@@ -25,7 +25,7 @@ var GoogleAnalytics = exports.GoogleAnalytics = function (_React$Component) {
   function GoogleAnalytics() {
     _classCallCheck(this, GoogleAnalytics);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(GoogleAnalytics).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GoogleAnalytics.__proto__ || Object.getPrototypeOf(GoogleAnalytics)).apply(this, arguments));
   }
 
   _createClass(GoogleAnalytics, [{

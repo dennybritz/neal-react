@@ -31,7 +31,7 @@ var Section = exports.Section = function (_React$Component) {
   function Section() {
     _classCallCheck(this, Section);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Section).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).apply(this, arguments));
   }
 
   _createClass(Section, [{
