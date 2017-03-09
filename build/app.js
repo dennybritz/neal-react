@@ -17,8 +17,6 @@ Object.keys(_index).forEach(function (key) {
   });
 });
 
-require("babel-polyfill");
-
 var _bootstrap = require("./helpers/bootstrap");
 
 var bootstrapHelpers = _interopRequireWildcard(_bootstrap);

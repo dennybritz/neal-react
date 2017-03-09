@@ -34,7 +34,7 @@ var Stripe = exports.Stripe = function (_React$Component) {
       var stripeKey = this.props.stripeKey;
       var stripeOptions = this.props.stripeOptions;
       jQuery.getScript("https://checkout.stripe.com/checkout.js", function (data, textStatus, jqxhr) {
-        Stripe.StripeHandler = StripeCheckout.configure(Object.assign({}, { key: stripeKey }, stripeOptions));
+        Stripe.StripeHandler = StripeCheckout.configure(jQuery.extend({}, { key: stripeKey }, stripeOptions));
       });
     }
   }, {

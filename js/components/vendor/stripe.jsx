@@ -12,7 +12,7 @@ export class Stripe extends React.Component {
     const stripeKey = this.props.stripeKey;
     const stripeOptions = this.props.stripeOptions;
     jQuery.getScript("https://checkout.stripe.com/checkout.js", (data, textStatus, jqxhr) => {
-      Stripe.StripeHandler = StripeCheckout.configure(Object.assign({}, { key: stripeKey }, stripeOptions));
+      Stripe.StripeHandler = StripeCheckout.configure(jQuery.extend({}, { key: stripeKey }, stripeOptions));
     });
   }
 
