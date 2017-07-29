@@ -10,12 +10,13 @@ export class Hero extends React.Component {
 
   render() {
     const _style = {};
-    if (this.props.backgroundImage) {
-      _style.backgroundImage = `url(${this.props.backgroundImage})`;
+    const { backgroundImage, ...otherProps } = this.props;
+    if (backgroundImage) {
+      _style.backgroundImage = `url(${backgroundImage})`;
     }
     const _className = classNames("neal-hero jumbotron jumbotron-fluid", this.props.className);
     return (
-      <div {... this.props} className={_className} style={_style}>
+      <div {... otherProps} className={_className} style={_style}>
         <Container>
           { this.props.children }
         </Container>
