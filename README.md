@@ -5,7 +5,7 @@
 
 ## Visit the Sample Page
 
-- [Hosted Sample Page](http://www.nealjs.com)
+- Sample Page - currently unavailable.
 - [Sample Page Code on Github](https://github.com/dennybritz/neal-sample)
 
 ## Available Components
