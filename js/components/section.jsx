@@ -9,10 +9,11 @@ export class Section extends React.Component {
 
   render() {
     const _className = classNames("neal-section", this.props.className);
+    const { heading, ...otherProps } = this.props;
     return (
-      <div {... this.props} className={_className}>
+      <div {... otherProps} className={_className}>
         <div className="container">
-          { this.props.heading ? <h2>{this.props.heading}</h2> : null }
+          { heading ? <h2>{heading}</h2> : null }
           {this.props.children}
         </div>
       </div>
