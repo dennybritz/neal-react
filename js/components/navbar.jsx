@@ -40,18 +40,17 @@ export class Navbar extends React.Component {
 export class NavItem extends React.Component {
 
   static propTypes = {
-    dropdown: PropTypes.bool,
     className: PropTypes.string,
+    dropdown: PropTypes.bool,
   };
 
-
   render() {
-    console.log(this.props);
-    console.log(classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className));
-    const _className = classNames("nav-item", { dropdown: this.props.dropdown }, this.props.className);
+    const { dropdown, className, children, ...otherProps } = this.props;
+    const _className = classNames("nav-item", { dropdown }, className);
+
     return (
-      <li className={_className}>
-        { this.props.children }
+      <li {...otherProps} className={_className}>
+        { children }
       </li>
     );
   }
@@ -59,15 +58,19 @@ export class NavItem extends React.Component {
 
 export class DropdownToggle extends React.Component {
   render() {
+    const { children, ...otherProps } = this.props;
+
     return (
-      <a className="nav-link" data-toggle="dropdown" role="button" {... this.props}>
-        {this.props.children}
+      <a className="nav-link" data-toggle="dropdown" role="button" {...otherProps}>
+        {children}
       </a>);
   }
 }
 
 export class DropdownMenu extends React.Component {
   render() {
-    return <div className="dropdown-menu" {... this.props}>{this.props.children}</div>;
+    const { children, ...otherProps } = this.props;
+
+    return <div className="dropdown-menu" {...otherProps}>{children}</div>;
   }
 }

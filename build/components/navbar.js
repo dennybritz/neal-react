@@ -23,6 +23,8 @@ var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -106,13 +108,18 @@ var NavItem = exports.NavItem = function (_React$Component2) {
   _createClass(NavItem, [{
     key: "render",
     value: function render() {
-      console.log(this.props);
-      console.log((0, _classnames2.default)("nav-item", { dropdown: this.props.dropdown }, this.props.className));
-      var _className = (0, _classnames2.default)("nav-item", { dropdown: this.props.dropdown }, this.props.className);
+      var _props = this.props,
+          dropdown = _props.dropdown,
+          className = _props.className,
+          children = _props.children,
+          otherProps = _objectWithoutProperties(_props, ["dropdown", "className", "children"]);
+
+      var _className = (0, _classnames2.default)("nav-item", { dropdown: dropdown }, className);
+
       return _react2.default.createElement(
         "li",
-        { className: _className },
-        this.props.children
+        _extends({}, otherProps, { className: _className }),
+        children
       );
     }
   }]);
@@ -121,8 +128,8 @@ var NavItem = exports.NavItem = function (_React$Component2) {
 }(_react2.default.Component);
 
 NavItem.propTypes = {
-  dropdown: _propTypes2.default.bool,
-  className: _propTypes2.default.string
+  className: _propTypes2.default.string,
+  dropdown: _propTypes2.default.bool
 };
 
 var DropdownToggle = exports.DropdownToggle = function (_React$Component3) {
@@ -137,10 +144,14 @@ var DropdownToggle = exports.DropdownToggle = function (_React$Component3) {
   _createClass(DropdownToggle, [{
     key: "render",
     value: function render() {
+      var _props2 = this.props,
+          children = _props2.children,
+          otherProps = _objectWithoutProperties(_props2, ["children"]);
+
       return _react2.default.createElement(
         "a",
-        _extends({ className: "nav-link", "data-toggle": "dropdown", role: "button" }, this.props),
-        this.props.children
+        _extends({ className: "nav-link", "data-toggle": "dropdown", role: "button" }, otherProps),
+        children
       );
     }
   }]);
@@ -160,10 +171,14 @@ var DropdownMenu = exports.DropdownMenu = function (_React$Component4) {
   _createClass(DropdownMenu, [{
     key: "render",
     value: function render() {
+      var _props3 = this.props,
+          children = _props3.children,
+          otherProps = _objectWithoutProperties(_props3, ["children"]);
+
       return _react2.default.createElement(
         "div",
-        _extends({ className: "dropdown-menu" }, this.props),
-        this.props.children
+        _extends({ className: "dropdown-menu" }, otherProps),
+        children
       );
     }
   }]);

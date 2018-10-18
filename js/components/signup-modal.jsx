@@ -119,11 +119,13 @@ SignupModal.Input = class extends React.Component {
   };
 
   render() {
+    const { label, name, placeholder, type, ...otherProps } = this.props;
+
     return (
       <div className="form-group neal-signup-modal-input">
-        <label className="sr-only" htmlFor={this.props.name}>{this.props.label}</label>
-        <input type="text" className="form-control" name={this.props.name}
-          placeholder={this.props.placeholder} {... this.props}/>
+        <label className="sr-only" htmlFor={name}>{label}</label>
+        <input type={type} className="form-control" name={name}
+          placeholder={placeholder} {...otherProps}/>
       </div>
     );
   }

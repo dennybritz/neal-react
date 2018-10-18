@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import classNames from "classnames";
 import { HorizontalSplit } from "./index";
 
@@ -17,13 +16,13 @@ export class PricingTable extends React.Component {
 export class PricingPlan extends React.Component {
 
   static propTypes = {
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    price: PropTypes.node.isRequired,
-    period: PropTypes.string,
-    features: PropTypes.objectOf(PropTypes.bool),
-    buttonText: PropTypes.string,
-    onClick: PropTypes.func,
+    name: React.PropTypes.string.isRequired,
+    description: React.PropTypes.string,
+    price: React.PropTypes.node.isRequired,
+    period: React.PropTypes.string,
+    features: React.PropTypes.objectOf(React.PropTypes.bool),
+    buttonText: React.PropTypes.string,
+    onClick: React.PropTypes.func,
   };
 
   static defaultProps = {

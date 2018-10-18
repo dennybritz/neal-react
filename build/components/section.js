@@ -23,6 +23,8 @@ var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -41,19 +43,26 @@ var Section = exports.Section = function (_React$Component) {
   _createClass(Section, [{
     key: "render",
     value: function render() {
-      var _className = (0, _classnames2.default)("neal-section", this.props.className);
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          heading = _props.heading,
+          otherProps = _objectWithoutProperties(_props, ["children", "className", "heading"]);
+
+      var _className = (0, _classnames2.default)("neal-section", className);
+
       return _react2.default.createElement(
         "div",
-        _extends({}, this.props, { className: _className }),
+        _extends({}, otherProps, { className: _className }),
         _react2.default.createElement(
           "div",
           { className: "container" },
-          this.props.heading ? _react2.default.createElement(
+          heading ? _react2.default.createElement(
             "h2",
             null,
-            this.props.heading
+            heading
           ) : null,
-          this.props.children
+          children
         )
       );
     }

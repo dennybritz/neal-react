@@ -23,6 +23,8 @@ var _bootstrap = require("../helpers/bootstrap");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -209,16 +211,23 @@ SignupModal.Input = (_temp2 = _class = function (_React$Component4) {
   _createClass(_class, [{
     key: "render",
     value: function render() {
+      var _props = this.props,
+          label = _props.label,
+          name = _props.name,
+          placeholder = _props.placeholder,
+          type = _props.type,
+          otherProps = _objectWithoutProperties(_props, ["label", "name", "placeholder", "type"]);
+
       return _react2.default.createElement(
         "div",
         { className: "form-group neal-signup-modal-input" },
         _react2.default.createElement(
           "label",
-          { className: "sr-only", htmlFor: this.props.name },
-          this.props.label
+          { className: "sr-only", htmlFor: name },
+          label
         ),
-        _react2.default.createElement("input", _extends({ type: "text", className: "form-control", name: this.props.name,
-          placeholder: this.props.placeholder }, this.props))
+        _react2.default.createElement("input", _extends({ type: type, className: "form-control", name: name,
+          placeholder: placeholder }, otherProps))
       );
     }
   }]);

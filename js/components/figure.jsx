@@ -11,11 +11,13 @@ export class Figure extends React.Component {
   };
 
   render() {
-    const figureClasses = classNames("neal-figure figure", this.props.className);
+    const { caption, className, src, ...otherProps } = this.props;
+    const figureClasses = classNames("neal-figure figure", className);
+
     return (
-      <figure {... this.props} className={figureClasses}>
-        <img src={this.props.src} alt={this.props.caption}/>
-        <figcaption className="figure-caption">{this.props.caption}</figcaption>
+      <figure {...otherProps} className={figureClasses}>
+        <img src={src} alt={caption}/>
+        <figcaption className="figure-caption">{caption}</figcaption>
       </figure>
     );
   }

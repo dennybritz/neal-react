@@ -11,15 +11,16 @@ export class Hero extends React.Component {
   };
 
   render() {
+    const { backgroundImage, children, className, ...otherProps } = this.props;
     const _style = {};
-    if (this.props.backgroundImage) {
-      _style.backgroundImage = `url(${this.props.backgroundImage})`;
+    if (backgroundImage) {
+      _style.backgroundImage = `url(${backgroundImage})`;
     }
-    const _className = classNames("neal-hero jumbotron jumbotron-fluid", this.props.className);
+    const _className = classNames("neal-hero jumbotron jumbotron-fluid", className);
     return (
-      <div className={_className} style={_style}>
+      <div {...otherProps} className={_className} style={_style}>
         <Container>
-          { this.props.children }
+          { children }
         </Container>
       </div>
     );
