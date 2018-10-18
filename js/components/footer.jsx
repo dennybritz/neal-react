@@ -1,16 +1,17 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Container, Row, Col } from "../helpers/bootstrap";
 import Navbar from "./navbar";
 
 export class Footer extends React.Component {
 
   static propTypes = {
-    brandName: React.PropTypes.node.isRequired,
-    facebookUrl: React.PropTypes.string,
-    twitterUrl: React.PropTypes.string,
-    githubUrl: React.PropTypes.string,
-    email: React.PropTypes.node,
-    address: React.PropTypes.node,
+    brandName: PropTypes.node.isRequired,
+    facebookUrl: PropTypes.string,
+    twitterUrl: PropTypes.string,
+    githubUrl: PropTypes.string,
+    email: PropTypes.node,
+    address: PropTypes.node,
   };
 
   render() {

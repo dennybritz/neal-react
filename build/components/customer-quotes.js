@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _horizontalSplit = require("./horizontal-split");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -64,9 +68,9 @@ var CustomerQuote = exports.CustomerQuote = function (_React$Component) {
 }(_react2.default.Component);
 
 CustomerQuote.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired,
-  title: _react2.default.PropTypes.string,
-  imageUrl: _react2.default.PropTypes.string.isRequired
+  name: _propTypes2.default.string.isRequired,
+  title: _propTypes2.default.string,
+  imageUrl: _propTypes2.default.string.isRequired
 };
 
 var CustomerQuotes = exports.CustomerQuotes = function (_React$Component2) {
@@ -98,7 +102,7 @@ var CustomerQuotes = exports.CustomerQuotes = function (_React$Component2) {
 
 CustomerQuotes.propTypes = {
   // TODO: Enforce CustomerQuote type
-  children: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.element)
+  children: _propTypes2.default.arrayOf(_propTypes2.default.element)
 };
 
 

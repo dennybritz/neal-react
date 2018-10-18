@@ -1,13 +1,14 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { HorizontalSplit } from "./horizontal-split";
 import { Row, Col } from "../helpers/bootstrap";
 
 export class TeamMember extends React.Component {
 
   static propTypes = {
-    name: React.PropTypes.string.isRequired,
-    title: React.PropTypes.string,
-    imageUrl: React.PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    imageUrl: PropTypes.string.isRequired,
   };
 
   render() {
@@ -31,7 +32,7 @@ export class Team extends React.Component {
 
   static propTypes = {
     // TODO: Enforce Member type
-    children: React.PropTypes.arrayOf(React.PropTypes.element),
+    children: PropTypes.arrayOf(PropTypes.element),
   };
 
   render() {

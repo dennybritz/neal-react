@@ -13,6 +13,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -59,5 +63,6 @@ var Section = exports.Section = function (_React$Component) {
 }(_react2.default.Component);
 
 Section.propTypes = {
-  heading: _react2.default.PropTypes.node
+  className: _propTypes2.default.string,
+  heading: _propTypes2.default.node
 };

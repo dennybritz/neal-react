@@ -13,6 +13,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -86,7 +90,8 @@ var Navbar = exports.Navbar = function (_React$Component) {
 }(_react2.default.Component);
 
 Navbar.propTypes = {
-  brand: _react2.default.PropTypes.node.isRequired
+  brand: _propTypes2.default.node.isRequired,
+  className: _propTypes2.default.string
 };
 
 var NavItem = exports.NavItem = function (_React$Component2) {
@@ -101,10 +106,12 @@ var NavItem = exports.NavItem = function (_React$Component2) {
   _createClass(NavItem, [{
     key: "render",
     value: function render() {
+      console.log(this.props);
+      console.log((0, _classnames2.default)("nav-item", { dropdown: this.props.dropdown }, this.props.className));
       var _className = (0, _classnames2.default)("nav-item", { dropdown: this.props.dropdown }, this.props.className);
       return _react2.default.createElement(
         "li",
-        _extends({}, this.props, { className: _className }),
+        { className: _className },
         this.props.children
       );
     }
@@ -114,7 +121,8 @@ var NavItem = exports.NavItem = function (_React$Component2) {
 }(_react2.default.Component);
 
 NavItem.propTypes = {
-  dropdown: _react2.default.PropTypes.bool
+  dropdown: _propTypes2.default.bool,
+  className: _propTypes2.default.string
 };
 
 var DropdownToggle = exports.DropdownToggle = function (_React$Component3) {

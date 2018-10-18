@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import Section from "./section";
 import { Col } from "../helpers/bootstrap";
 
 export class SignupInline extends React.Component {
 
   static propTypes = {
-    onSubmit: React.PropTypes.func,
+    onSubmit: PropTypes.func,
   };
 
   state = { email: null, password: null };

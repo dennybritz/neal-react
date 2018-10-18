@@ -15,6 +15,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _bootstrap = require("../helpers/bootstrap");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -69,7 +73,7 @@ var ModalHeader = function (_React$Component) {
 }(_react2.default.Component);
 
 ModalHeader.propTypes = {
-  title: _react2.default.PropTypes.string.isRequired
+  title: _propTypes2.default.string.isRequired
 };
 ModalHeader.defaultProps = {
   title: "Sign up"
@@ -103,7 +107,7 @@ var ModalFooter = function (_React$Component2) {
 }(_react2.default.Component);
 
 ModalFooter.propTypes = {
-  buttonText: _react2.default.PropTypes.string.isRequired
+  buttonText: _propTypes2.default.string.isRequired
 };
 ModalFooter.defaultProps = {
   buttonText: "Sign up"
@@ -181,10 +185,10 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
 }(_react2.default.Component);
 
 SignupModal.propTypes = {
-  title: _react2.default.PropTypes.string.isRequired,
-  buttonText: _react2.default.PropTypes.string.isRequired,
-  modalId: _react2.default.PropTypes.string.isRequired,
-  onSubmit: _react2.default.PropTypes.func
+  title: _propTypes2.default.string.isRequired,
+  buttonText: _propTypes2.default.string.isRequired,
+  modalId: _propTypes2.default.string.isRequired,
+  onSubmit: _propTypes2.default.func
 };
 SignupModal.defaultProps = {
   title: "Sign up",
@@ -221,10 +225,10 @@ SignupModal.Input = (_temp2 = _class = function (_React$Component4) {
 
   return _class;
 }(_react2.default.Component), _class.propTypes = {
-  type: _react2.default.PropTypes.string,
-  name: _react2.default.PropTypes.string.isRequired,
-  label: _react2.default.PropTypes.string.isRequired,
-  placeholder: _react2.default.PropTypes.string.isRequired
+  type: _propTypes2.default.string,
+  name: _propTypes2.default.string.isRequired,
+  label: _propTypes2.default.string.isRequired,
+  placeholder: _propTypes2.default.string.isRequired
 }, _class.defaultProps = {
   type: "text"
 }, _temp2);

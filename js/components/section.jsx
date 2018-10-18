@@ -1,10 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import classNames from "classnames";
 
 export class Section extends React.Component {
 
   static propTypes = {
-    heading: React.PropTypes.node,
+    className: PropTypes.string,
+    heading: PropTypes.node,
   };
 
   render() {

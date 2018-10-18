@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -199,8 +203,8 @@ var Countdown = exports.Countdown = function (_React$Component) {
 }(_react2.default.Component);
 
 Countdown.propTypes = {
-  date: PropTypes.string.isRequired,
-  className: PropTypes.string
+  date: _propTypes2.default.string.isRequired,
+  className: _propTypes2.default.string
 };
 Countdown.defaultProps = {
   date: new Date()

@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Col } from "../helpers/bootstrap";
 
 class ModalHeader extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -27,7 +28,7 @@ class ModalHeader extends React.Component {
 class ModalFooter extends React.Component {
 
   static propTypes = {
-    buttonText: React.PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -47,10 +48,10 @@ class ModalFooter extends React.Component {
 export class SignupModal extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string.isRequired,
-    buttonText: React.PropTypes.string.isRequired,
-    modalId: React.PropTypes.string.isRequired,
-    onSubmit: React.PropTypes.func,
+    title: PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
+    modalId: PropTypes.string.isRequired,
+    onSubmit: PropTypes.func,
   };
 
   static defaultProps = {
@@ -107,10 +108,10 @@ export class SignupModal extends React.Component {
 
 SignupModal.Input = class extends React.Component {
   static propTypes = {
-    type: React.PropTypes.string,
-    name: React.PropTypes.string.isRequired,
-    label: React.PropTypes.string.isRequired,
-    placeholder: React.PropTypes.string.isRequired,
+    type: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired,
   };
 
   static defaultProps = {

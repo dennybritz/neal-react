@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import Prism from "../vendor/prism.js";
 
 export class Code extends React.Component {
 
   static propProps = {
-    lang: React.PropTypes.string.isRequired,
-    block: React.PropTypes.bool,
+    lang: PropTypes.string.isRequired,
+    block: PropTypes.bool,
   };
 
   render() {

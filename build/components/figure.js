@@ -13,6 +13,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -55,6 +59,7 @@ var Figure = exports.Figure = function (_React$Component) {
 }(_react2.default.Component);
 
 Figure.propTypes = {
-  src: _react2.default.PropTypes.string.isRequired,
-  caption: _react2.default.PropTypes.node.isRequired
+  src: _propTypes2.default.string.isRequired,
+  caption: _propTypes2.default.node.isRequired,
+  className: _propTypes2.default.string
 };

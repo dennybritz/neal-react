@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _bootstrap = require("../helpers/bootstrap");
 
 var _navbar = require("./navbar");
@@ -116,12 +120,12 @@ var Footer = exports.Footer = function (_React$Component) {
 }(_react2.default.Component);
 
 Footer.propTypes = {
-  brandName: _react2.default.PropTypes.node.isRequired,
-  facebookUrl: _react2.default.PropTypes.string,
-  twitterUrl: _react2.default.PropTypes.string,
-  githubUrl: _react2.default.PropTypes.string,
-  email: _react2.default.PropTypes.node,
-  address: _react2.default.PropTypes.node
+  brandName: _propTypes2.default.node.isRequired,
+  facebookUrl: _propTypes2.default.string,
+  twitterUrl: _propTypes2.default.string,
+  githubUrl: _propTypes2.default.string,
+  email: _propTypes2.default.node,
+  address: _propTypes2.default.node
 };
 
 var FooterAddress = exports.FooterAddress = function (_React$Component2) {

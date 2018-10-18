@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import classNames from "classnames";
 
 export class ImageList extends React.Component {
 
   static propTypes = {
-    centered: React.PropTypes.bool.isRequired,
+    centered: PropTypes.bool.isRequired,
   };
 
   static defaultProps = {
@@ -24,8 +25,8 @@ export class ImageList extends React.Component {
 export class ImageListItem extends React.Component {
 
   static propTypes = {
-    src: React.PropTypes.string.isRequired,
-    url: React.PropTypes.string,
+    src: PropTypes.string.isRequired,
+    url: PropTypes.string,
   };
 
   render() {

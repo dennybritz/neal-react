@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _prism = require("../vendor/prism.js");
 
 var _prism2 = _interopRequireDefault(_prism);
@@ -53,6 +57,6 @@ var Code = exports.Code = function (_React$Component) {
 }(_react2.default.Component);
 
 Code.propProps = {
-  lang: _react2.default.PropTypes.string.isRequired,
-  block: _react2.default.PropTypes.bool
+  lang: _propTypes2.default.string.isRequired,
+  block: _propTypes2.default.bool
 };

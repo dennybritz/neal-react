@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -131,13 +135,13 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
 }(_react2.default.Component);
 
 PricingPlan.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired,
-  description: _react2.default.PropTypes.string,
-  price: _react2.default.PropTypes.node.isRequired,
-  period: _react2.default.PropTypes.string,
-  features: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.bool),
-  buttonText: _react2.default.PropTypes.string,
-  onClick: _react2.default.PropTypes.func
+  name: _propTypes2.default.string.isRequired,
+  description: _propTypes2.default.string,
+  price: _propTypes2.default.node.isRequired,
+  period: _propTypes2.default.string,
+  features: _propTypes2.default.objectOf(_propTypes2.default.bool),
+  buttonText: _propTypes2.default.string,
+  onClick: _propTypes2.default.func
 };
 PricingPlan.defaultProps = {
   period: "/month",

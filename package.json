@@ -16,10 +16,11 @@
   "dependencies": {
     "babel-polyfill": "^6.7.2",
     "bootstrap": ">4.0.0-alpha",
-    "classnames": "2.x.x"
+    "classnames": "2.x.x",
+    "prop-types": "^15.6.2"
   },
   "peerDependencies": {
-    "react": ">=0.14.7 || >15.0.0-rc"
+    "react": ">=0.14.7"
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",

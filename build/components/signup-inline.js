@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _section = require("./section");
 
 var _section2 = _interopRequireDefault(_section);
@@ -100,5 +104,5 @@ var SignupInline = exports.SignupInline = function (_React$Component) {
 }(_react2.default.Component);
 
 SignupInline.propTypes = {
-  onSubmit: _react2.default.PropTypes.func
+  onSubmit: _propTypes2.default.func
 };

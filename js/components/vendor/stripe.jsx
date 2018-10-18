@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export class Stripe extends React.Component {
 
   static propTypes ={
-    stripeKey: React.PropTypes.string.isRequired,
+    stripeKey: PropTypes.string.isRequired,
     // Optional options we pass to Stripe Checkout configuration
-    stripeOptions: React.PropTypes.object,
+    stripeOptions: PropTypes.object,
   };
 
   componentDidMount() {

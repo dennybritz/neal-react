@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -48,7 +52,7 @@ var ImageList = exports.ImageList = function (_React$Component) {
 }(_react2.default.Component);
 
 ImageList.propTypes = {
-  centered: _react2.default.PropTypes.bool.isRequired
+  centered: _propTypes2.default.bool.isRequired
 };
 ImageList.defaultProps = {
   centered: true
@@ -82,6 +86,6 @@ var ImageListItem = exports.ImageListItem = function (_React$Component2) {
 }(_react2.default.Component);
 
 ImageListItem.propTypes = {
-  src: _react2.default.PropTypes.string.isRequired,
-  url: _react2.default.PropTypes.string
+  src: _propTypes2.default.string.isRequired,
+  url: _propTypes2.default.string
 };
