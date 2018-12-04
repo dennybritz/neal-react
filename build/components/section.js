@@ -52,7 +52,7 @@ var Section = exports.Section = function (_React$Component) {
       var _className = (0, _classnames2.default)("neal-section", className);
 
       return _react2.default.createElement(
-        "div",
+        "section",
         _extends({}, otherProps, { className: _className }),
         _react2.default.createElement(
           "div",

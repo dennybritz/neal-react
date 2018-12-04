@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf ./build",
     "build": "babel js --out-dir build",
-    "start": "npm run clean && npm run build",
+    "start": "npm run clean && npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext js,jsx js/"
   },

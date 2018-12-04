@@ -2,29 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Col } from "../helpers/bootstrap";
 
-class ModalHeader extends React.Component {
-
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
-
-  static defaultProps = {
-    title: "Sign up",
-  };
-
-  render() {
-    return (
-      <div className="modal-header">
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-          <span className="sr-only">Close</span>
-        </button>
-        <h4 className="modal-title lead">{this.props.title}</h4>
-      </div>
-    );
-  }
-}
-
 class ModalFooter extends React.Component {
 
   static propTypes = {
@@ -75,7 +52,6 @@ export class SignupModal extends React.Component {
     if (this.props.children) return this.props.children;
     return (
       <div>
-        <SignupModal.Input name="name" required label="Name" placeholder="Name"/>
         <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"/>
         <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"/>
       </div>
@@ -90,7 +66,10 @@ export class SignupModal extends React.Component {
         tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <ModalHeader title={this.props.title}/>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span className="sr-only">Close</span>
+              </button>
               <form className="form-vertical" onSubmit={this.handleSubmit} onChange={this.handleChange}>
               <div className="modal-body">
                 { this.renderBody() }

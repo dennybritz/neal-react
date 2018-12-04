@@ -22,14 +22,15 @@ export class HorizontalSplit extends React.Component {
   };
 
   render() {
-    const numSections = this.props.children.length;
+    const { children, className, padding } = this.props;
+    const numSections = children.length;
     if (12 % numSections !== 0) {
       return null;
     }
 
     return (
-        <Row className={`neal-horizontal-split neal-horizontal-split-${this.props.padding}`}>
-          {this.props.children.map((child, idx) => {
+        <Row className={`neal-horizontal-split neal-horizontal-split-${padding} ${className}`}>
+          {children.map((child, idx) => {
             return (
               <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} className="neal-horizontal-split-col" key={idx}>
                   {child}

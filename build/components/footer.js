@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FooterAddress = exports.Footer = undefined;
+exports.Footer = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -16,10 +16,6 @@ var _propTypes = require("prop-types");
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _bootstrap = require("../helpers/bootstrap");
-
-var _navbar = require("./navbar");
-
-var _navbar2 = _interopRequireDefault(_navbar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48,22 +44,20 @@ var Footer = exports.Footer = function (_React$Component) {
           _bootstrap.Container,
           null,
           _react2.default.createElement(
-            _bootstrap.Row,
-            null,
+            "div",
+            { className: 'flex-grow-1 d-flex align-items-center justify-content-between' },
             _react2.default.createElement(
-              _bootstrap.Col,
-              { size: ["xs-12", "md-4"] },
+              "div",
+              null,
               _react2.default.createElement(
-                "p",
-                { className: "neal-footer-copyright" },
+                "div",
+                { className: "neal-footer-brand" },
                 "\xA9 ",
-                new Date().getFullYear(),
-                ", ",
                 this.props.brandName
               ),
               this.props.address,
               _react2.default.createElement(
-                "p",
+                "div",
                 null,
                 _react2.default.createElement(
                   "a",
@@ -72,12 +66,7 @@ var Footer = exports.Footer = function (_React$Component) {
                 )
               )
             ),
-            _react2.default.createElement(_bootstrap.Col, { size: ["xs-12", "md-4"] }),
-            _react2.default.createElement(
-              _bootstrap.Col,
-              { size: ["xs-12", "md-4"] },
-              this.renderSocialIcons()
-            )
+            this.renderSocialIcons()
           )
         )
       );
@@ -87,7 +76,7 @@ var Footer = exports.Footer = function (_React$Component) {
     value: function renderSocialIcons() {
       return _react2.default.createElement(
         "ul",
-        { className: "nav navbar-nav neal-footer-social pull-right" },
+        { className: "nav navbar-nav neal-footer-social pull-right d-flex flex-row" },
         this.renderSocialIcon("fa-twitter", this.props.twitterUrl),
         this.renderSocialIcon("fa-facebook", this.props.facebookUrl),
         this.renderSocialIcon("fa-github", this.props.githubUrl)
@@ -127,26 +116,3 @@ Footer.propTypes = {
   email: _propTypes2.default.node,
   address: _propTypes2.default.node
 };
-
-var FooterAddress = exports.FooterAddress = function (_React$Component2) {
-  _inherits(FooterAddress, _React$Component2);
-
-  function FooterAddress() {
-    _classCallCheck(this, FooterAddress);
-
-    return _possibleConstructorReturn(this, (FooterAddress.__proto__ || Object.getPrototypeOf(FooterAddress)).apply(this, arguments));
-  }
-
-  _createClass(FooterAddress, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "neal-footer-address" },
-        this.props.children
-      );
-    }
-  }]);
-
-  return FooterAddress;
-}(_react2.default.Component);

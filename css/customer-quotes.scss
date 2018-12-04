@@ -1,23 +1,13 @@
-.neal-customer-quotes {
-  .row { align-items: flex-end; }
-}
-
-.neal-customer-quotes .neal-customer-quote {
-  margin-bottom: $neal-page-paragraph-margin;
-}
-
 .neal-customer-quote-quote {
   background-color: $neal-customer-quotes-bg-color;
   border: 2px solid $neal-customer-quotes-border-color;
   padding: 1rem;
-  :last-child { margin-bottom: 0; }
-  margin-bottom: 1rem;
   font-weight: 300;
 }
 
 .neal-customer-quote-name { }
 .neal-customer-quote-title { }
-img.neal-customer-quote-img { 
+img.neal-customer-quote-img {
   display: inline-block;
   width: $neal-customer-quotes-img-width;
   margin-right: 1rem;

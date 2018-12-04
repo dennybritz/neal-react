@@ -14,13 +14,12 @@ export class Section extends React.Component {
     const _className = classNames("neal-section", className);
 
     return (
-      <div {...otherProps} className={_className}>
+      <section {...otherProps} className={_className}>
         <div className="container">
           {heading ? <h2>{heading}</h2> : null}
           {children}
         </div>
-      </div>
+      </section>
     );
   }
-
 }

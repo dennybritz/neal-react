@@ -1,25 +1,27 @@
 .neal-horizontal-split-col {
-  margin-bottom: $neal-page-paragraph-margin * 2;
+  margin-bottom: $neal-page-paragraph-margin;
+  display: flex;
+  align-items: center;
 }
 
 .neal-horizontal-split {
-  margin-bottom: -$neal-page-paragraph-margin * 2;
+  margin-bottom: -$neal-page-paragraph-margin;
 }
 
-.neal-horizontal-split-sm {
-  .neal-horizontal-split-col {
-    padding-right: $neal-horizontal-split-padding-x-sm * 2;
-  }
-}
+// .neal-horizontal-split-sm {
+//   .neal-horizontal-split-col {
+//     padding-right: $neal-horizontal-split-padding-x-sm;
+//   }
+// }
 
-.neal-horizontal-split-md {
-  .neal-horizontal-split-col {
-    padding-right: $neal-horizontal-split-padding-x-md * 2;
-  }
-}
+// .neal-horizontal-split-md {
+//   .neal-horizontal-split-col {
+//     padding-right: $neal-horizontal-split-padding-x-md;
+//   }
+// }
 
-.neal-horizontal-split-lg {
-  .neal-horizontal-split-col {
-    padding-right: $neal-horizontal-split-padding-x-lg * 2;
-  }
-}
+// .neal-horizontal-split-lg {
+//   .neal-horizontal-split-col {
+//     padding-right: $neal-horizontal-split-padding-x-lg;
+//   }
+// }

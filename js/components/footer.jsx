@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Container, Row, Col } from "../helpers/bootstrap";
-import Navbar from "./navbar";
+import { Container } from "../helpers/bootstrap";
 
 export class Footer extends React.Component {
 
@@ -18,22 +17,18 @@ export class Footer extends React.Component {
     return (
       <footer className="neal-footer navbar">
         <Container>
-          <Row>
-            <Col size={["xs-12", "md-4"]}>
-              <p className="neal-footer-copyright">
-                © {new Date().getFullYear()}, {this.props.brandName}
-              </p>
+          <div className={'flex-grow-1 d-flex align-items-center justify-content-between'}>
+            <div>
+              <div className="neal-footer-brand">
+                © {this.props.brandName}
+              </div>
               {this.props.address}
-              <p>
-                 <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
-              </p>
-            </Col>
-            <Col size={["xs-12", "md-4"]}>
-            </Col>
-            <Col size={["xs-12", "md-4"]}>
-              {this.renderSocialIcons()}
-            </Col>
-          </Row>
+              <div>
+                <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
+              </div>
+            </div>
+            {this.renderSocialIcons()}
+          </div>
         </Container>
       </footer>
     );
@@ -41,7 +36,7 @@ export class Footer extends React.Component {
 
   renderSocialIcons() {
     return (
-      <ul className="nav navbar-nav neal-footer-social pull-right">
+      <ul className="nav navbar-nav neal-footer-social pull-right d-flex flex-row">
         { this.renderSocialIcon("fa-twitter", this.props.twitterUrl) }
         { this.renderSocialIcon("fa-facebook", this.props.facebookUrl) }
         { this.renderSocialIcon("fa-github", this.props.githubUrl) }
@@ -53,7 +48,7 @@ export class Footer extends React.Component {
   renderSocialIcon(iconClass, url) {
     if (!url || !iconClass) { return null; }
     return (
-     <li className={`nav-item neal-footer-social-icon ${iconClass.replace("fa-", "")}`}>
+      <li className={`nav-item neal-footer-social-icon ${iconClass.replace("fa-", "")}`}>
         <a href={url} target="_blank">
           <span className="fa-stack">
             <i className="fa fa-circle fa-stack-2x"></i>
@@ -63,16 +58,4 @@ export class Footer extends React.Component {
       </li>
     );
   }
-}
-
-export class FooterAddress extends React.Component {
-
-  render() {
-    return (
-      <div className="neal-footer-address">
-        { this.props.children }
-      </div>
-    );
-  }
-
 }

@@ -33,56 +33,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ModalHeader = function (_React$Component) {
-  _inherits(ModalHeader, _React$Component);
-
-  function ModalHeader() {
-    _classCallCheck(this, ModalHeader);
-
-    return _possibleConstructorReturn(this, (ModalHeader.__proto__ || Object.getPrototypeOf(ModalHeader)).apply(this, arguments));
-  }
-
-  _createClass(ModalHeader, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "modal-header" },
-        _react2.default.createElement(
-          "button",
-          { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
-          _react2.default.createElement(
-            "span",
-            { "aria-hidden": "true" },
-            "\xD7"
-          ),
-          _react2.default.createElement(
-            "span",
-            { className: "sr-only" },
-            "Close"
-          )
-        ),
-        _react2.default.createElement(
-          "h4",
-          { className: "modal-title lead" },
-          this.props.title
-        )
-      );
-    }
-  }]);
-
-  return ModalHeader;
-}(_react2.default.Component);
-
-ModalHeader.propTypes = {
-  title: _propTypes2.default.string.isRequired
-};
-ModalHeader.defaultProps = {
-  title: "Sign up"
-};
-
-var ModalFooter = function (_React$Component2) {
-  _inherits(ModalFooter, _React$Component2);
+var ModalFooter = function (_React$Component) {
+  _inherits(ModalFooter, _React$Component);
 
   function ModalFooter() {
     _classCallCheck(this, ModalFooter);
@@ -115,13 +67,13 @@ ModalFooter.defaultProps = {
   buttonText: "Sign up"
 };
 
-var SignupModal = exports.SignupModal = function (_React$Component3) {
-  _inherits(SignupModal, _React$Component3);
+var SignupModal = exports.SignupModal = function (_React$Component2) {
+  _inherits(SignupModal, _React$Component2);
 
   function SignupModal() {
     var _ref;
 
-    var _temp, _this3, _ret;
+    var _temp, _this2, _ret;
 
     _classCallCheck(this, SignupModal);
 
@@ -129,23 +81,22 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this3 = _possibleConstructorReturn(this, (_ref = SignupModal.__proto__ || Object.getPrototypeOf(SignupModal)).call.apply(_ref, [this].concat(args))), _this3), _this3.state = {}, _this3.handleChange = function (e) {
-      _this3.setState(_defineProperty({}, "" + e.target.name, e.target.value));
-    }, _this3.handleSubmit = function (e) {
+    return _ret = (_temp = (_this2 = _possibleConstructorReturn(this, (_ref = SignupModal.__proto__ || Object.getPrototypeOf(SignupModal)).call.apply(_ref, [this].concat(args))), _this2), _this2.state = {}, _this2.handleChange = function (e) {
+      _this2.setState(_defineProperty({}, "" + e.target.name, e.target.value));
+    }, _this2.handleSubmit = function (e) {
       e.preventDefault();
-      if (_this3.props.onSubmit) {
-        _this3.props.onSubmit(_this3.state);
+      if (_this2.props.onSubmit) {
+        _this2.props.onSubmit(_this2.state);
       }
-    }, _this3.renderBody = function () {
-      if (_this3.props.children) return _this3.props.children;
+    }, _this2.renderBody = function () {
+      if (_this2.props.children) return _this2.props.children;
       return _react2.default.createElement(
         "div",
         null,
-        _react2.default.createElement(SignupModal.Input, { name: "name", required: true, label: "Name", placeholder: "Name" }),
         _react2.default.createElement(SignupModal.Input, { type: "email", required: true, name: "email", label: "Email", placeholder: "Email" }),
         _react2.default.createElement(SignupModal.Input, { type: "password", required: true, name: "password", label: "Password", placeholder: "Password" })
       );
-    }, _temp), _possibleConstructorReturn(_this3, _ret);
+    }, _temp), _possibleConstructorReturn(_this2, _ret);
   }
 
   _createClass(SignupModal, [{
@@ -165,7 +116,20 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
             _react2.default.createElement(
               "div",
               { className: "modal-content" },
-              _react2.default.createElement(ModalHeader, { title: this.props.title }),
+              _react2.default.createElement(
+                "button",
+                { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
+                _react2.default.createElement(
+                  "span",
+                  { "aria-hidden": "true" },
+                  "\xD7"
+                ),
+                _react2.default.createElement(
+                  "span",
+                  { className: "sr-only" },
+                  "Close"
+                )
+              ),
               _react2.default.createElement(
                 "form",
                 { className: "form-vertical", onSubmit: this.handleSubmit, onChange: this.handleChange },
@@ -199,8 +163,8 @@ SignupModal.defaultProps = {
 };
 
 
-SignupModal.Input = (_temp2 = _class = function (_React$Component4) {
-  _inherits(_class, _React$Component4);
+SignupModal.Input = (_temp2 = _class = function (_React$Component3) {
+  _inherits(_class, _React$Component3);
 
   function _class() {
     _classCallCheck(this, _class);

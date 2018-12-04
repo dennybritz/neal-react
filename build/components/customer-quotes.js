@@ -40,6 +40,7 @@ var CustomerQuote = exports.CustomerQuote = function (_React$Component) {
       return _react2.default.createElement(
         "div",
         { className: "neal-customer-quote" },
+        _react2.default.createElement("i", { className: "fa fa-quote-left" }),
         _react2.default.createElement(
           "div",
           { className: "neal-customer-quote-quote" },
@@ -48,7 +49,6 @@ var CustomerQuote = exports.CustomerQuote = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: "neal-customer-quote-profile" },
-          _react2.default.createElement("img", { className: "neal-customer-quote-img img-responsive", src: this.props.imageUrl }),
           _react2.default.createElement(
             "span",
             { className: "neal-customer-quote-name" },
@@ -69,8 +69,7 @@ var CustomerQuote = exports.CustomerQuote = function (_React$Component) {
 
 CustomerQuote.propTypes = {
   name: _propTypes2.default.string.isRequired,
-  title: _propTypes2.default.string,
-  imageUrl: _propTypes2.default.string.isRequired
+  title: _propTypes2.default.string
 };
 
 var CustomerQuotes = exports.CustomerQuotes = function (_React$Component2) {

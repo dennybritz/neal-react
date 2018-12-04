@@ -1,6 +1,6 @@
 .neal-pricing-table {
 
-  .neal-pricing-plan { 
+  .neal-pricing-plan {
     border: 1px solid $neal-pricing-plan-border-color;
   }
 
@@ -28,11 +28,13 @@
     font-weight: 300;
   }
 
-  .neal-pricing-plan-description { 
+  .neal-pricing-plan-description {
     font-weight: 300;
   }
 
-  p.neal-pricing-plan-action { 
+  p.neal-pricing-plan-action {
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
   }
 

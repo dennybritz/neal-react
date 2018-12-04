@@ -1,35 +1,35 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import classNames from "classnames";
+import HamburgerIcon from './HamburgerIcon';
 
 export class Navbar extends React.Component {
-
   static propTypes = {
     brand: PropTypes.node.isRequired,
+    burgerColor: PropTypes.string,
     className: PropTypes.string
   };
 
+  static defaultProps = {
+    burgerColor: 'rgba(0, 0, 0, .5)', // bootstrap nav hamburger default
+  };
+
   render() {
-    const _className = classNames("navbar neal-navbar", this.props.className);
+    const { brand, burgerColor, children, className } = this.props;
+    const _className = classNames("navbar navbar-expand-md navbar-light neal-navbar", className);
+
     return (
       <header className="neal-navbar-wrapper">
         <nav className={_className}>
-          <div className="container">
-            <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
-              data-target="#mobile-nav">
-              &#9776;
-            </button>
-            <a className="navbar-brand hidden-sm-down" href="/">{this.props.brand}</a>
-            <div className="navbar-toggleable-sm hidden-sm-down" id="header-nav">
-              <ul className="nav navbar-nav pull-right">
-                {this.props.children}
-              </ul>
-            </div>
-            <div className="collapse navbar-toggleable-sm hidden-md-up neal-mobile-nav" id="mobile-nav">
-              <ul className="nav navbar-nav">
-                {this.props.children}
-              </ul>
-            </div>
+          <span className="navbar-brand d-flex w-50 mr-auto">{brand}</span>
+          <button className="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#header-nav" aria-label="toggle-navigation">
+            <HamburgerIcon fill={burgerColor}/>
+          </button>
+          <div className="navbar-collapse collapse w-100" id="header-nav">
+            <ul className="nav navbar-nav ml-auto w-100 justify-content-end">
+              {children}
+            </ul>
           </div>
         </nav>
       </header>
@@ -38,7 +38,6 @@ export class Navbar extends React.Component {
 }
 
 export class NavItem extends React.Component {
-
   static propTypes = {
     className: PropTypes.string,
     dropdown: PropTypes.bool,
@@ -53,24 +52,5 @@ export class NavItem extends React.Component {
         { children }
       </li>
     );
-  }
-}
-
-export class DropdownToggle extends React.Component {
-  render() {
-    const { children, ...otherProps } = this.props;
-
-    return (
-      <a className="nav-link" data-toggle="dropdown" role="button" {...otherProps}>
-        {children}
-      </a>);
-  }
-}
-
-export class DropdownMenu extends React.Component {
-  render() {
-    const { children, ...otherProps } = this.props;
-
-    return <div className="dropdown-menu" {...otherProps}>{children}</div>;
   }
 }

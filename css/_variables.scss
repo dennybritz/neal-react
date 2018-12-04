@@ -5,6 +5,12 @@
 $neal-link-color: #0088cc !default;
 $neal-font-family: "Open Sans", "Noto Sans", "Noto Sans CJK JP", sans-serif !default;
 
+$bp-xs: 0;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
 // Buttons
 $neal-button-ghost-enable: true !default;
 $neal-button-padding-x: 3rem !default;
@@ -15,8 +21,15 @@ $neal-input-padding-x: 1rem !default;
 $neal-input-padding-y: 1rem !default;
 
 // Colors
-$primary-color: #0091EA !default;
-$accent-color: #455A64 !default;
+// $primary-color: #0091EA !default;
+$primary-color: #0074B5 !default;
+$primary-dark-color: #00466E !default;
+$primary-darkest-color: #263137 !default;
+$ivory: #EBD6B1 !default;
+$med-gray: #646464 !default;
+$placeholder-gray: #8e8e8e !default;
+// $secondary-color: #57b8ff !default;
+$secondary-color: #0197F6 !default;
 $gray-dark: #212121 !default;
 $gray: lighten($gray-dark, 10%) !default;
 $gray-light: lighten($gray-dark, 30%) !default;
@@ -40,37 +53,28 @@ $neal-page-paragraph-margin: 2rem !default;
 
 // Footer Component
 $neal-footer-margin-top: 4rem !default;
-$neal-footer-bg-color: darken($accent-color, 15%) !default;
+$neal-footer-bg-color: $primary-darkest-color !default;
 $neal-footer-padding-y: 4rem !default;
-$neal-footer-text-color: $gray-lightest !default;
-$neal-footer-link-color: $gray-lighter !default;
+$neal-footer-text-color: #fff !default;
+$neal-footer-link-color: #fff !default;
 $neal-footer-social-icon-color: #fff !default;
 $neal-footer-social-icon-bg-color: $gray-lighter !default;
-
-// Code component
-$neal-code-padding: 1rem 1.5rem !default;
 
 // Section Component
 $neal-section-padding-y: 10rem !default;
 $neal-section-heading-margin-bottom: 2rem !default;
-$neal-section-border-bottom: 1px solid $gray-lightest !default;;
+$neal-section-border-bottom: 1px solid $gray-lighter !default;;
 $neal-subhero-bg-color: $gray-uberlight !default;;
 
 // Navbar Component
 $neal-navbar-bg-color: #fff !default;
-$neal-navbar-padding-y: 1rem !default;
-$neal-navbar-link-color: #666 !default;
-$neal-header-link-color-hover: darken($neal-navbar-link-color, 25%) !default;
+$neal-navbar-padding-y: .5rem !default;
+$neal-navbar-link-color: #555 !default;
+$neal-header-link-color-hover: darken($neal-navbar-link-color, 50%) !default;
 $neal-navbar-brand-color: #333 !default;
-$neal-navbar-item-padding-x: 1.5rem !default;
+$neal-navbar-item-padding-x: .3rem !default;
 
-// Hero Component
-$neal-hero-padding-y: 10rem !default;
-$neal-hero-margin-bottom: $neal-section-padding-y/2 !default;
-$neal-hero-bg-color: #263238 !default;
-$neal-hero-text-color: #fff !default;
-
-// Horizontal Split: 
+// Horizontal Split:
 $neal-horizontal-split-padding-x-sm: 0rem !default;
 $neal-horizontal-split-padding-x-md: 2rem !default;
 $neal-horizontal-split-padding-x-lg: 3rem !default;
@@ -84,31 +88,14 @@ $neal-customer-quotes-img-width: 25% !default;
 // N/A
 
 // Signup Modal
-$neal-signup-modal-header-bg-color: $accent-color !default;
-$neal-signup-modal-header-text-color: #fff !default;
-$neal-signup-modal-padding-x: 3rem !default;
+$neal-signup-modal-padding-x: 2.5rem !default;
 
 // N/A
 
 // Pricing Table
 $neal-pricing-plan-border-color: $gray-lightest !default;
-$neal-pricing-plan-header-bg-color: $accent-color !default;
+$neal-pricing-plan-header-bg-color: $primary-color !default;
 $neal-pricing-plan-header-text-color: #fff !default;
-
-// Image List
-$neal-image-list-item-padding-x: 2.5rem !default;
-$neal-image-list-item-max-height: 50px !default;
-
-// Team
-// N/A
-
-// Figure
-
-$neal-figure-border: 1px solid $gray-lightest !default;
-$neal-figure-caption-bg-color: $gray-uberlight !default;
-$neal-figure-img-padding: 0rem !default;
- 
-
 
 // Bootstrap Overrides
 // ========================================
@@ -118,7 +105,7 @@ $enable-rounded: false !default;;
 $border-radius: 0 !default;;
 $link-color: $neal-link-color !default;
 $font-family-sans-serif: $neal-font-family !default;
-$jumbotron-padding: $neal-hero-padding-y !default;
+$jumbotron-padding: 10rem !default;
 
 // Button Paddings
 $btn-padding-x: $neal-button-padding-x;

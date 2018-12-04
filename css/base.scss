@@ -1,23 +1,41 @@
 // Load variables and base styles
 @import '_variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import "vendor/prism";
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
 
 // Component Styles
 @import 'buttons.scss';
-@import 'code.scss';
-@import 'countdown.scss';
 @import 'customer-quotes.scss';
-@import 'figure.scss';
 @import 'footer.scss';
-@import 'hero.scss';
 @import 'horizontal-split.scss';
-@import 'image-list.scss';
 @import 'navbar.scss';
 @import 'page.scss';
 @import 'pricing-table.scss';
 @import 'section.scss';
-@import 'singup-inline.scss';
-@import 'singup-modal.scss';
-@import 'team.scss';
+@import 'signup-inline.scss';
+@import 'signup-modal.scss';
 @import 'typography.scss';
+@import 'value-prop.scss';
