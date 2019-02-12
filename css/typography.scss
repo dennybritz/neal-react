@@ -3,10 +3,45 @@
   li { margin: 1rem 0; }
 }
 
-form .form-group {
-  margin: 0.5rem 0;
-}
+// form .form-group {
+//   margin-bottom: 1rem;
+//   &:last-child { margin-bottom: 0; }
+// }
 
 h3, h4 {
   line-height: 1.5;
+}
+
+.text-navy {
+  color: $primary-dark-color;
+}
+
+.text-ivory {
+  color: $ivory;
+}
+
+.text-med-gray {
+  color: $med-gray;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Light.ttf") format("truetype");
+	font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+input, textarea, button {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }

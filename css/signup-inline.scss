@@ -1,0 +1,32 @@
+.form-inline {
+  .form-group {
+    height: 50px;
+    &.input-group {
+      margin-bottom: 8px;
+      flex: 0 0 375px;
+      margin-right: 0;
+      @media (min-width: $bp-md) {
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+    &.button-group {
+      flex: 0 0 375px;
+      margin-bottom: 0;
+      @media (min-width: $bp-md) {
+        flex: 0 0 auto;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-control {
+    border-radius: 3px;
+    // font-weight: 300;
+    @include placeholder {
+      color: $placeholder-gray;
+    }
+  }
+}

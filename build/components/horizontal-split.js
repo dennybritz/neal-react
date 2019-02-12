@@ -7,11 +7,15 @@ exports.HorizontalSplit = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _bootstrap = require("../helpers/bootstrap");
-
 var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _bootstrap = require("../helpers/bootstrap");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33,15 +37,20 @@ var HorizontalSplit = exports.HorizontalSplit = function (_React$Component) {
   _createClass(HorizontalSplit, [{
     key: "render",
     value: function render() {
-      var numSections = this.props.children.length;
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          padding = _props.padding;
+
+      var numSections = children.length;
       if (12 % numSections !== 0) {
         return null;
       }
 
       return _react2.default.createElement(
         _bootstrap.Row,
-        { className: "neal-horizontal-split neal-horizontal-split-" + this.props.padding },
-        this.props.children.map(function (child, idx) {
+        { className: "neal-horizontal-split neal-horizontal-split-" + padding + " " + className },
+        children.map(function (child, idx) {
           return _react2.default.createElement(
             _bootstrap.Col,
             { size: HorizontalSplit.COLUMN_CLASSES[numSections], className: "neal-horizontal-split-col", key: idx },
@@ -64,7 +73,7 @@ HorizontalSplit.COLUMN_CLASSES = {
   12: ["xs-12", "sm-6", "lg-3"]
 };
 HorizontalSplit.propTypes = {
-  padding: _react2.default.PropTypes.oneOf(["sm", "md", "lg"])
+  padding: _propTypes2.default.oneOf(["sm", "md", "lg"])
 };
 HorizontalSplit.defaultProps = {
   padding: "sm"

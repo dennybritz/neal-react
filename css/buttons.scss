@@ -1,57 +1,14 @@
-@mixin ghost-button($text-color, $text-color-hover){
-  border: 2px solid $text-color;
-  color: $text-color;
-  background-color: inherit;
-  &:hover, &:active {
-    color: $text-color-hover;
-    border-color: $text-color-hover;
-  }
-}
-
-@mixin full-button($bg-color, $bg-color-hover){
-  border: none;
-  color: #fff;
-  background-color: $bg-color;  
-  &:hover, &:active {
-    background-color: $bg-color-hover;
-  }
-}
-
 .btn.btn-primary {
-  &.btn-full { @include full-button($primary-color, darken($primary-color, 15%)); }
-  &.btn-ghost { @include ghost-button($primary-color, darken($primary-color, 15%)); }
+  padding: .75rem 2rem;
+  border-radius: 3px;
+  font-weight: 300;
+  height: 50px;
 }
 
 .btn.btn-accent {
-  &.btn-full { @include full-button($accent-color, darken($accent-color, 15%)); }
-  &.btn-ghost { @include ghost-button($accent-color, darken($accent-color, 15%)); }
-}
-
-.btn.btn-secondary {
-  &.btn-full { @include full-button($gray-dark, darken($gray-dark, 15%)); }
-  &.btn-ghost { @include ghost-button($gray-dark, darken($gray-dark, 15%)); }
-}
-
-.btn.btn-info {
-  &.btn-full { @include full-button($brand-info, darken($brand-info, 15%)); }
-  &.btn-ghost { @include ghost-button($brand-info, darken($brand-info, 15%)); }
-}
-
-.btn.btn-success {
-  &.btn-full { @include full-button($brand-success, darken($brand-success, 15%)); }
-  &.btn-ghost { @include ghost-button($brand-success, darken($brand-success, 15%)); }
-}
-
-.btn.btn-warning {
-  &.btn-full { @include full-button($brand-warning, darken($brand-warning, 15%)); }
-  &.btn-ghost { @include ghost-button($brand-warning, darken($brand-warning, 15%)); }
-}
-
-.btn.btn-danger {
-  &.btn-full { @include full-button($brand-danger, darken($brand-danger, 15%)); }
-  &.btn-ghost { @include ghost-button($brand-danger, darken($brand-danger, 15%)); }
-}
-
-.btn.btn-white {
-  @include ghost-button(#fff, rgba(#fff, 0.80));
+  background-color: $secondary-color;
+  border: none;
+  &:active {
+    background: darken($secondary-color, 10%) !important;
+  }
 }

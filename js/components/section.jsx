@@ -1,22 +1,25 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import classNames from "classnames";
 
 export class Section extends React.Component {
 
   static propTypes = {
-    heading: React.PropTypes.node,
+    className: PropTypes.string,
+    heading: PropTypes.node,
   };
 
   render() {
-    const _className = classNames("neal-section", this.props.className);
+    const { children, className, heading, ...otherProps } = this.props;
+    const _className = classNames("neal-section", className);
+
     return (
-      <div {... this.props} className={_className}>
+      <section {...otherProps} className={_className}>
         <div className="container">
-          { this.props.heading ? <h2>{this.props.heading}</h2> : null }
-          {this.props.children}
+          {heading ? <h2>{heading}</h2> : null}
+          {children}
         </div>
-      </div>
+      </section>
     );
   }
-
 }

@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -64,7 +68,15 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
   _createClass(PricingPlan, [{
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _props = this.props,
+          buttonText = _props.buttonText,
+          description = _props.description,
+          features = _props.features,
+          name = _props.name,
+          onClick = _props.onClick,
+          period = _props.period,
+          price = _props.price;
+
 
       return _react2.default.createElement(
         "div",
@@ -72,48 +84,48 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
         _react2.default.createElement(
           "div",
           { className: "card-header neal-pricing-plan-name" },
-          this.props.name
+          name
         ),
         _react2.default.createElement(
           "div",
-          { className: "card-block" },
+          { className: "card-block container" },
           _react2.default.createElement(
             "div",
-            { className: "text-xs-center neal-pricing-plan-price" },
+            { className: "text-center neal-pricing-plan-price" },
             _react2.default.createElement(
               "h4",
               { className: "card-title neal-pricing-plan-price-amount" },
-              this.props.price
+              price
             ),
             _react2.default.createElement(
               "span",
               { className: "neal-pricing-plan-price-period" },
-              this.props.period
+              period
             )
           ),
-          _react2.default.createElement(
+          description && _react2.default.createElement(
             "p",
-            { className: "card-text text-xs-center neal-pricing-plan-description" },
-            this.props.description
+            { className: "card-text text-center neal-pricing-plan-description" },
+            description
           ),
           _react2.default.createElement(
             "p",
-            { className: "card-text text-xs-center neal-pricing-plan-action" },
+            { className: "card-text neal-pricing-plan-action" },
             _react2.default.createElement(
               "button",
-              { className: "btn btn-ghost btn-primary btn-lg", onClick: this.props.onClick },
-              this.props.buttonText
+              { className: "btn btn-primary", onClick: onClick },
+              buttonText
             )
           )
         ),
-        _react2.default.createElement(
+        features && _react2.default.createElement(
           "div",
           { className: "card-block neal-pricing-plan-features" },
           _react2.default.createElement(
             "ul",
             { className: "list-group list-group-flush" },
-            Object.keys(this.props.features).map(function (name, idx) {
-              var isEnabled = _this3.props.features[name];
+            Object.keys(features).map(function (name, idx) {
+              var isEnabled = features[name];
               var _className = (0, _classnames2.default)("neal-pricing-plan-feature", { isEnabled: isEnabled, "isDisabled": !isEnabled });
               return _react2.default.createElement(
                 "li",
@@ -131,13 +143,13 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
 }(_react2.default.Component);
 
 PricingPlan.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired,
-  description: _react2.default.PropTypes.string,
-  price: _react2.default.PropTypes.node.isRequired,
-  period: _react2.default.PropTypes.string,
-  features: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.bool),
-  buttonText: _react2.default.PropTypes.string,
-  onClick: _react2.default.PropTypes.func
+  name: _propTypes2.default.string.isRequired,
+  description: _propTypes2.default.string,
+  price: _propTypes2.default.node.isRequired,
+  period: _propTypes2.default.string,
+  features: _propTypes2.default.objectOf(_propTypes2.default.bool),
+  buttonText: _propTypes2.default.string,
+  onClick: _propTypes2.default.func
 };
 PricingPlan.defaultProps = {
   period: "/month",

@@ -1,7 +1,6 @@
 // General
 footer.neal-footer {
-  padding: $neal-footer-padding-y 0;
-  margin-top: $neal-footer-margin-top;
+  padding: $neal-footer-padding-y / 2 0;
   background-color: $neal-footer-bg-color;
   color: $neal-footer-text-color;
   font-size: 0.8rem;
@@ -12,7 +11,7 @@ footer.neal-footer {
 .neal-footer-social {
   font-size: 1.5rem;
 }
-.neal-footer-social-icon { 
+.neal-footer-social-icon {
   i.fa-stack-2x { color: $neal-footer-social-icon-bg-color; }
   i.fa-stack-1x { color: $neal-footer-social-icon-color; }
 }
@@ -21,5 +20,6 @@ footer.neal-footer {
 .facebook.neal-footer-social-icon i.fa-stack-2x { color: #3b5998; }
 .github.neal-footer-social-icon i.fa-stack-2x { color: #000; }
 
-// Copyright
-.neal-footer-copyright { }
+.neal-footer-brand {
+  margin-bottom: 0;
+}

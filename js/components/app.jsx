@@ -1,13 +1,14 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { GoogleAnalytics, Segment, Stripe, Page, TypeformIntegration } from "./index";
 
 export class App extends React.Component {
 
   static propTypes = {
-    googleAnalyticsKey: React.PropTypes.string,
-    segmentKey: React.PropTypes.string,
-    stripeKey: React.PropTypes.string,
-    history: React.PropTypes.object,
+    googleAnalyticsKey: PropTypes.string,
+    segmentKey: PropTypes.string,
+    stripeKey: PropTypes.string,
+    history: PropTypes.object,
   };
 
   render() {
@@ -17,7 +18,7 @@ export class App extends React.Component {
     const history = this.props.history;
 
     return (
-      <div className="neal-app">
+      <div>
         { this.props.children }
         { googleAnalyticsKey ? <GoogleAnalytics account={googleAnalyticsKey} history={history} /> : null }
         { segmentKey ? <Segment writeKey={segmentKey} history={history} /> : null }

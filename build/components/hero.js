@@ -13,13 +13,19 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _bootstrap = require("../helpers/bootstrap");
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _bootstrap = require("../helpers/bootstrap");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -39,18 +45,24 @@ var Hero = exports.Hero = function (_React$Component) {
   _createClass(Hero, [{
     key: "render",
     value: function render() {
+      var _props = this.props,
+          backgroundImage = _props.backgroundImage,
+          children = _props.children,
+          className = _props.className,
+          otherProps = _objectWithoutProperties(_props, ["backgroundImage", "children", "className"]);
+
       var _style = {};
-      if (this.props.backgroundImage) {
-        _style.backgroundImage = "url(" + this.props.backgroundImage + ")";
+      if (backgroundImage) {
+        _style.backgroundImage = "url(" + backgroundImage + ")";
       }
-      var _className = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid", this.props.className);
+      var _className = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid", className);
       return _react2.default.createElement(
         "div",
-        _extends({}, this.props, { className: _className, style: _style }),
+        _extends({}, otherProps, { className: _className, style: _style }),
         _react2.default.createElement(
           _bootstrap.Container,
           null,
-          this.props.children
+          children
         )
       );
     }
@@ -60,5 +72,6 @@ var Hero = exports.Hero = function (_React$Component) {
 }(_react2.default.Component);
 
 Hero.propTypes = {
-  backgroundImage: _react2.default.PropTypes.string
+  backgroundImage: _propTypes2.default.string,
+  className: _propTypes2.default.string
 };

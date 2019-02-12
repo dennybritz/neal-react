@@ -1,0 +1,52 @@
+.neal-signup-modal {
+  button.close {
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: 13px;
+  }
+
+  .modal-title {
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  .modal-footer {
+    border: none;
+    margin: 0;
+    padding: 0rem $neal-signup-modal-padding-x $neal-signup-modal-padding-x $neal-signup-modal-padding-x;
+    .modal-alternatives {
+      font-size: 12px;
+    }
+
+    button.modal-submit {
+      margin-bottom: .75rem;
+    }
+  }
+
+  .modal-footer > :not(:first-child) {
+    margin-left: 0;
+  }
+  .modal-footer > :not(:last-child) {
+    margin-right: 0;
+  }
+
+  .modal-body {
+    padding: $neal-signup-modal-padding-x $neal-signup-modal-padding-x 1.5rem $neal-signup-modal-padding-x;
+  }
+  .form-control::placeholder {
+    color: #8e8e8e;
+    opacity: 1;
+  }
+
+  .form-control {
+    height: 50px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+
+  .modal-error {
+    color: #c62828;
+    margin-top: 1rem;
+  }
+}

@@ -1,16 +1,32 @@
 .neal-navbar-wrapper {
   background-color: $neal-navbar-bg-color;
+  border-bottom: 1px solid $gray-lightest;
+  position: fixed;
+  z-index: 2;
+  height: 53px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid rgb(235,235,235);
 }
 
 nav.neal-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
 
   @mixin nav-link {
-    font-weight: 500;
     font-size: $font-size-sm;
     // text-transform: uppercase;
-    color: $neal-navbar-link-color;
-    &:hover, &:active {
-      color: $neal-header-link-color-hover;
+    color: $neal-navbar-link-color !important;
+    &:hover {
+      color: $neal-header-link-color-hover !important;
+    }
+    &:active {
+      opacity: 0.7;
     }
   }
 
@@ -18,12 +34,11 @@ nav.neal-navbar {
     padding: 0 $neal-navbar-item-padding-x;
     // Don't pad the last item on the right
     &:last-child { padding-right: 0; }
-    &:first-child { padding-left: 0; }
+    // &:first-child { padding-left: 0; }
   }
 
-  a.nav-link { 
+  a.nav-link {
     @include nav-link;
-
   }
 
   a.navbar-brand {
@@ -56,5 +71,4 @@ nav.neal-navbar {
       margin-left: 0rem;
     }
   }
-
 }

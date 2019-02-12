@@ -11,9 +11,9 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _section = require("./section");
+var _propTypes = require("prop-types");
 
-var _section2 = _interopRequireDefault(_section);
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _bootstrap = require("../helpers/bootstrap");
 
@@ -41,7 +41,7 @@ var SignupInline = exports.SignupInline = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SignupInline.__proto__ || Object.getPrototypeOf(SignupInline)).call.apply(_ref, [this].concat(args))), _this), _this.state = { email: null, password: null }, _this.handleChange = function (e) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SignupInline.__proto__ || Object.getPrototypeOf(SignupInline)).call.apply(_ref, [this].concat(args))), _this), _this.state = { email: null }, _this.handleChange = function (e) {
       _this.setState(_defineProperty({}, "" + e.target.name, e.target.value));
     }, _this.handleSubmit = function (e) {
       e.preventDefault();
@@ -54,42 +54,36 @@ var SignupInline = exports.SignupInline = function (_React$Component) {
   _createClass(SignupInline, [{
     key: "render",
     value: function render() {
+      var CTA = this.props.CTA;
+
+
       return _react2.default.createElement(
-        "div",
-        { className: "neal-signup-inline" },
+        "form",
+        { className: "form-inline d-flex justify-content-center", onSubmit: this.handleSubmit },
         _react2.default.createElement(
-          "form",
-          { className: "form-inline row", onSubmit: this.handleSubmit },
+          "div",
+          { className: "form-group input-group" },
           _react2.default.createElement(
-            _bootstrap.Col,
-            { className: "form-group", size: ["xs-12", "lg-5"] },
-            _react2.default.createElement(
-              "label",
-              { className: "sr-only", htmlFor: "email" },
-              "Email address"
-            ),
-            _react2.default.createElement("input", { type: "email", required: true, className: "form-control", name: "email", placeholder: "Email",
-              onChange: this.handleChange })
+            "label",
+            { className: "sr-only", htmlFor: "email" },
+            "Email address"
           ),
+          _react2.default.createElement("input", {
+            type: "email",
+            name: "email",
+            placeholder: "Enter email address",
+            className: "form-control h-100 w-100",
+            onChange: this.handleChange,
+            required: true
+          })
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "form-group button-group" },
           _react2.default.createElement(
-            _bootstrap.Col,
-            { className: "form-group", size: ["xs-12", "lg-5"] },
-            _react2.default.createElement(
-              "label",
-              { className: "sr-only", htmlFor: "password" },
-              "Password"
-            ),
-            _react2.default.createElement("input", { type: "password", required: true, className: "form-control", name: "password", placeholder: "Password",
-              onChange: this.handleChange })
-          ),
-          _react2.default.createElement(
-            _bootstrap.Col,
-            { className: "form-group", size: ["xs-12", "lg-2"] },
-            _react2.default.createElement(
-              "button",
-              { type: "submit", className: "btn btn-primary btn-ghost" },
-              "Sign up"
-            )
+            "button",
+            { type: "submit", className: "btn btn-primary " },
+            CTA
           )
         )
       );
@@ -100,5 +94,10 @@ var SignupInline = exports.SignupInline = function (_React$Component) {
 }(_react2.default.Component);
 
 SignupInline.propTypes = {
-  onSubmit: _react2.default.PropTypes.func
+  CTA: _propTypes2.default.string,
+  onSubmit: _propTypes2.default.func
+};
+SignupInline.defaultProps = {
+  CTA: 'Submit',
+  onSubmit: function onSubmit() {}
 };

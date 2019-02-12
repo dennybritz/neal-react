@@ -1,19 +1,23 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import classNames from "classnames";
 
 export class Figure extends React.Component {
 
   static propTypes = {
-    src: React.PropTypes.string.isRequired,
-    caption: React.PropTypes.node.isRequired,
+    src: PropTypes.string.isRequired,
+    caption: PropTypes.node.isRequired,
+    className: PropTypes.string
   };
 
   render() {
-    const figureClasses = classNames("neal-figure figure", this.props.className);
+    const { caption, className, src, ...otherProps } = this.props;
+    const figureClasses = classNames("neal-figure figure", className);
+
     return (
-      <figure {... this.props} className={figureClasses}>
-        <img src={this.props.src} alt={this.props.caption}/>
-        <figcaption className="figure-caption">{this.props.caption}</figcaption>
+      <figure {...otherProps} className={figureClasses}>
+        <img src={src} alt={caption}/>
+        <figcaption className="figure-caption">{caption}</figcaption>
       </figure>
     );
   }

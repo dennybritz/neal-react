@@ -33,7 +33,7 @@ var Page = exports.Page = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "neal-page" },
+        { className: 'page' },
         this.props.children
       );
     }
