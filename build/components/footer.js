@@ -42,7 +42,7 @@ var Footer = exports.Footer = function (_React$Component) {
         { className: "neal-footer navbar" },
         _react2.default.createElement(
           _bootstrap.Container,
-          null,
+          { className: "p-0" },
           _react2.default.createElement(
             "div",
             { className: 'flex-grow-1 d-flex align-items-center justify-content-between' },

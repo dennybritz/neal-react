@@ -14,7 +14,7 @@
       flex: 0 0 375px;
       margin-bottom: 0;
       @media (min-width: $bp-md) {
-        flex: 0;
+        flex: 0 0 auto;
       }
       button {
         width: 100%;

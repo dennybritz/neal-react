@@ -16,7 +16,7 @@ export class Footer extends React.Component {
   render() {
     return (
       <footer className="neal-footer navbar">
-        <Container>
+        <Container className="p-0">
           <div className={'flex-grow-1 d-flex align-items-center justify-content-between'}>
             <div>
               <div className="neal-footer-brand">

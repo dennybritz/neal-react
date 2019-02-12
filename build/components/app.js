@@ -44,7 +44,7 @@ var App = exports.App = function (_React$Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "neal-app" },
+        null,
         this.props.children,
         googleAnalyticsKey ? _react2.default.createElement(_index.GoogleAnalytics, { account: googleAnalyticsKey, history: history }) : null,
         segmentKey ? _react2.default.createElement(_index.Segment, { writeKey: segmentKey, history: history }) : null,

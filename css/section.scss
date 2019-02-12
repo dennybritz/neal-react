@@ -2,12 +2,12 @@ $section-vertical-spacing: 4rem;
 
 .section {
   position: relative;
-  padding: $section-vertical-spacing 0;
+  padding: 3rem 0;
   &.small {
     padding: $section-vertical-spacing / 2 0;
   }
   &.bg-primary {
-    background-color: $primary-color;
+    background-color: #00466E;
     color: #fff;
   }
   &.main-section {
@@ -21,12 +21,16 @@ $section-vertical-spacing: 4rem;
   .headline {
     font-size: 44px;
     font-weight: bold;
+    letter-spacing: 0.02em,
   }
 }
 
 .lead {
   font-weight: 300;
   font-size: 18px;
+  &.lead-lg {
+    font-size: 24px;
+  }
 }
 
 .value-prop {
@@ -34,5 +38,5 @@ $section-vertical-spacing: 4rem;
 }
 
 .margin-bottom-sm {
-  margin-bottom: $section-vertical-spacing / 2;
+  margin-bottom: 1.5rem;
 }

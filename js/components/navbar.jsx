@@ -16,10 +16,11 @@ export class Navbar extends React.Component {
 
   render() {
     const { brand, burgerColor, children, className } = this.props;
-    const _className = classNames("navbar navbar-expand-md navbar-light neal-navbar", className);
+    const _className = classNames("navbar navbar-expand-md navbar-light fixed-top", className);
 
+    console.log('brand :', brand);
     return (
-      <header className="neal-navbar-wrapper">
+      <header>
         <nav className={_className}>
           <span className="navbar-brand d-flex w-50 mr-auto">{brand}</span>
           <button className="navbar-toggler" type="button" data-toggle="collapse"
